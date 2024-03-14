@@ -1,0 +1,40 @@
+
+{% extends "base.html" %}
+
+{% block head %}
+<title>Dashboard</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="dashboard-cont">
+
+    <div class="dash-item character-select">
+        <div class="col1">
+            <div class="profile-search"></div>
+            <div class="profile-postit"></div>
+            <div class="profile-ad"></div>
+        </div> 
+        <div class="col2">
+            <div class="who-am-i">Character Select</div>
+        </div> 
+        <div class="col3">
+            <div class="completion-postit"></div>
+            <div class="completion-ad"></div>
+        </div> 
+    </div>
+
+    <div class="dash-item achievements">
+        <div class="col1"></div> 
+        <div class="col2"</div> 
+        <div class="col3"</div> 
+    </div>
+</div>
+
+
+
+<style> {% include "dashboard.css" %} </style>
+<script> {% include "dashboard.js" %} </script>
+{% endblock %}
+
+

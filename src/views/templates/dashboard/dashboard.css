@@ -1,0 +1,9 @@
+.dashboard-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-item{
+    display:flex;
+    height: 100vh;
+}
