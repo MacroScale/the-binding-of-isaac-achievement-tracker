@@ -1,9 +1,131 @@
+/*
+ *
+ * Universal
+ *
+ * */
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.bg{
+    width: 100%;
+    height: auto;
+}
+
+.overlay{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+/*
+ *
+ * Dashboard
+ *
+ * */
+
 .dashboard-cont{
     display: flex;
     flex-direction: column;
 }
 
 .dash-item{
-    display:flex;
     height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+
+/*
+ *
+ * Character Selection
+ *
+ * */
+
+.who-am-i{
+    position: relative;
+}
+
+.who-am-i .character-wheel{
+    position: absolute;
+    bottom: 8%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.who-am-i .character-wheel img{
+    width: 12%;
+    height: auto;
+ }
+
+
+/*
+ *
+ * Profile
+ *
+ * */
+
+.profile-postit{
+    position: relative
+}
+
+.profile-postit #placeholder{
+    width: 62%;
+    height: auto;
+    top: 18%;
+    left: 19%;
+}
+
+
+
+.profile-search{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+
+.profile-ad,
+.profile-ad .ad{
+    width: 100%;
+    height: 12%;
+    background-color: red;
+}
+
+
+/*
+ *
+ * Achievements 
+ *
+ * */
+
+.achievements-navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*
+ *
+ * Completion Marks
+ *
+ * */
+
+.completion-ad,
+.completion-ad .ad{
+    width: 100%;
+    height: 50%;
+    background-color: red;
 }
