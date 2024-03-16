@@ -10,6 +10,11 @@ input {
   font-family: IsaacFont;
 }
 
+h2{
+    font-size: 2vw;
+}
+
+
 img {
     -moz-user-select: none;
     -webkit-user-select: none;
