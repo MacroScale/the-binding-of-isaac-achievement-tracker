@@ -3,6 +3,7 @@ use env_logger;
 use dotenv::dotenv;
 
 mod server;
+mod models;
 mod views;
 mod controllers;
 
