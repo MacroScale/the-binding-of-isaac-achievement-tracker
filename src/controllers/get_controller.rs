@@ -1,6 +1,8 @@
-use actix_web::{get, Responder, HttpResponse};
+use actix_web::{get, web, Responder, HttpResponse};
 use askama::Template;
 use crate::views;
+use crate::models::app_state::AppState;
+use crate::models::responses::dashboard;
 
 #[get("/")]
 pub async fn index() -> impl Responder {
@@ -52,4 +54,34 @@ pub async fn isaacnews() -> impl Responder {
 pub async fn isaacyoutube() -> impl Responder {
     views::IsaacYoutubeTemplate.render().unwrap();
     HttpResponse::Ok().body(views::IsaacYoutubeTemplate.render().unwrap())
+}
+
+
+/*
+ * 
+ * API
+ *
+ */
+#[get("/api/app-state")]
+pub async fn get_app_state(app_state: web::Data<AppState>) -> impl Responder {
+    HttpResponse::Ok().json(app_state)
+}
+
+#[get("/api/next-char")]
+pub async fn next_char(app_state: web::Data<AppState>) -> impl Responder {
+
+    log::info!("{:?}", app_state);
+
+    let marks = vec![
+        dashboard::Mark{
+            mark_name: "mark_name".to_string(),
+            mark_url: "mark_url".to_string()
+        }
+    ];
+
+    HttpResponse::Ok().json(dashboard::NextCharacter{
+        status: 200,
+        char_icon_url: "char_icon_url".to_string(),
+        completion_urls: marks 
+    })
 }
