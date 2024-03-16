@@ -14,14 +14,15 @@
             <div class="profile-search">
                 <div class="profile-search-bar">
                     <img class="bg" src="/static/profile search/search bar more chode edition.png"/>
+                    <input id="profile-search-input" class="overlay" type="text" placeholder="steam id...">
                 </div>
                 <div class="profile-search-button">
-                    <img class="bg" src="/static/profile search/search bar more chode edition BUTTON.png"/>
+                    <img id="search-profile" class="bg" src="/static/profile search/search bar more chode edition BUTTON.png"/>
                 </div>
             </div>
             <div class="profile-postit">
                 <img class="bg" src="/static/profile/profile.png"/>
-                <img id="placeholder" class="overlay" src="/static/profile/placeholder.png"/>
+                <img id="profile-avatar" class="overlay" src="/static/profile/placeholder.png"/>
                 <img id="profile-border" class="overlay" src="/static/profile/profileborder.png"/>
             </div>
             <div class="profile-ad">
@@ -32,18 +33,29 @@
             <div class="who-am-i">
                 <img class="bg" src="/static/character wheel/character wheel/who am i.png"/>
 
-                <img class="overlay" src="/static/character wheel/character icons/isaac.png"/>
+                <img id="current-character" class="overlay" src="/static/character wheel/character icons/isaac.png"/>
 
                 <div class="character-wheel">
-                    <img src="/static/character wheel/character wheel/character_wheel_left.png"/>
+                    <img id="prev-char" src="/static/character wheel/character wheel/character_wheel_left.png"/>
                     <img id="switch" src="/static/character wheel/character wheel/switch.png"/>
-                    <img src="/static/character wheel/character wheel/character_wheel_right.png"/>
+                    <img id="next-char" src="/static/character wheel/character wheel/character_wheel_right.png"/>
                 </div>
             </div>
         </div> 
         <div class="col3 col">
             <div class="completion-postit ">
                 <img class="bg" src="/static/completion marks/completion marks/post_it.png"/>
+                <img class="overlay" id="heart" src="/static/completion marks/completion marks/moms_heart.png" draggable="false">
+                <img class="overlay" id="isaac" src="/static/completion marks/completion marks/null.png" draggable="false">
+                <img class="overlay" id="polaroid" src="/static/completion marks/completion marks/null.png" draggable="false">
+                <img class="overlay" id="cent" src="/static/completion marks/completion marks/null.png" draggable="false">
+                <img class="overlay" id="satan" src="/static/completion marks/completion marks/null.png" draggable="false">
+                <img class="overlay" id="negative" src="/static/completion marks/completion marks/null.png" draggable="false">
+                <img class="overlay" id="brimstone"src="/static/completion marks/completion marks/null.png" draggable="false">
+                <img class="overlay" id="star" src="/static/completion marks/completion marks/null.png" draggable="false">
+                <img class="overlay" id="hush" src="/static/completion marks/completion marks/null.png" draggable="false">
+                <img class="overlay" id="knife" src="/static/completion marks/completion marks/null.png" draggable="false">
+                <img class="overlay" id="dadsnote" src="/static/completion marks/completion marks/null.png" draggable="false">
             </div>
             <div class="completion-ad">
                 <div class="ad"></div>
@@ -60,8 +72,15 @@
         </div> 
 
         <div class="col2 col">
-            <div class="achievements-page ">
+            <div class="achievement-page-search">
+                <div id="achievement-page-search-box">
+                    <img class="bg" src="/static/achievement display/box.png" />
+                </div>
+                <h2>/637</h2>
+            </div>
+            <div class="achievements-page">
                 <img class="bg" src="/static/achievements/SecretsPaper.png" />
+                <img id="current-achievement" class="overlay" src="/static/achievements/achievements/achievement_magdalene.png" />
             </div>
             <div class="achievements-navbar">
                 <img class="bg" src="/static/achievements/pages/leftarrow.png" />
