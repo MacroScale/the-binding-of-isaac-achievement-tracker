@@ -26,8 +26,7 @@ $(document).ready(function(){
         })
         let res = await req.json()
         if (req.status === 200) {
-            console.log(res)
-            $("#profile-avatar").attr("src", res.avatar_url)
+            location.reload();
         }
         else{
             alert(res.message)

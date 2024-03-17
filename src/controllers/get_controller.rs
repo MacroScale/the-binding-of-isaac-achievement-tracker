@@ -16,22 +16,29 @@ pub async fn index(req: HttpRequest) -> impl Responder {
     if user_data.is_none() {
         template = views::DashboardTemplate{
             profile_username: "???".to_string(),
-            profile_avatar: "/static/profile/profileborder.png".to_string(),
+            profile_avatar: "/static/profile/placeholder.png".to_string(),
             profile_country: "MK".to_string(),
             profile_online_status: "/static/profile/offline.png".to_string(),
             achievement_date_unlocked: "???".to_string(),
             achievement_time_unlocked: "???".to_string(),
             achievement_timezone: "???".to_string()
         };
+
+        HttpResponse::Ok().body(template.render().unwrap())
     }
     else{
+        let updated_cookie = utils::update_player_summary(&req).await;
+        //get data from cookie
+        
+        let app_cookie: AppCookie = serde_json::from_str(&updated_cookie.value()).unwrap();
 
-        let user_data = user_data.unwrap();
-        let player_summary = user_data.player_summary.unwrap();
+        let player_summary = app_cookie.player_summary.unwrap();
 
-        let player_online_status = if player_summary.online 
-            {"/static/profile/online.png"} 
-            else {"/static/profile/offline.png"};
+        let player_online_status;
+        if player_summary.online {player_online_status="/static/profile/online.png"} 
+        else {player_online_status="/static/profile/offline.png"};
+        
+        log::info!("player_online_status: {:?}", player_online_status);
 
         template = views::DashboardTemplate{
             profile_username: player_summary.username.to_string(),
@@ -42,10 +49,10 @@ pub async fn index(req: HttpRequest) -> impl Responder {
             achievement_time_unlocked: "achievement_time_unlocked".to_string(),
             achievement_timezone: "achievement_timezone".to_string()
         };
+
+        HttpResponse::Ok().cookie(updated_cookie).body(template.render().unwrap())
     }
 
-
-    HttpResponse::Ok().body(template.render().unwrap())
 }
 
 #[get("/whatsnew")]

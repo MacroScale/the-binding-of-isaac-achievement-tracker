@@ -2,25 +2,21 @@ use serde::{Serialize, Deserialize};
 
 #[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct Profile{
-    pub status: i32,
     pub steam_id: i64,
     pub username: String,
     pub avatar_url: String,
     pub online: bool,
     pub country: String,
-    pub country_flag_url: String,
 } 
 
 impl Profile{
     pub fn new() -> Profile{
         Profile{
-            status: 200,
             steam_id: -1,
             username: "???".to_string(),
             avatar_url: "/static/profile/placeholder.png".to_string(),
             online: false,
             country: "".to_string(),
-            country_flag_url: "".to_string(),
         }
     }
 }
