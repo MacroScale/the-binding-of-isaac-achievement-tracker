@@ -4,6 +4,32 @@
  *
  * */
 
+h2{
+    margin: 0;
+}
+
+input{
+    /* make background transparent */
+    background-color: transparent;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
 .col{
     display: flex;
     flex-direction: column;
@@ -22,7 +48,6 @@
     left: 0;
     z-index: 1;
 }
-
 
 /*
  *
@@ -75,17 +100,6 @@
  *
  * */
 
-.profile-postit{
-    position: relative
-}
-
-.profile-postit #profile-avatar{
-    width: 62%;
-    height: auto;
-    top: 18%;
-    left: 19%;
-}
-
 .profile-search-bar{
     position: relative;
     display: flex;
@@ -101,6 +115,61 @@
     justify-content: center;
 }
 
+.profile-search-bar #profile-search-input{
+    width: 80%;
+    height: 45%;
+    top: 24%;
+    left: 9%;
+}
+
+
+.profile-postit{
+    position: relative
+}
+
+
+.profile-postit #profile-avatar{
+    width: 62%;
+    height: auto;
+    top: 18%;
+    left: 19%;
+}
+
+
+.profile-postit #profile-name{
+    top: 70%;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+
+.profile-postit #profile-name img{
+    height: auto;
+    width: 12%;
+}
+
+.profile-postit #profile-country{
+    top: 80%;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+.profile-postit #profile-country img{
+    height: auto;
+    width: 12%;
+}
+
+
+
 .profile-ad,
 .profile-ad .ad{
     width: 100%;
@@ -115,6 +184,25 @@
  *
  * */
 
+.achievements-postit{
+    position: relative;
+}
+
+.achievements-postit #achievements-text-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+}
+
 .achievement-page-search{
     position: relative;
     display: flex;
@@ -126,16 +214,28 @@
 
 .achievement-page-search h2{
     font-size: 3vw;
-    margin: 0;
     align-self: flex-end;
 }
 
-.achievement-page-search #achievement-page-search-box{
+.achievement-page-search-box{
     position: relative;
     width: 15%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+
+.achievement-page-search-box #achievement-page-search-input{
+    position: absolute;
+    top: 14%;
+    left: 13%;
+    z-index: 1;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+}
+
 
 .achievements-page{
     position: relative;
@@ -147,6 +247,17 @@
     flex-direction: row;
 }
 
+.achievements-listbox{
+    position: relative;
+}
+
+.achievements-listbox #achievement-search-input{
+    position: absolute;
+    width: 85%;
+    height: 10%;
+    top: 4%;
+    left: 6%;
+}
 
 /*
  *

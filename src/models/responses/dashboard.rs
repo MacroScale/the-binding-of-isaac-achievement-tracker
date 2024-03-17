@@ -1,6 +1,6 @@
-use serde::Serialize;
+use serde::{Serialize, Deserialize};
 
-#[derive(Serialize)]
+#[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct Profile{
     pub status: i32,
     pub steam_id: i64,
@@ -11,20 +11,35 @@ pub struct Profile{
     pub country_flag_url: String,
 } 
 
-#[derive(Serialize)]
+impl Profile{
+    pub fn new() -> Profile{
+        Profile{
+            status: 200,
+            steam_id: -1,
+            username: "???".to_string(),
+            avatar_url: "/static/profile/placeholder.png".to_string(),
+            online: false,
+            country: "".to_string(),
+            country_flag_url: "".to_string(),
+        }
+    }
+}
+
+
+#[derive(Serialize, Deserialize)]
 pub struct Mark{
     pub mark_name: String,
     pub mark_url: String,
 } 
 
-#[derive(Serialize)]
+#[derive(Serialize, Deserialize)]
 pub struct NextCharacter{
     pub status: i32, 
     pub char_icon_url: String, 
     pub completion_urls: Vec<Mark>,  
 } 
 
-#[derive(Serialize)]
+#[derive(Serialize, Deserialize)]
 pub struct Achievement{
     pub status: i32, 
     pub achievement_id: i32,

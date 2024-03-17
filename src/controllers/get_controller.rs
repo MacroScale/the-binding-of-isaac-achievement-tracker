@@ -1,15 +1,52 @@
-use actix_web::{get, web, Responder, HttpResponse};
+use actix_web::{get, web, Responder, HttpResponse, HttpRequest};
 use askama::Template;
 use crate::views;
-use crate::models::app_state::AppState;
 use crate::models::responses::dashboard;
+use crate::controllers::utils;
+use crate::models::cookie::AppCookie;
+
 
 #[get("/")]
-pub async fn index() -> impl Responder {
-    views::DashboardTemplate.render().unwrap();
-    HttpResponse::Ok().body(views::DashboardTemplate.render().unwrap())
-}
+pub async fn index(req: HttpRequest) -> impl Responder {
+    
+    let user_data = utils::get_cookie(&req);
 
+    let template;
+
+    if user_data.is_none() {
+        template = views::DashboardTemplate{
+            profile_username: "???".to_string(),
+            profile_avatar: "/static/profile/profileborder.png".to_string(),
+            profile_country: "MK".to_string(),
+            profile_online_status: "/static/profile/offline.png".to_string(),
+            achievement_date_unlocked: "???".to_string(),
+            achievement_time_unlocked: "???".to_string(),
+            achievement_timezone: "???".to_string()
+        };
+    }
+    else{
+
+        let user_data = user_data.unwrap();
+        let player_summary = user_data.player_summary.unwrap();
+
+        let player_online_status = if player_summary.online 
+            {"/static/profile/online.png"} 
+            else {"/static/profile/offline.png"};
+
+        template = views::DashboardTemplate{
+            profile_username: player_summary.username.to_string(),
+            profile_avatar: player_summary.avatar_url.to_string(),
+            profile_country: player_summary.country.to_string(),
+            profile_online_status: player_online_status.to_string(),
+            achievement_date_unlocked: "achievement_date_unlocked".to_string(),
+            achievement_time_unlocked: "achievement_time_unlocked".to_string(),
+            achievement_timezone: "achievement_timezone".to_string()
+        };
+    }
+
+
+    HttpResponse::Ok().body(template.render().unwrap())
+}
 
 #[get("/whatsnew")]
 pub async fn whatsnew() -> impl Responder {
@@ -62,15 +99,21 @@ pub async fn isaacyoutube() -> impl Responder {
  * API
  *
  */
-#[get("/api/app-state")]
-pub async fn get_app_state(app_state: web::Data<AppState>) -> impl Responder {
-    HttpResponse::Ok().json(app_state)
+
+#[get("/api/get-cookie-data")]
+pub async fn get_cookie_data(req: HttpRequest) -> impl Responder {
+
+    let user_data = utils::get_cookie(&req);  
+
+    if user_data.is_none() {
+        return HttpResponse::Ok().json(AppCookie::new())
+    }
+
+    HttpResponse::Ok().json(user_data)
 }
 
 #[get("/api/next-char")]
-pub async fn next_char(app_state: web::Data<AppState>) -> impl Responder {
-
-    log::info!("{:?}", app_state);
+pub async fn next_char() -> impl Responder {
 
     let marks = vec![
         dashboard::Mark{

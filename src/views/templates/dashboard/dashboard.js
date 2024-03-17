@@ -27,6 +27,7 @@ $(document).ready(function(){
         let res = await req.json()
         if (req.status === 200) {
             console.log(res)
+            $("#profile-avatar").attr("src", res.avatar_url)
         }
         else{
             alert(res.message)
@@ -101,8 +102,8 @@ $(document).ready(function(){
 
 })
 
-async function getAppState(){
-    let req = await fetch("/api/app-state", {
+async function getCookieData(){
+    let req = await fetch("/api/get-cookie-data", {
         method: "GET",
         headers: {
             "Content-Type": "application/json"
