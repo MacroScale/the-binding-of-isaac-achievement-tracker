@@ -1,6 +1,6 @@
 use serde::Deserialize;
 
-#[derive(Deserialize, Debug)]
-pub struct ProfileSearch{
+#[derive(Deserialize)]
+pub struct ProfileSearch {
     pub steam_id: String,
 }

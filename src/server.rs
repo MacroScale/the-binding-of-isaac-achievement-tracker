@@ -9,12 +9,10 @@ pub async fn start() -> std::io::Result<()> {
     HttpServer::new(|| {
         App::new()
             .service(get_controller::index)
+            .service(get_controller::dashboard)
             .service(get_controller::whatsnew)
             .service(get_controller::isaacnews)
             .service(get_controller::isaacyoutube)
-            //api routes (get)
-            .service(get_controller::get_cookie_data)
-            .service(get_controller::next_char)
             //api routes (post)
             .service(post_controller::profile_search)
             //static files

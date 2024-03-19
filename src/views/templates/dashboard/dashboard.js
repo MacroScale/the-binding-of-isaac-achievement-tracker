@@ -12,102 +12,18 @@ var completion_mark_ids = {
     "dadsnote": "#dadsnote",
 };
 
-$(document).ready(function(){
-
-    $("body").on("click", "#search-profile", async function(){
-        let req = await fetch("/api/profile-search", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                "steam_id": $("#profile-search-input").val()
-            })
-        })
-        let res = await req.json()
-        if (req.status === 200) {
-            location.reload();
-        }
-        else{
-            alert(res.message)
-        }
-    })
-
-    $("body").on("click", "#next-char", async function(){
-        let req = await fetch("/api/next-char", {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            },
-        })
-        let res = await req.json()
-        if (req.status === 200) {
-            console.log(res)
-        }
-        else{
-            alert(res.message)
-        }
-    })
-
-    $("body").on("click", "#prev-char", async function(){
-        let req = await fetch("/api/prev-char", {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            },
-        })
-        let res = await req.json()
-        if (req.status === 200) {
-            console.log(res)
-        }
-        else{
-            alert(res.message)
-        }
-    })
 
 
-    $("body").on("click", "#next-achievement", async function(){
-        let req = await fetch("/api/next-achievement", {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            },
-        })
-        let res = await req.json()
-        if (req.status === 200) {
-            console.log(res)
-        }
-        else{
-            alert(res.message)
-        }
-    })
-
-    $("body").on("click", "#prev-achievement", async function(){
-        let req = await fetch("/api/prev-achievement", {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-            },
-        })
-        let res = await req.json()
-        if (req.status === 200) {
-            console.log(res)
-        }
-        else{
-            alert(res.message)
-        }
-    })
-
-
-})
-
-async function getCookieData(){
-    let req = await fetch("/api/get-cookie-data", {
-        method: "GET",
-        headers: {
-            "Content-Type": "application/json"
-        },
-    })
-    let res = await req.json()
-    console.log(res);
+function updateCompletionMarks(data){
+    $("#heart").attr("src", data.heart_url)
+    $("#isaac").attr("src", data.isaac_url)
+    $("#polaroid").attr("src", data.polaroid_url)
+    $("#cent").attr("src", data.cent_url)
+    $("#satan").attr("src", data.satan_url)
+    $("#negative").attr("src", data.negative_url)
+    $("#brimstone").attr("src", data.brimstone_url)
+    $("#star").attr("src", data.star_url)
+    $("#hush").attr("src", data.hush_url)
+    $("#knife").attr("src", data.knife_url)
+    $("#dadsnote").attr("src", data.dadsnote_url)
 }

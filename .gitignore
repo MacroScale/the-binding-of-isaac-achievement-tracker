@@ -8,6 +8,10 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+package-lock.json
+package.json
+.eslintrc.js
+.eslintrc.cjs
 dist
 dist-ssr
 *.local

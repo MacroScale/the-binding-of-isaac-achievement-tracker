@@ -2,16 +2,7 @@ use askama::Template;
 
 #[derive(Template)]
 #[template(path = "dashboard/dashboard.html")]
-pub struct DashboardTemplate{
-    pub profile_username: String,
-    pub profile_avatar: String,
-    pub profile_country: String,
-    pub profile_online_status: String,
-    pub achievement_date_unlocked: String,
-    pub achievement_time_unlocked: String,
-    pub achievement_timezone: String,
-}
-
+pub struct DashboardTemplate;
 
 #[derive(Template)]
 #[template(path = "whatsnew/whatsnew.html")]
@@ -46,7 +37,6 @@ pub struct IsaacNewsTemplate{
     pub slot5_content: String,
     pub slot5_win_num: i32
 }
-
 
 #[derive(Template)]
 #[template(path = "isaacyoutube/isaacyoutube.html")]

@@ -22,15 +22,15 @@
             </div>
             <div class="profile-postit">
                 <img class="bg" src="/static/profile/profile.png"/>
-                <img id="profile-avatar" class="overlay" src="{{profile_avatar}}"/>
+                <img id="profile-avatar" class="overlay" src="/static/profile/placeholder.png"/>
                 <img id="profile-border" class="overlay" src="/static/profile/profileborder.png"/>
                 <div id="profile-name" class="overlay">
-                    <img id="profile-online-status" src="{{profile_online_status}}"/>
-                    <h2>{{profile_username}}<h2>
+                    <img id="profile-online" src="/static/profile/offline.png"/>
+                    <h2 id="profile-username">???<h2>
                 </div>
                 <div id="profile-country" class="overlay">
                     <h2>country:</h2>
-                    <img id="profile-country-img" src="https://flagsapi.com/{{profile_country}}/flat/64.png" />
+                    <img id="profile-country-img" src="https://flagsapi.com/MK/flat/64.png" />
                 </div>
             </div>
             <div class="profile-ad">
@@ -52,7 +52,7 @@
         </div> 
         <div class="col3 col">
             <div class="completion-postit ">
-                <img class="bg" src="/static/completion marks/completion marks/post_it.png"/>
+                <img class="bg" id="wrinkled-paper" src="/static/completion marks/completion marks/post_it.png"/>
                 <img class="overlay" id="heart" src="/static/completion marks/completion marks/moms_heart.png" draggable="false">
                 <img class="overlay" id="isaac" src="/static/completion marks/completion marks/null.png" draggable="false">
                 <img class="overlay" id="polaroid" src="/static/completion marks/completion marks/null.png" draggable="false">
@@ -78,11 +78,11 @@
                 <img class="bg" src="/static/profile/taintedprofile.png" />
                 <div id="achievements-text-overlay" class="overlay">
                     <h2>Date Unlocked</h2>
-                    <h2>{{achievement_date_unlocked}}</h2>
+                    <h2>???</h2>
                     <h2>Time Unlocked</h2>
-                    <h2>{{achievement_time_unlocked}}</h2>
+                    <h2>???</h2>
                     <h2>Time-Zone</h2>
-                    <h2>{{achievement_timezone}}</h2>
+                    <h2>???</h2>
                 </div>
             </div>
         </div> 
@@ -122,7 +122,9 @@
 </div>
 
 <style> {% include "dashboard.css" %} </style>
-<script> {% include "dashboard.js" %} </script>
+<script> {% include "dashboardPoster.js" %} </script>
+<script> {% include "dashboardRedeemer.js" %} </script>
+<script> {% include "dashboardInit.js" %} </script>
 {% endblock %}
 
 

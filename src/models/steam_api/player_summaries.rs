@@ -1,4 +1,5 @@
 use serde::{Serialize, Deserialize};
+use anyhow;
 
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
@@ -29,4 +30,23 @@ pub struct Response{
 #[derive(Serialize, Deserialize, Debug)]
 pub struct PlayerSummary{
     pub response: Response,
+}
+
+impl PlayerSummary{
+
+    pub async fn new(steam_id: &i64) -> anyhow::Result<PlayerSummary>{
+
+        let STEAM_API_KEY = std::env::var("STEAM_API_KEY").expect("STEAM_API_KEY must be set.");
+
+        let url = format!("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key={}&steamids={}", STEAM_API_KEY, steam_id);
+
+        log::info!("url: {:?}", &url);
+
+        //get fetch json
+        let fetch = reqwest::get(&url).await?;
+        let res_text = fetch.text().await?;
+        let res = serde_json::from_str::<PlayerSummary>(&res_text)?;
+
+        Ok(res)
+    }
 }
