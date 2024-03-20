@@ -13,7 +13,8 @@ pub struct WhatsNewTemplate;
 #[derive(Template)]
 #[template(path = "isaacnews/isaacnews.html")]
 pub struct IsaacNewsTemplate{
-    pub news: Vec<NewsItem>
+    pub news: Vec<NewsItem>,
+    pub random_windows: Vec<i32>
 }
 
 #[derive(Template)]

@@ -3,6 +3,7 @@ body{
     /*
      height: 100vh;
      * */
+    overflow-x: hidden;
 }
 
 .navbar{
@@ -91,6 +92,7 @@ body{
     position: absolute;
     top: 77%;
     left: 66%;
-    width: 70%;
+    width: 7%;
     font-family: 'IsaacFont';
+    font-size: 1.3vw;
 }

@@ -2,6 +2,7 @@ use actix_web::{get, web, Responder, HttpResponse, HttpRequest};
 use askama::Template;
 use crate::views;
 use crate::models;
+use rand::Rng;
 
 #[get("/")]
 pub async fn index() -> impl Responder {
@@ -33,8 +34,19 @@ pub async fn isaacnews() -> impl Responder {
 
     log::info!("news: {:?}", &news);
 
+    let mut rng = rand::thread_rng();
+    let arr_size = news.len();
+    let mut random_windows = Vec::new();
+    for _ in 0..arr_size{
+        // 1-4
+        let random = rng.gen_range(1..=4);
+        random_windows.push(random);
+    }
+
+
     let template = views::IsaacNewsTemplate{
-        news
+        news,
+        random_windows
     };
 
     HttpResponse::Ok().body(template.render().unwrap())

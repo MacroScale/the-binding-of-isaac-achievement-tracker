@@ -16,7 +16,7 @@
         <div class="slot">
             <img class="slot-img" src="/static/news/Mid_BG.png" />
             <img class="slot-img" src="/static/news/Mid_BG.png" />
-            <img class="slot-overlay" src="/static/news/Window1.png" />
+            <img class="slot-overlay" src="/static/news/Window{{ random_windows[loop.index0] }}.png" />
 
             <h2 class="slot-title">{{ item.title }}</h2>
             <textarea class="slot-body" disabled>{{ item.contents }}</textarea>
