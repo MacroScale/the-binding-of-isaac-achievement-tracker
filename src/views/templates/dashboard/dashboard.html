@@ -8,7 +8,6 @@
 {% block content %}
 
 <div class="dashboard-cont">
-
     <div class="dash-item character-select">
         <div class="col1 col">
             <div class="profile-search">
@@ -34,12 +33,14 @@
                 </div>
             </div>
             <div class="profile-ad">
-                <div class="ad"></div>
+                <div class="ad overlay">
+                    <script src="https://s3-us-west-2.amazonaws.com/kaboodle/kaboodle.js" type="text/javascript"></script>
+                </div>
             </div>
         </div> 
         <div class="col2 col">
             <div class="who-am-i">
-                <img class="bg" src="/static/character wheel/character wheel/who am i.png"/>
+                <img id="who-am-i-bg" class="bg" src="/static/character wheel/character wheel/who am i.png"/>
 
                 <img id="current-character" class="overlay" src="/static/character wheel/character icons/isaac.png"/>
 
@@ -66,7 +67,9 @@
                 <img class="overlay" id="dadsnote" src="/static/completion marks/completion marks/null.png" draggable="false">
             </div>
             <div class="completion-ad">
-                <div class="ad"></div>
+                <div class="ad overlay">
+                    <script src="https://s3-us-west-2.amazonaws.com/kaboodle/kaboodle.js" type="text/javascript"></script>
+                </div>
             </div>
         </div> 
     </div>
@@ -78,11 +81,11 @@
                 <img class="bg" src="/static/profile/taintedprofile.png" />
                 <div id="achievements-text-overlay" class="overlay">
                     <h2>Date Unlocked</h2>
-                    <h2>???</h2>
+                    <h2 id="date-unlocked">???</h2>
                     <h2>Time Unlocked</h2>
-                    <h2>???</h2>
+                    <h2 id="time-unlocked">???</h2>
                     <h2>Time-Zone</h2>
-                    <h2>???</h2>
+                    <h2 id="time-zone">???</h2>
                 </div>
             </div>
         </div> 
@@ -95,20 +98,25 @@
                 </div>
                 <h2>/637</h2>
             </div>
+            <div class="achievement-page-search">
+                <div style="height: 8vh; display: flex; flex-direction: column; justify-content: center;">
+                    <h2 id="achievement-text" style="text-align: center;">penis penis</h2>
+                </div>
+            </div>
             <div class="achievements-page">
                 <img class="bg" src="/static/achievements/SecretsPaper.png" />
-                <img id="current-achievement" class="overlay" src="/static/achievements/achievements/achievement_magdalene.png" />
+                <img id="current-achievement" class="overlay" src="/static/achievements/achievements/locked.png" />
             </div>
             <div class="achievements-navbar">
-                <img class="bg" src="/static/achievements/pages/leftarrow.png" />
-                <img class="bg" src="/static/achievements/pages/lockedpage1.png" />
-                <img class="bg" src="/static/achievements/pages/lockedpage2.png" />
-                <img class="bg" src="/static/achievements/pages/lockedpage3.png" />
-                <img class="bg" src="/static/achievements/pages/lockedpage1.png" />
-                <img class="bg" src="/static/achievements/pages/lockedpage2.png" />
-                <img class="bg" src="/static/achievements/pages/lockedpage3.png" />
-                <img class="bg" src="/static/achievements/pages/lockedpage1.png" />
-                <img class="bg" src="/static/achievements/pages/rightarrow.png" />
+                <div class="achievement-nav-page"><img id="prev-achievement" class="bg" src="/static/achievements/pages/leftarrow.png" /></div> 
+                <div class="achievement-nav-page"><img id="page-1" class="bg" src="/static/achievements/pages/lockedpage1.png" /></div>
+                <div class="achievement-nav-page"><img id="page-2" class="bg" src="/static/achievements/pages/lockedpage2.png" /></div>
+                <div class="achievement-nav-page"><img id="page-3" class="bg" src="/static/achievements/pages/lockedpage3.png" /></div>
+                <div class="achievement-nav-page"><img id="page-4" class="bg" src="/static/achievements/pages/lockedpage1.png" /></div>
+                <div class="achievement-nav-page"><img id="page-5" class="bg" src="/static/achievements/pages/lockedpage2.png" /></div>
+                <div class="achievement-nav-page"><img id="page-6" class="bg" src="/static/achievements/pages/lockedpage3.png" /></div>
+                <div class="achievement-nav-page"><img id="page-7" class="bg" src="/static/achievements/pages/lockedpage1.png" /></div>
+                <div class="achievement-nav-page"><img id="next-achievement" class="bg" src="/static/achievements/pages/rightarrow.png" /></div>
             </div>
         </div> 
 
@@ -116,10 +124,17 @@
             <div class="achievements-listbox">
                 <img class="bg" src="/static/achievement search/search box.png" />
                 <input id="achievement-search-input" class="overlay" type="text" placeholder="search..."/>
+                <div class="achievements-listbox-table-cont">
+                    <table id="achievements-listbox-table"></table>
+                </div>
+                <img id="toggle-all" class="bg" src="/static/achievement search/all_achievements.png" />
+                <img id="toggle-missing" class="bg" src="/static/achievement search/missing_achievements.png" style="display:none;" />
             </div>
         </div> 
     </div>
 </div>
+
+
 
 <style> {% include "dashboard.css" %} </style>
 <script> {% include "dashboardPoster.js" %} </script>
@@ -127,4 +142,18 @@
 <script> {% include "dashboardInit.js" %} </script>
 {% endblock %}
 
+
+
+{% block outerContent %}
+
+<div class="modal-wrapper">
+    <div class="modal">
+        <div class="modal-content">
+            <img src="/static/error popups/No_Profile.png" />
+            <input id="modal-search-profile" placeholder="penis penis penis"/>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
 

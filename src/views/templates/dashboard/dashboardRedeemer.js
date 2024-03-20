@@ -1,73 +1,10 @@
 var _steam_data = null;
+
 var _app_state = {
     is_tainted: false,
-    current_character_id: 16,
-    current_achievement: 0,
+    current_character_id: 0,
+    current_achievement_id: 0,
 }
-
-async function ProfileSearchRedeemer(req){
-    let res = await req.json();
-    _steam_data = processProfileSearch(res);
-    console.log(_steam_data);
-
-    updateProfilePostit(_steam_data.summary);
-    updateCharacterOverlay(_app_state.current_character_id);
-    updateCompletionMarks(_app_state.current_character_id);
-}
-
-function processProfileSearch(res){
-    if (res.status === 200) {
-        let summary = res.player_summary.response.players[0];
-        let achievements = res.player_achievements.playerstats.achievements;
-        let characterData = res.character_data;
-
-        return {
-            status: res.status,
-            message: res.message,
-            summary: summary,
-            achievements: achievements,
-            characterData: characterData
-        }
-    }
-
-    return {
-        status: res.status,
-        message: res.message,
-        summary: {},
-        achievements: [],
-        characterData: []
-    }
-}
-
-function getCharacterData(character_id, characterData=_steam_data.characterData){
-    return characterData.find(c => c.id === character_id);
-}
-
-
-function updateProfilePostit(summary){
-    let username = summary.personaname;
-    let avatar = summary.avatarfull;
-    let country_code = summary.loccountrycode;
-    let offline = summary.personastate === 0;
-
-    $("#profile-avatar").attr("src", avatar);
-    $("#profile-username").text(username);
-    $("#profile-online").attr("src", offline ? "/static/profile/offline.png" : "/static/profile/online.png");
-    $("#profile-country-img").attr("src", `https://flagsapi.com/${country_code}/flat/64.png`);
-}
-
-function updateCharacterOverlay(character_id=_app_state.current_character_id, achievements=_steam_data.achievements){
-    let characterData = getCharacterData(character_id);
-    let character_unlock_id = characterData.character_unlock;
-
-    if (character_unlock_id === -1) $("#current-character").attr("src", `/static/character wheel/character icons/${characterData.unlock_url}`);
-    else {
-        let is_locked = _steam_data.achievements.find(a => parseInt(a.apiname) === character_unlock_id).achieved === 0;
-        if (is_locked) $("#current-character").attr("src", `/static/character wheel/locked character icons/${characterData.locked_url}`);
-        else $("#current-character").attr("src", `/static/character wheel/character icons/${characterData.unlock_url}`);
-    }
-}
-
 
 const mark_map = new Map([
     ["#heart", "/static/completion marks/completion marks/moms_heart.png"],
@@ -84,11 +21,106 @@ const mark_map = new Map([
     ["#wrinkled-paper", "/static/completion marks/completion marks/delirium.png"],
 ]);
 
+
+
+function getCharacterData(character_id, characterData){
+    return characterData.find(c => c.id === character_id);
+}
+
+function validateSteamData(steam_data=_steam_data){
+    if (steam_data.status === 200) return true;
+    return false
+}
+
+async function ProfileSearchRedeemer(req){
+    let res = await req.json();
+    _steam_data = processProfileSearch(res);
+
+    if (!validateSteamData(_steam_data)){
+        console.log(_steam_data);
+        $(".content").css("filter", "blur(5px)");
+        $(".navbar").css("filter", "blur(5px)");
+        $(".modal-wrapper").show();
+        $("html").css("overflow", "hidden");
+        return;
+    } 
+
+
+    console.log(_steam_data);
+
+    updatePlaytime(_steam_data.playerGameData.playtime_forever);
+    updateProfilePostit(_steam_data.summary);
+    updateCharacterOverlay(_app_state.current_character_id);
+    updateCompletionMarks(_app_state.current_character_id);
+    updateAchievements(_app_state.current_achievement_id, _steam_data.achievements);
+    populateAchievementsTable(_steam_data.achievements, _steam_data.achievementImageData);
+}
+
+function processProfileSearch(res){
+    if (res.status === 200) {
+        let summary = res.player_summary.response.players[0];
+        let achievements = res.player_achievements.playerstats.achievements;
+        let gameData = res.player_game_data;
+        let characterData = res.character_data;
+        let achievementImageData = res.achievement_image_data;
+
+        return {
+            status: res.status,
+            message: res.message,
+            summary: summary,
+            playerGameData: gameData,
+            achievements: achievements,
+            characterData: characterData,
+            achievementImageData: achievementImageData 
+        }
+    }
+
+    return {
+        status: res.status,
+        message: res.message,
+        summary: {},
+        playerGameData: {},
+        achievements: [],
+        characterData: [],
+        achievementImageData: []
+    }
+}
+
+
+function updatePlaytime(playtime){
+    playtime = Math.trunc(playtime / 60);
+    $("#playtime").text(playtime);
+}
+
+function updateProfilePostit(summary){
+    let username = summary.personaname;
+    let avatar = summary.avatarfull;
+    let country_code = summary.loccountrycode;
+    let offline = summary.personastate === 0;
+
+    $("#profile-avatar").attr("src", avatar);
+    $("#profile-username").text(username);
+    $("#profile-online").attr("src", offline ? "/static/profile/offline.png" : "/static/profile/online.png");
+    $("#profile-country-img").attr("src", `https://flagsapi.com/${country_code}/flat/64.png`);
+}
+
+function updateCharacterOverlay(character_id=_app_state.current_character_id, achievements=_steam_data.achievements){
+    let characterData = getCharacterData(character_id, _steam_data.characterData);
+    let character_unlock_id = characterData.character_unlock;
+
+    if (character_unlock_id === -1) $("#current-character").attr("src", `/static/character wheel/character icons/${characterData.unlock_url}`);
+    else {
+        let is_locked = _steam_data.achievements.find(a => parseInt(a.apiname) === character_unlock_id).achieved === 0;
+        if (is_locked) $("#current-character").attr("src", `/static/character wheel/locked character icons/${characterData.locked_url}`);
+        else $("#current-character").attr("src", `/static/character wheel/character icons/${characterData.unlock_url}`);
+    }
+}
+
 function updateCompletionMarks(character_id=_app_state.current_character_id, achievements=_steam_data.achievements, is_tainted=_app_state.is_tainted){
     
-    unsetCompletionMarks();
+    unsetCompletionMarks(_app_state.is_tainted);
 
-    let characterData = getCharacterData(character_id);
+    let characterData = getCharacterData(character_id, _steam_data.characterData);
     let unlock_map = new Map();
 
     unlock_map.set(characterData.hard_hard_all, "ALL");
@@ -115,7 +147,7 @@ function updateCompletionMarks(character_id=_app_state.current_character_id, ach
         if (unlock_map.has(apiname) && achieved === 1){
             let mark_id = unlock_map.get(apiname);
 
-            if (mark_id === "ALL") return setAllCompletionMarks();
+            if (mark_id === "ALL") return setAllCompletionMarks(_app_state.is_tainted);
             if (mark_id === "hard_cent") {
                 $("#cent").attr("src", "/static/completion marks/completion marks/greed_hard.png");
                 continue;
@@ -129,8 +161,6 @@ function updateCompletionMarks(character_id=_app_state.current_character_id, ach
         }
     }
 }
-
-
 
 function unsetCompletionMarks(is_tainted=false){
     let prefix = is_tainted ? "alt_" : "";
@@ -163,3 +193,153 @@ function setAllCompletionMarks(is_tainted=false){
     $("#dadsnote").attr("src", `/static/completion marks/completion marks/beast_hard.png`)
     $("#wrinkled-paper").attr("src", `/static/completion marks/completion marks/${prefix}delirium_hard.png`)
 }
+
+
+
+function updateAchievements(achievement_id=_app_state.current_achievement_id, achievements=_steam_data.achievements, achievementImageData=_steam_data.achievementImageData){
+
+    let seven_page_ids= [];
+    let seven_page_images = [null, null, null, null, null, null, null];
+
+    let achievement = null; 
+    let achievementImage = null;
+    let achievementImageSuffix = null;
+    let achievementText = null;
+
+    let completed_achievements = null;
+
+    for (let idx = 0; idx < 7; idx++){
+        let next_id = (achievement_id - 3) + idx;
+        if (next_id < 0) next_id = achievements.length + next_id;
+        seven_page_ids.push(next_id+1);
+    }
+
+    for (let idx = 0; idx < achievements.length; idx++){
+        let achieve = achievements[idx];
+        let apiname = parseInt(achieve.apiname);
+
+        let currentAchievementImageData = achievementImageData.find(a => parseInt(a._id) === apiname);
+        let currentAchievementText = currentAchievementImageData._text;
+
+        if (apiname === achievement_id+1) {
+            achievement = achieve;
+            achievementImage = currentAchievementImageData;
+            achievementImageSuffix = achievementImage._gfx;
+            achievementText = currentAchievementText;
+        }
+
+        if (achieve.achieved === 1) completed_achievements++;
+
+        if (seven_page_ids.includes(apiname)){ 
+            let i = seven_page_ids.indexOf(apiname);
+            seven_page_images[i] = achieve;
+        }
+
+    }
+
+    updateAchievementProgress(completed_achievements);
+    updateAchievementPostIt(achievement);
+    updateAchievementOverlay(achievement.achieved === 0, achievementImageSuffix);
+    updateAchievementInputNumber(achievement_id);
+    updateSevenPageAchievements(seven_page_images);
+    updateAchievementText(achievementText)
+}
+
+function populateAchievementsTable(achievements, achievementImageData){
+
+    let table = $("#achievements-listbox-table");
+    table.empty();
+
+    for (let idx = 0; idx < achievements.length; idx++){
+
+        let achieve = achievements[idx];
+        let apiname = parseInt(achieve.apiname);
+        let achieved = achieve.achieved;
+
+        let currentAchievementImageData = achievementImageData.find(a => parseInt(a._id) === apiname);
+        let achievementText = currentAchievementImageData._text;
+
+        let row_html = `
+            <tr data-id="${apiname}" data-achieved="${achieved===1}" data-text="${achievementText.toLowerCase()}">
+                <td class="achievement-list-img">
+                    <img src="/static/achievement search/steam_icons/${apiname}.png"/>
+                </td>
+                <td class="achievement-list-text">${achievementText}</td>
+            </tr>
+        `; 
+        table.append(row_html);
+    }
+
+}
+
+function updateAchievementPostIt(achievement){
+    if (achievement.achieved === 0) {
+        $("#date-unlocked").text("???"); 
+        $("#time-unlocked").text("???"); 
+        $("#time-zone").text("???"); 
+        return;
+    }
+
+    var dateUnlocked = new Date(0); // The 0 there is the key, which sets the date to the epoch
+    dateUnlocked.setUTCSeconds(achievement.unlocktime);
+    let stdDate = `${dateUnlocked.getDate()}/${dateUnlocked.getMonth() + 1}/${dateUnlocked.getFullYear()}`;
+    let stdTime = `${dateUnlocked.getHours()}:${(dateUnlocked.getMinutes() < 10 ? "0" : "") + dateUnlocked.getMinutes()}`;
+    let stdTimeZone = `${dateUnlocked.toString().split(" ")[5]}`;
+
+    $("#date-unlocked").text(stdDate); 
+    $("#time-unlocked").text(stdTime); 
+    $("#time-zone").text(stdTimeZone); 
+}
+
+function updateAchievementOverlay(locked=false, suffix="locked.png"){
+    if (locked) {
+        $("#current-achievement").attr("src", "/static/achievements/achievements/locked.png");
+        return;
+    }
+    $("#current-achievement").attr("src", `/static/achievements/achievements/${suffix}`);
+}
+
+function updateAchievementInputNumber(achievement_id){
+    $("#achievement-page-search-input").val(achievement_id+1);
+}
+
+function updateSevenPageAchievements(seven_page_images){
+
+    for (let idx = 0; idx < seven_page_images.length; idx++){
+        let achievement = seven_page_images[idx];
+        let locked = achievement.achieved === 0;
+
+        let original_url = $(`#page-${idx+1}`).attr("src");
+        let original_suffix = original_url.match(/\d+/)[0];
+
+        let new_suffix = (original_suffix % 3) + 1;
+
+        
+        if (locked){
+            $(`#page-${idx+1}`).attr("src", `/static/achievements/pages/lockedpage${new_suffix}.png`);
+            continue;
+        }
+
+        $(`#page-${idx+1}`).attr("src", `/static/achievements/pages/page${new_suffix}.png`);
+    }
+
+}
+
+
+function updateAchievementText(achievementText){
+    $("#achievement-text").text(achievementText);
+}
+
+function updateAchievementProgress(completed_achievements){
+
+    let percentage = Math.trunc((completed_achievements / 637) * 100);
+
+    $("#completed-achievements").text(completed_achievements);
+    $("#completed-achievements-percentage").text(percentage);
+
+}
+
+function insertAchievementsTable(achievement_id, achievementText, achieved){
+}
+
+

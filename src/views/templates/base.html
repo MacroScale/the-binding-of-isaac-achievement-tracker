@@ -21,8 +21,8 @@
         </div>
         <div class="nav-section nav-center">
             <img src="/static/logo.png">
-            <h2>0/367 (0%)</h2>
-            <h2>0 Hours</h2>
+            <h2><span id="completed-achievements">0</span>/637 (<span id="completed-achievements-percentage">0</span>%)</h2>
+            <h2><span id="playtime">0</span> Hours</h2>
         </div>
         <div class="nav-section" data-url="isaacnews">
             <img src="/static/navbar/steamupdates.png">
@@ -38,11 +38,17 @@
         {% endblock %}
     </div>
 
+
+    {% block outerContent %}
+    {% endblock %}
+
+
+
     <div class="footer">
         <img class="footer-img" src="/static/footer/Footer.png" />
         <div id="footer-section1" class="footer-section">
             <a class="footer-text" href="/">Contacts</a>
-            <a class="footer-text" href="/">Facts</a>
+            <a class="footer-text" href="/">FAQs</a>
             <a class="footer-text" href="/">Top</a>
         </div>
         <div id="footer-section2" class="footer-section">
