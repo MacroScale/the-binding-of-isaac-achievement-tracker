@@ -23,31 +23,18 @@ pub async fn whatsnew() -> impl Responder {
 #[get("/isaacnews")]
 pub async fn isaacnews() -> impl Responder {
 
+    let news = models::steam_api::steam_news::SteamNews::new().await;
+
+    if news.is_err(){
+        return HttpResponse::InternalServerError().body("Failed to get news");
+    }
+
+    let news = news.unwrap().appnews.newsitems;
+
+    log::info!("news: {:?}", &news);
+
     let template = views::IsaacNewsTemplate{
-        slot1_title: "slot1_title".to_string(),
-        slot1_sub_title: "slot1_sub_title".to_string(),
-        slot1_content: "slot1_content".to_string(),
-        slot1_win_num: 1,
-
-        slot2_title: "slot2_title".to_string(),
-        slot2_sub_title: "slot2_sub_title".to_string(),
-        slot2_content: "slot2_content".to_string(),
-        slot2_win_num: 2,
-
-        slot3_title: "slot3_title".to_string(),
-        slot3_sub_title: "slot3_sub_title".to_string(),
-        slot3_content: "slot3_content".to_string(),
-        slot3_win_num: 3,
-
-        slot4_title: "slot4_title".to_string(),
-        slot4_sub_title: "slot4_sub_title".to_string(),
-        slot4_content: "slot4_content".to_string(),
-        slot4_win_num: 4,
-
-        slot5_title: "slot5_title".to_string(),
-        slot5_sub_title: "slot5_sub_title".to_string(),
-        slot5_content: "slot5_content".to_string(),
-        slot5_win_num: 1
+        news
     };
 
     HttpResponse::Ok().body(template.render().unwrap())

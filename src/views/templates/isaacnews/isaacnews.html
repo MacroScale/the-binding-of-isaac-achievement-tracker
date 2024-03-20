@@ -9,64 +9,25 @@
 
 
 <div class="isaacnews-cont">
-    <img class="tb-img" src="/static/news/Top_BG.png" />
+    <div class="slot-container">
+        <img class="tb-img" src="/static/news/Top_BG.png" />
 
-    <div id="slot1" class="slot">
-        <img src="/static/news/Mid_BG.png" />
-        <div class="slot-window win{{ slot1_win_num }}">
-            <div class="slot-window-content">
-                <h1>{{ slot1_title }}</h1>
-                <h2>{{ slot1_sub_title }}</h2>
-                <div class="text">{{ slot1_content }}</div>
-            </div> 
+        {% for item in news %}
+        <div class="slot">
+            <img class="slot-img" src="/static/news/Mid_BG.png" />
+            <img class="slot-img" src="/static/news/Mid_BG.png" />
+            <img class="slot-overlay" src="/static/news/Window1.png" />
+
+            <h2 class="slot-title">{{ item.title }}</h2>
+            <textarea class="slot-body" disabled>{{ item.contents }}</textarea>
+            <a class="slot-link" href="{{ item.url }}">Read More</a>
+
         </div>
-    </div>
+        {% endfor %}
 
-    <div id="slot2" class="slot">
-        <img src="/static/news/Mid_BG.png" />
-        <div class="slot-window win{{ slot2_win_num }}">
-            <div class="slot-window-content">
-                <h1>{{ slot2_title }}</h1>
-                <h2>{{ slot2_sub_title }}</h2>
-                <div class="text">{{ slot2_content }}</div>
-            </div> 
-        </div>
+        <img class="tb-img" src="/static/news/Bot_BG.png" />
+        <div id="end"></div>
     </div>
-
-    <div id="slot3" class="slot">
-        <img src="/static/news/Mid_BG.png" />
-        <div class="slot-window win{{ slot3_win_num }}">
-            <div class="slot-window-content">
-                <h1>{{ slot3_title }}</h1>
-                <h2>{{ slot3_sub_title }}</h2>
-                <div class="text">{{ slot3_content }}</div>
-            </div> 
-        </div>
-    </div>
-
-    <div id="slot4" class="slot">
-        <img src="/static/news/Mid_BG.png" />
-        <div class="slot-window win{{ slot4_win_num }}">
-            <div class="slot-window-content">
-                <h1>{{ slot4_title }}</h1>
-                <h2>{{ slot4_sub_title }}</h2>
-                <div class="text">{{ slot4_content }}</div>
-            </div> 
-        </div>
-    </div>
-
-    <div id="slot5" class="slot">
-        <img src="/static/news/Mid_BG.png" />
-        <div class="slot-window win{{ slot5_win_num }}">
-            <div class="slot-window-content">
-                <h1>{{ slot5_title }}</h1>
-                <h2>{{ slot5_sub_title }}</h2>
-                <div class="text">{{ slot5_content }}</div>
-            </div> 
-        </div>
-    </div>
-
-    <img class="tb-img" src="/static/news/Bot_BG.png" />
 </div>
 
 
