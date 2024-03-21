@@ -21,8 +21,10 @@
         </div>
         <div class="nav-section nav-center">
             <img src="/static/logo.png">
-            <h2><span id="completed-achievements">0</span>/637 (<span id="completed-achievements-percentage">0</span>%)</h2>
-            <h2><span id="playtime">0</span> Hours</h2>
+            {% if profile_loaded %}
+                <h2><span id="completed-achievements">{{ completed }}</span>/637 (<span id="completed-achievements-percentage">{{ percentage }}</span>%)</h2>
+                <h2><span id="playtime">{{ hours_played }}</span> Hours</h2>
+            {% endif %}
         </div>
         <div class="nav-section" data-url="isaacnews">
             <img src="/static/navbar/steamupdates.png">

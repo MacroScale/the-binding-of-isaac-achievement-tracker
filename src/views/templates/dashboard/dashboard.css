@@ -296,7 +296,7 @@ input[type=number] {
 
 .achievements-listbox-table-cont{
     position: absolute;
-    width: 86%;
+    width: 93%;
     height: 63%;
     top: 15%;
     left: 5%;
@@ -345,6 +345,10 @@ input[type=number] {
 .hidden-toggle
 {
     display: none !important;
+}
+
+.hovering{
+    background-color: #f0f0f0;
 }
 
 /*

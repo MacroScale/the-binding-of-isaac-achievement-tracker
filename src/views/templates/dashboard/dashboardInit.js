@@ -1,12 +1,15 @@
 $(document).ready( async function(){
 
     $("body").on("click", "#search-profile", async function(){
-        window.location.href = "/dashboard?steam_id=" + $("#profile-search-input").val()
+        //window.location.href = "/dashboard?steam_id=" + $("#profile-search-input").val()
+        postProfileSearch($("#profile-search-input").val());
+        window.history.pushState({}, "Dashboard", "/dashboard?steam_id=" + $("#profile-search-input").val());
     })
 
     $("body").on("keyup", "#modal-search-profile", async function(e){
         if (e.key === "Enter"){
-            window.location.href = "/dashboard?steam_id=" + $("#modal-search-profile").val()
+            postProfileSearch($("#modal-search-profile").val());
+            window.history.pushState({}, "Dashboard", "/dashboard?steam_id=" + $("#modal-search-profile").val());
         }
     })
 
@@ -134,6 +137,14 @@ $(document).ready( async function(){
         if (_app_state.current_achievement_id === new_id) return;
         _app_state.current_achievement_id = parseInt($(this).data("id")) - 1;
         updateAchievements();
+    });
+
+    $("body").on("mouseenter", "#achievements-listbox-table tr", function(){
+        $(this).addClass("hovering");
+    });
+
+    $("body").on("mouseleave", "#achievements-listbox-table tr", function(){
+        $(this).removeClass("hovering");
     });
 
     await init();

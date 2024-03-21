@@ -11,18 +11,101 @@ pub async fn index() -> impl Responder {
 
 #[get("/dashboard{tail:.*}")]
 pub async fn dashboard(req: HttpRequest) -> impl Responder {
-    let template = views::DashboardTemplate;
+
+    let cookie = req.cookie("achievement");
+
+    let mut completed = 0;
+    let mut percentage = 0;
+    let mut hours_played = 0;
+    let mut profile_loaded = false;
+
+    if cookie.is_some(){
+        let cookie = cookie.unwrap();
+        let cookie_str = cookie.value();
+        let cookie: models::cookie::AchievementCookie = serde_json::from_str(cookie_str).unwrap();
+
+        completed = cookie.completed;
+        percentage = cookie.percentage;
+        hours_played = cookie.hours_played;
+        profile_loaded = true;
+    }
+
+
+    let cookie = req.cookie("achievement");
+    if cookie.is_some(){
+        let cookie = cookie.unwrap();
+        let cookie_str = cookie.value();
+        let cookie: models::cookie::AchievementCookie = serde_json::from_str(cookie_str).unwrap();
+        let steam_id = &cookie.steam_id;
+        let location = format!("/dashboard?steam_id={}", steam_id);
+
+        if location != req.uri().to_string(){
+            return HttpResponse::TemporaryRedirect().header("Location", location).finish();
+        }
+    }
+
+    let template = views::DashboardTemplate{
+        completed,
+        percentage,
+        hours_played,
+        profile_loaded
+    };
     HttpResponse::Ok().body(template.render().unwrap())
 }
 
 #[get("/whatsnew")]
-pub async fn whatsnew() -> impl Responder {
-    views::WhatsNewTemplate.render().unwrap();
-    HttpResponse::Ok().body(views::WhatsNewTemplate.render().unwrap())
+pub async fn whatsnew(req: HttpRequest) -> impl Responder {
+
+    let cookie = req.cookie("achievement");
+
+    let mut completed = 0;
+    let mut percentage = 0;
+    let mut hours_played = 0;
+    let mut profile_loaded = false;
+
+    if cookie.is_some(){
+        let cookie = cookie.unwrap();
+        let cookie_str = cookie.value();
+        let cookie: models::cookie::AchievementCookie = serde_json::from_str(cookie_str).unwrap();
+
+        completed = cookie.completed;
+        percentage = cookie.percentage;
+        hours_played = cookie.hours_played;
+        profile_loaded = true;
+    }
+
+    let template = views::WhatsNewTemplate{
+        completed,
+        percentage,
+        hours_played,
+        profile_loaded
+
+    };
+
+    HttpResponse::Ok().body(template.render().unwrap())
 }
 
 #[get("/isaacnews")]
-pub async fn isaacnews() -> impl Responder {
+pub async fn isaacnews(req: HttpRequest) -> impl Responder {
+
+
+    let cookie = req.cookie("achievement");
+
+    let mut completed = 0;
+    let mut percentage = 0;
+    let mut hours_played = 0;
+    let mut profile_loaded = false;
+
+    if cookie.is_some(){
+        let cookie = cookie.unwrap();
+        let cookie_str = cookie.value();
+        let cookie: models::cookie::AchievementCookie = serde_json::from_str(cookie_str).unwrap();
+
+        completed = cookie.completed;
+        percentage = cookie.percentage;
+        hours_played = cookie.hours_played;
+        profile_loaded = true;
+    }
 
     let news = models::steam_api::steam_news::SteamNews::new().await;
 
@@ -31,8 +114,6 @@ pub async fn isaacnews() -> impl Responder {
     }
 
     let news = news.unwrap().appnews.newsitems;
-
-    log::info!("news: {:?}", &news);
 
     let mut rng = rand::thread_rng();
     let arr_size = news.len();
@@ -43,8 +124,11 @@ pub async fn isaacnews() -> impl Responder {
         random_windows.push(random);
     }
 
-
     let template = views::IsaacNewsTemplate{
+        completed,
+        percentage,
+        hours_played,
+        profile_loaded,
         news,
         random_windows
     };
@@ -53,7 +137,32 @@ pub async fn isaacnews() -> impl Responder {
 }
 
 #[get("/isaacyoutube")]
-pub async fn isaacyoutube() -> impl Responder {
-    views::IsaacYoutubeTemplate.render().unwrap();
-    HttpResponse::Ok().body(views::IsaacYoutubeTemplate.render().unwrap())
+pub async fn isaacyoutube(req: HttpRequest) -> impl Responder {
+
+    let cookie = req.cookie("achievement");
+
+    let mut completed = 0;
+    let mut percentage = 0;
+    let mut hours_played = 0;
+    let mut profile_loaded = false;
+
+    if cookie.is_some(){
+        let cookie = cookie.unwrap();
+        let cookie_str = cookie.value();
+        let cookie: models::cookie::AchievementCookie = serde_json::from_str(cookie_str).unwrap();
+
+        completed = cookie.completed;
+        percentage = cookie.percentage;
+        hours_played = cookie.hours_played;
+        profile_loaded = true;
+    }
+
+    let template = views::IsaacYoutubeTemplate{
+        completed,
+        percentage,
+        hours_played,
+        profile_loaded,
+    };
+
+    HttpResponse::Ok().body(template.render().unwrap())
 }

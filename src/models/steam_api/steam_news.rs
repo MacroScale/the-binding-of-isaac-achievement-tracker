@@ -37,8 +37,6 @@ impl SteamNews{
 
         let url = "https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=250900".to_string();
 
-        log::info!("url: {:?}", &url);
-
         //get fetch json
         let fetch = reqwest::get(&url).await?;
         let res_text = fetch.text().await?;

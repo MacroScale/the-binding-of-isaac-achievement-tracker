@@ -44,10 +44,17 @@ async function ProfileSearchRedeemer(req){
         $("html").css("overflow", "hidden");
         return;
     } 
+    else{
+        $(".content").css("filter", "none");
+        $(".navbar").css("filter", "none");
+        $(".modal-wrapper").hide();
+        $("html").css("overflow", "auto");
+    }
 
 
     console.log(_steam_data);
 
+    createNavPlaytimeInfo();
     updatePlaytime(_steam_data.playerGameData.playtime_forever);
     updateProfilePostit(_steam_data.summary);
     updateCharacterOverlay(_app_state.current_character_id);
@@ -86,6 +93,14 @@ function processProfileSearch(res){
     }
 }
 
+function createNavPlaytimeInfo(){
+    let html = `
+        <img src="/static/logo.png">
+        <h2><span id="completed-achievements">0</span>/637 (<span id="completed-achievements-percentage">0</span>%)</h2>
+        <h2><span id="playtime"></span> Hours</h2>
+    `
+    $(".nav-center").html(html);
+}
 
 function updatePlaytime(playtime){
     playtime = Math.trunc(playtime / 60);
