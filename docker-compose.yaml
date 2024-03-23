@@ -9,7 +9,7 @@ services:
     env_file:
       - ./app/.env
     build:
-      dockerfile: ./DF.local
+      dockerfile: ./Dockerfile
     networks:
       - app
 
