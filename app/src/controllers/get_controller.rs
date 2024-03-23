@@ -166,3 +166,65 @@ pub async fn isaacyoutube(req: HttpRequest) -> impl Responder {
 
     HttpResponse::Ok().body(template.render().unwrap())
 }
+
+#[get("/contact")]
+pub async fn contact(req: HttpRequest) -> impl Responder {
+
+    let cookie = req.cookie("achievement");
+
+    let mut completed = 0;
+    let mut percentage = 0;
+    let mut hours_played = 0;
+    let mut profile_loaded = false;
+
+    if cookie.is_some(){
+        let cookie = cookie.unwrap();
+        let cookie_str = cookie.value();
+        let cookie: models::cookie::AchievementCookie = serde_json::from_str(cookie_str).unwrap();
+
+        completed = cookie.completed;
+        percentage = cookie.percentage;
+        hours_played = cookie.hours_played;
+        profile_loaded = true;
+    }
+
+    let template = views::ContactTemplate{
+        completed,
+        percentage,
+        hours_played,
+        profile_loaded,
+    };
+
+    HttpResponse::Ok().body(template.render().unwrap())
+}
+
+#[get("/faqs")]
+pub async fn faqs(req: HttpRequest) -> impl Responder {
+
+    let cookie = req.cookie("achievement");
+
+    let mut completed = 0;
+    let mut percentage = 0;
+    let mut hours_played = 0;
+    let mut profile_loaded = false;
+
+    if cookie.is_some(){
+        let cookie = cookie.unwrap();
+        let cookie_str = cookie.value();
+        let cookie: models::cookie::AchievementCookie = serde_json::from_str(cookie_str).unwrap();
+
+        completed = cookie.completed;
+        percentage = cookie.percentage;
+        hours_played = cookie.hours_played;
+        profile_loaded = true;
+    }
+
+    let template = views::FaqsTemplate{
+        completed,
+        percentage,
+        hours_played,
+        profile_loaded,
+    };
+
+    HttpResponse::Ok().body(template.render().unwrap())
+}

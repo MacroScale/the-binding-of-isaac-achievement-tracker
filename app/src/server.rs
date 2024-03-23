@@ -13,6 +13,8 @@ pub async fn start() -> std::io::Result<()> {
             .service(get_controller::whatsnew)
             .service(get_controller::isaacnews)
             .service(get_controller::isaacyoutube)
+            .service(get_controller::contact)
+            .service(get_controller::faqs)
             //api routes (post)
             .service(post_controller::profile_search)
             //static files

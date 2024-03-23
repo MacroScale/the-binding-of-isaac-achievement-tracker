@@ -39,3 +39,21 @@ pub struct IsaacYoutubeTemplate{
     pub hours_played: i64,
     pub profile_loaded: bool
 }
+
+#[derive(Template)]
+#[template(path = "faqs/faqs.html")]
+pub struct FaqsTemplate{
+    pub completed: i32,
+    pub percentage: i32,
+    pub hours_played: i64,
+    pub profile_loaded: bool
+}
+
+#[derive(Template)]
+#[template(path = "contact/contact.html")]
+pub struct ContactTemplate{
+    pub completed: i32,
+    pub percentage: i32,
+    pub hours_played: i64,
+    pub profile_loaded: bool
+}
