@@ -1,0 +1,20 @@
+
+{% extends "base.html" %}
+
+{% block head %}
+<title>404 Not Found</title>
+{% endblock %}
+
+{% block content %}
+
+<div class="contact-cont">
+    <img class="bg" />
+    <img class="overlay" src="/static/error/errorkeeper.gif" />
+
+</div>
+
+
+<style> {% include "error.css" %} </style>
+<script> {% include "error.js" %} </script>
+
+{% endblock %}

@@ -4,6 +4,8 @@ use crate::views;
 use crate::models;
 use rand::Rng;
 
+use crate::models::responses::error::Error;
+
 #[get("/")]
 pub async fn index() -> impl Responder {
     HttpResponse::PermanentRedirect().header("Location", "/dashboard").finish()
@@ -158,6 +160,121 @@ pub async fn isaacyoutube(req: HttpRequest) -> impl Responder {
     }
 
     let template = views::IsaacYoutubeTemplate{
+        completed,
+        percentage,
+        hours_played,
+        profile_loaded
+    };
+
+    HttpResponse::Ok().body(template.render().unwrap())
+}
+
+#[get("/contact")]
+pub async fn contact(req: HttpRequest) -> impl Responder {
+
+    let cookie = req.cookie("achievement");
+
+    let mut completed = 0;
+    let mut percentage = 0;
+    let mut hours_played = 0;
+    let mut profile_loaded = false;
+
+    if cookie.is_some(){
+        let cookie = cookie.unwrap();
+        let cookie_str = cookie.value();
+        let cookie: models::cookie::AchievementCookie = serde_json::from_str(cookie_str).unwrap();
+
+        completed = cookie.completed;
+        percentage = cookie.percentage;
+        hours_played = cookie.hours_played;
+        profile_loaded = true;
+    }
+
+    let template = views::ContactTemplate{
+        completed,
+        percentage,
+        hours_played,
+        profile_loaded,
+    };
+
+    HttpResponse::Ok().body(template.render().unwrap())
+}
+
+#[get("/faqs")]
+pub async fn faqs(req: HttpRequest) -> impl Responder {
+
+    let cookie = req.cookie("achievement");
+
+    let mut completed = 0;
+    let mut percentage = 0;
+    let mut hours_played = 0;
+    let mut profile_loaded = false;
+
+    if cookie.is_some(){
+        let cookie = cookie.unwrap();
+        let cookie_str = cookie.value();
+        let cookie: models::cookie::AchievementCookie = serde_json::from_str(cookie_str).unwrap();
+
+        completed = cookie.completed;
+        percentage = cookie.percentage;
+        hours_played = cookie.hours_played;
+        profile_loaded = true;
+    }
+
+    let template = views::FaqsTemplate{
+        completed,
+        percentage,
+        hours_played,
+        profile_loaded,
+    };
+
+    HttpResponse::Ok().body(template.render().unwrap())
+}
+
+#[get("/api/isaacyoutubers")]
+pub async fn api_isaacyoutubers() -> impl Responder {
+
+    let youtubers = models::youtube_api::isaac_youtubers::IsaacYoutubers::new().await;
+
+    if youtubers.is_err(){
+
+        let error = Error{
+            status: 500,
+            message: "Failed to get youtubers".to_string()
+        };
+
+        log::error!("Failed to get youtubers: {:?}", youtubers.err());
+
+        return HttpResponse::Ok().json(error);
+    }
+
+    let youtubers = youtubers.unwrap();
+
+    HttpResponse::Ok().json(youtubers)
+}
+
+
+pub async fn not_found(req: HttpRequest) -> impl Responder {
+
+    let cookie = req.cookie("achievement");
+
+    let mut completed = 0;
+    let mut percentage = 0;
+    let mut hours_played = 0;
+    let mut profile_loaded = false;
+
+    if cookie.is_some(){
+        let cookie = cookie.unwrap();
+        let cookie_str = cookie.value();
+        let cookie: models::cookie::AchievementCookie = serde_json::from_str(cookie_str).unwrap();
+
+        completed = cookie.completed;
+        percentage = cookie.percentage;
+        hours_played = cookie.hours_played;
+        profile_loaded = true;
+    }
+
+    let template = views::ErrorTemplate{
         completed,
         percentage,
         hours_played,
