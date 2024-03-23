@@ -97,6 +97,11 @@ body{
 }
 
 
+li{
+    font-size: 2vw;
+}
+
+
 
 .slot-body::-webkit-scrollbar {
     width: 20px;

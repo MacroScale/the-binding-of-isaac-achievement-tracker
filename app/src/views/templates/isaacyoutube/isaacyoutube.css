@@ -70,9 +70,9 @@ body{
 }
 .thumbnail{
     position: absolute;
-    top: 31%;
-    left: 15%;
-    width: 57% !important;
+    top: 39%;
+    left: 13%;
+    width: 64% !important;
     z-index: -1 !important;
 }
 
@@ -117,4 +117,14 @@ body{
     font-family: 'IsaacFont';
     font-size: 1.3vw;
     color: #E9DADF;
+}
+
+.tv-text{
+    position: absolute;
+    top: 83.8%;
+    left: 0%;
+    width: 100%;
+    color: black;
+    font-size: 1.8vw;
+    text-align: center;
 }
