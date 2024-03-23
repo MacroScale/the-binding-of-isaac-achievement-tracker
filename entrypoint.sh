@@ -6,7 +6,7 @@ echo "Starting entrypoint.sh"
 ls -l /usr/local/bin/
 
 # Start rust server
-/usr/local/bin/tinyified &
+/usr/local/bin/tboi &
 
 # Print the process list to check if rust_server is running
 ps aux

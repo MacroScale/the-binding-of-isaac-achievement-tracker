@@ -18,7 +18,7 @@ pub async fn start() -> std::io::Result<()> {
             //static files
             .service(fs::Files::new("/static", "./static"))
     })
-    .bind(("127.0.0.1", 8080))?
+    .bind(("0.0.0.0", 3000))?
     .run()
     .await
 }

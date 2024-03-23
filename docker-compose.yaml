@@ -2,10 +2,10 @@ version: "3.4"
 
 services:
   tinyified:
-    container_name: tinyified
-    image: tinyified:latest
+    container_name: tboi 
+    image: tboi:latest
     ports:
-      - 5000:80
+      - 5001:80
     env_file:
       - ./app/.env
     build:

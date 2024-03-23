@@ -31,6 +31,9 @@ ENV RUST_LOG=info
 # Set the working directory
 WORKDIR /usr/src/$APP
 
+# Get output for release
+COPY --from=builder /usr/local/cargo/bin/$APP /release/$APP
+
 COPY --from=builder /usr/local/cargo/bin/$APP /usr/local/bin/$APP
 COPY ./app/static /usr/local/bin/$APP/static 
 COPY ./app/static ./static 
