@@ -1,25 +1,3 @@
-FROM rust:alpine as builder
-
-ENV APP rust_server 
-
-WORKDIR /usr/src/$APP
-COPY ./app .
-
-ENV RUSTFLAGS="-C linker=clang -C link-arg=-fuse-ld=lld"
-
-# Install build dependencies
-RUN apk add --no-cache musl-dev
-RUN apk add --no-cache openssl-dev
-RUN apk add --no-cache clang
-RUN apk add --no-cache lld
-RUN apk add --no-cache build-base
-RUN apk add --no-cache pkgconfig
-RUN apk add --no-cache openssl-libs-static
-RUN apk add --no-cache openssl-dev
-RUN apk add --no-cache openssl
-
-RUN cargo install --path .
-
 FROM alpine:latest
 
 # Install build dependencies
@@ -31,10 +9,7 @@ ENV RUST_LOG=info
 # Set the working directory
 WORKDIR /usr/src/$APP
 
-# Get output for release
-COPY --from=builder /usr/local/cargo/bin/$APP /release/$APP
-
-COPY --from=builder /usr/local/cargo/bin/$APP /usr/local/bin/$APP
+COPY ./release /usr/local/bin/$APP
 COPY ./app/static /usr/local/bin/$APP/static 
 COPY ./app/static ./static 
 
