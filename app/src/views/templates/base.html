@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% block head %}
+    {% endblock %}
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="BrandonGill" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <style>{% include "global.css" %}</style>
+  </head>
+  <body>
+    <div class="navbar">
+        <div class="nav-section" data-url="/">
+            <img src="/static/navbar/dashboard.png">
+            <img class="nav-underline" src="/static/navbar/dashboard_ul.png">
+        </div>
+        <div class="nav-section" data-url="/whatsnew">
+            <img src="/static/navbar/changelog.png">
+            <img class="nav-underline" src="/static/navbar/changelog_ul.png">
+        </div>
+        <div class="nav-section nav-center">
+            <img src="/static/logo.png">
+            {% if profile_loaded %}
+                <h2><span id="completed-achievements">{{ completed }}</span>/637 (<span id="completed-achievements-percentage">{{ percentage }}</span>%)</h2>
+                <h2><span id="playtime">{{ hours_played }}</span> Hours</h2>
+            {% endif %}
+        </div>
+        <div class="nav-section" data-url="isaacnews">
+            <img src="/static/navbar/steamupdates.png">
+            <img class="nav-underline" src="/static/navbar/steamupdates_ul.png">
+        </div>
+        <div class="nav-section" data-url="isaacyoutube">
+            <img src="/static/navbar/youtube.png">
+            <img class="nav-underline" src="/static/navbar/youtube_ul.png">
+        </div>
+    </div>
+    <div class="content">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+
+    {% block outerContent %}
+    {% endblock %}
+
+
+
+    <div class="footer">
+        <img class="footer-img" src="/static/footer/Footer.png" />
+        <div id="footer-section1" class="footer-section">
+            <a class="footer-text" href="/">Contacts</a>
+            <a class="footer-text" href="/">FAQs</a>
+            <a class="footer-text" href="/">Top</a>
+        </div>
+        <div id="footer-section2" class="footer-section">
+            <a class="footer-text" href="/">Dashboard</a>
+            <a class="footer-text" href="/whatsnew">Changelog</a>
+            <a class="footer-text" href="/isaacnews">Steam News</a>
+            <a class="footer-text" href="/isaacyoutube">Youtube</a>
+        </div>
+    </div>
+
+    <script>{% include "global.js" %}</script>
+  </body>
+</html>

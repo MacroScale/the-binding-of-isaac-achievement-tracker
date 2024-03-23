@@ -1,0 +1,113 @@
+
+html{
+    background-image: none;
+    background-color: black;
+}
+
+body{
+    /*
+     height: 100vh;
+     * */
+    overflow-x: hidden;
+}
+
+.navbar{
+    padding-bottom: 4%;
+    background-image: url("/static/news/Banner_BG.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.content{
+    position: relative;
+    min-height: 100%;
+    padding: 8%;
+    padding-bottom: 0;
+    padding-top: 5%;
+}
+
+
+
+.isaacnews-cont{
+    position: relative;
+}
+
+
+.slot-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tb-img, .slot-img{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.slot{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.slot-content{
+    position: absolute;
+    top: 0;
+    left: 8%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.errorkeeper{
+    width: auto; 
+    height: 30%;
+    align-self: flex-start;
+    margin-top: 10%;
+}
+
+.panel{
+    width: auto;
+    height: 60%;
+}
+
+
+.slot-text{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slot-title{
+    position: absolute;
+    top: 21%;
+    left: 18%;
+}
+.slot-text{
+    position: absolute;
+    top: 35%;
+    left: 18%;
+    width: 60%;
+    height: 40%;
+    margin: 0;
+}
+
+
+
+.slot-body::-webkit-scrollbar {
+    width: 20px;
+}
+.slot-body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.slot-body::-webkit-scrollbar-thumb{
+    background-color: #948473;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}

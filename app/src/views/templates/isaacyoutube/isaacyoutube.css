@@ -1,0 +1,120 @@
+html{
+    background-image: none;
+    background-color: black;
+}
+
+body{
+    /*
+     height: 100vh;
+     * */
+    overflow-x: hidden;
+}
+
+.navbar{
+    padding-bottom: 4%;
+    background-image: url("/static/news/Banner_BG.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.content{
+    position: relative;
+    min-height: 100%;
+}
+
+
+
+.isaacnews-cont{
+    position: relative;
+}
+
+
+.slot-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tb-img, .slot-img{
+    width: 100%;
+    height: auto;
+}
+
+.slot{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.slot-content{
+    position: absolute;
+    top: -11%;
+    left: 20%;
+    width: 61%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10%;
+    z-index: 2;
+}
+
+.slot-content img{
+    width: 100%;
+    height: auto;
+}
+
+.tv{
+    position: relative;
+}
+.thumbnail{
+    position: absolute;
+    top: 31%;
+    left: 15%;
+    width: 57% !important;
+    z-index: -1 !important;
+}
+
+.slot-title{
+    position: absolute;
+    top: 27%;
+    left: 26%;
+    width: 70%;
+    color: white;
+}
+
+.slot-body::-webkit-scrollbar {
+    width: 20px;
+}
+.slot-body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.slot-body::-webkit-scrollbar-thumb{
+    background-color: #948473;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+.slot-body{
+    position: absolute;
+    top: 38%;
+    left: 26%;
+    width: 47%;
+    height: 35%;
+    background: transparent;
+    border: none;
+    resize: none;
+    color: white;
+    font-size: 1vw;
+}
+.slot-link{
+    position: absolute;
+    top: 77%;
+    left: 66%;
+    width: 7%;
+    font-family: 'IsaacFont';
+    font-size: 1.3vw;
+    color: #E9DADF;
+}

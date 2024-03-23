@@ -1,0 +1,37 @@
+
+{% extends "base.html" %}
+
+{% block head %}
+<title>Isaac News</title>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="isaacnews-cont">
+    <div class="slot-container">
+        <img class="tb-img" src="/static/news/Top_BG.png" />
+
+        {% for item in news %}
+        <div class="slot">
+            <img class="slot-img" src="/static/news/Mid_BG.png" />
+            <img class="slot-img" src="/static/news/Mid_BG.png" />
+            <img class="slot-overlay" src="/static/news/Window{{ random_windows[loop.index0] }}.png" />
+
+            <h2 class="slot-title">{{ item.title }}</h2>
+            <textarea class="slot-body" disabled>{{ item.contents }}</textarea>
+            <a class="slot-link" href="{{ item.url }}">Read More</a>
+
+        </div>
+        {% endfor %}
+
+        <img class="tb-img" src="/static/news/Bot_BG.png" />
+        <div id="end"></div>
+    </div>
+</div>
+
+
+<style> {% include "isaacnews.css" %} </style>
+<script> {% include "isaacnews.js" %} </script>
+
+{% endblock %}

@@ -1,0 +1,414 @@
+/*
+ *
+ * Universal
+ *
+ * */
+
+html{
+    min-width: 1250px;
+}
+
+h2{
+    margin: 0;
+}
+
+@media only screen and (max-width: 1250px) {
+    h2{
+        font-size: 1.55em !important;
+    }
+    .footer-text{
+        font-size: 2.4em !important;
+    }
+    input{
+        font-size: 1.5em !important;
+    }
+}
+
+input{
+    /* make background transparent */
+    background-color: transparent;
+    border: none;
+    font-size: 1.5vw;
+}
+input:focus{
+    outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.content{
+    padding: 6%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bg{
+    width: 100%;
+    height: auto;
+}
+
+.overlay{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+
+/*
+ *
+ * Dashboard
+ *
+ * */
+
+.dashboard-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.dash-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 6%;
+}
+
+
+/*
+ *
+ * Character Selection
+ *
+ * */
+
+.who-am-i{
+    position: relative;
+}
+
+.who-am-i .character-wheel{
+    position: absolute;
+    bottom: 8%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.who-am-i .character-wheel img{
+    width: 12%;
+    height: auto;
+ }
+
+
+/*
+ *
+ * Profile
+ *
+ * */
+
+.profile-search-bar{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-search{
+    position: relative;
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+}
+
+.profile-search-bar #profile-search-input{
+    width: 80%;
+    height: 45%;
+    top: 24%;
+    left: 9%;
+}
+
+
+.profile-postit{
+    position: relative;
+    margin-bottom: 5px;
+}
+
+
+.profile-postit #profile-avatar{
+    width: 62%;
+    height: auto;
+    top: 18%;
+    left: 19%;
+}
+
+
+.profile-postit #profile-name{
+    top: 70%;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+}
+
+.profile-postit #profile-name img{
+    height: auto;
+    width: 12%;
+}
+
+.profile-postit #profile-country{
+    top: 80%;
+    left: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+.profile-postit #profile-country img{
+    height: auto;
+    width: 12%;
+}
+
+
+
+.profile-ad{
+    position: relative;
+    width: 100%;
+    height: 22%;
+    max-height: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+/*
+ *
+ * Achievements 
+ *
+ * */
+
+.achievements{
+    margin-top: 3%;
+}
+
+.achievements-postit{
+    position: relative;
+}
+
+.achievements-postit #achievements-text-overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7%;
+}
+
+.achievement-page-search{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.achievement-page-search h2{
+    align-self: flex-end;
+}
+
+.achievement-page-search-box{
+    position: relative;
+    width: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.achievement-page-search-box #achievement-page-search-input{
+    position: absolute;
+    top: 21%;
+    left: 10%;
+    z-index: 1;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+}
+
+
+.achievements-page{
+    position: relative;
+}
+.achievements-navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.achievement-nav-page{
+    width: 100%;
+}
+
+.achievements-listbox{
+    position: relative;
+}
+
+.achievements-listbox #achievement-search-input{
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    top: 4.2%;
+    left: 8%;
+}
+
+.achievements-listbox-table-cont{
+    position: absolute;
+    width: 93%;
+    height: 63%;
+    top: 15%;
+    left: 5%;
+    overflow: hidden;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+.achievements-listbox-table-cont::-webkit-scrollbar {
+    width: 20px;
+}
+.achievements-listbox-table-cont::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.achievements-listbox-table-cont::-webkit-scrollbar-thumb{
+    background-color: #948473;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+}
+
+.achievements-listbox #achievements-listbox-table{
+    height: 100%;
+}
+
+.achievements-listbox #achievements-listbox-table tr{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+
+.achievement-list-img img{
+    width: auto;
+    height: 100%;
+}
+
+.achievement-list-text{
+    height: 100%;
+    padding-left: 10%;
+}
+
+.hidden-query,
+.hidden-toggle
+{
+    display: none !important;
+}
+
+.hovering{
+    background-color: #f0f0f0;
+}
+
+/*
+ *
+ * Completion Marks
+ *
+ * */
+
+.completion-postit {
+    position: relative;
+    margin-bottom: 5px;
+}
+.completion-ad{
+    position: relative;
+    width: 100%;
+    height: 45%;
+    max-height: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+
+
+/*
+ *
+ * Modal
+ *
+ * */
+
+.modal-wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    display: none;
+}
+
+.modal{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    position: relative;
+}
+
+.modal-content #modal-search-profile{
+    position: absolute;
+    width: 27%;
+    height: 3%;
+    top: 59.3%;
+    left: 36%;
+}
+
