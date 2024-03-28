@@ -9,9 +9,11 @@ pub struct PlayerAchievements{
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct PlayerStats{
-   pub steamID: String, 
-   pub gameName: String,
-   pub achievements: Vec<Achievement>,
+   pub steamID: Option<String>, 
+   pub gameName: Option<String>,
+   pub error: Option<String>,
+   pub success: Option<bool>,
+   pub achievements: Option<Vec<Achievement>>,
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug)]
@@ -33,7 +35,15 @@ impl PlayerAchievements{
         //get fetch json
         let fetch = reqwest::get(&url).await?;
         let res_text = fetch.text().await?;
-        let res = serde_json::from_str::<PlayerAchievements>(&res_text)?;
+        let res = serde_json::from_str::<PlayerAchievements>(&res_text);
+
+        if res.is_err(){
+            log::info!("Failed to get player achievements: {:?}", res.err());
+            return Err(anyhow::Error::msg("Failed to get player achievements"));
+        }
+
+        let res = res.unwrap();
+        log::info!("player achievement grabbed successfully");
 
         Ok(res)
 

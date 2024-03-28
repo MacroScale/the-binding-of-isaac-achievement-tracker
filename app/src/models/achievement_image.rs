@@ -3200,6 +3200,9 @@ impl AchievementImg{
             _gfx: "achievement_deadgod.png".to_string(),
         });
 
+
+        log::info!("achievements image data successfully");
+
         achievements
     }
 

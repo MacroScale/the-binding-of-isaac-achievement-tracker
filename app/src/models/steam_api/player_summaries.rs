@@ -13,7 +13,7 @@ pub struct Player{
     pub avatarmedium: String,
     pub avatarfull: String,
     pub avatarhash: String,
-    pub lastlogoff: i64,
+    pub lastlogoff: Option<i64>,
     pub personastate: i32,
     pub realname: Option<String>,
     pub primaryclanid: Option<String>,
@@ -45,7 +45,14 @@ impl PlayerSummary{
         //get fetch json
         let fetch = reqwest::get(&url).await?;
         let res_text = fetch.text().await?;
-        let res = serde_json::from_str::<PlayerSummary>(&res_text)?;
+        let res = serde_json::from_str::<PlayerSummary>(&res_text);
+
+        if res.is_err(){
+            log::info!("Failed to get player summary: {:?}", res.err());
+            return Err(anyhow::Error::msg("Failed to get player summary"));
+        }
+
+        let res = res.unwrap();
 
         Ok(res)
     }

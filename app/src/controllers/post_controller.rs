@@ -12,9 +12,12 @@ pub async fn profile_search(req: web::Json<dashboard::ProfileSearch>) -> impl Re
     let id = ProfileSearch::new(steam_id).await;
 
     if id.is_err() {
+
+        let id_err = id.err().unwrap().to_string();
+
         let err = Error{
             status: 500,
-            message: "error".to_string(),
+            message: id_err,
         };
         return HttpResponse::Ok().json(err);
     }
@@ -24,10 +27,13 @@ pub async fn profile_search(req: web::Json<dashboard::ProfileSearch>) -> impl Re
     let info = PlayerInfo::new(&id).await;
 
     if info.is_err() {
+        let info_err = info.err().unwrap().to_string();
+
         let err = Error{
             status: 500,
-            message: "error".to_string(),
+            message: info_err,
         };
+
         return HttpResponse::Ok().json(err);
     }
 
@@ -37,6 +43,8 @@ pub async fn profile_search(req: web::Json<dashboard::ProfileSearch>) -> impl Re
         .player_achievements
         .playerstats
         .achievements
+        .clone()
+        .unwrap()
         .iter()
         .filter(|x| x.achieved == 1).count() as i32;
 

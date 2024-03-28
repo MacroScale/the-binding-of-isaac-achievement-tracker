@@ -38,6 +38,15 @@ async function ProfileSearchRedeemer(req){
 
     if (!validateSteamData(_steam_data)){
         console.log(_steam_data);
+
+        if (_steam_data.message === "Invalid steam id"){
+            $("#modal-img").attr("src", "/static/error popups/No_Profile.png");
+        }
+        else if (_steam_data.message === "Failed to get player game data"){
+            $("#modal-img").attr("src", "/static/error popups/No_Game_Data.png");
+        }
+
+
         $(".content").css("filter", "blur(5px)");
         $(".navbar").css("filter", "blur(5px)");
         $(".modal-wrapper").show();
@@ -65,11 +74,11 @@ async function ProfileSearchRedeemer(req){
 
 function processProfileSearch(res){
     if (res.status === 200) {
-        let summary = res.player_summary.response.players[0];
-        let achievements = res.player_achievements.playerstats.achievements;
-        let gameData = res.player_game_data;
-        let characterData = res.character_data;
-        let achievementImageData = res.achievement_image_data;
+        let summary = res.player_summary.response.players[0] ?? {};
+        let achievements = res.player_achievements.playerstats.achievements ?? [];
+        let gameData = res.player_game_data ?? {};
+        let characterData = res.character_data ?? [];
+        let achievementImageData = res.achievement_image_data ?? [];
 
         return {
             status: res.status,

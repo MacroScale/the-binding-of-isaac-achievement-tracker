@@ -10,8 +10,8 @@ pub struct Game{
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Response{
-    pub game_count: i32,
-    pub games: Vec<Game>,
+    pub game_count: Option<i32>,
+    pub games: Option<Vec<Game>>,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
@@ -34,7 +34,20 @@ impl PlayerGame{
         let res_text = fetch.text().await?;
         let res = serde_json::from_str::<PlayerGame>(&res_text)?;
 
-        let tboi_data = res.response.games.iter().find(|x| x.appid == 250900);
+
+        if res.response.games.is_none(){
+            log::info!("Failed to get player game data: {:?}", res);
+            return Err(anyhow::Error::msg("Failed to get player game data"));
+        }
+
+        let tboi_data = res.response.games.as_ref().unwrap().iter().find(|x| x.appid == 250900);
+
+        if tboi_data.is_none(){
+            log::info!("Failed to get player game data: {:?}", res);
+            return Err(anyhow::Error::msg("Failed to get player game data"));
+        }
+
+        log::info!("player game data grabbed successfully");
 
         Ok(tboi_data.cloned())
     }
