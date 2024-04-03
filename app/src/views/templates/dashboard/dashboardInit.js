@@ -6,6 +6,15 @@ $(document).ready( async function(){
         window.history.pushState({}, "Dashboard", "/dashboard?steam_id=" + $("#profile-search-input").val());
     })
 
+
+    $("body").on("keyup", "#profile-search-input", async function(e){
+        if (e.key === "Enter"){
+            postProfileSearch($("#profile-search-input").val());
+            window.history.pushState({}, "Dashboard", "/dashboard?steam_id=" + $("#profile-search-input").val());
+        }
+    })
+
+
     $("body").on("keyup", "#modal-search-profile", async function(e){
         if (e.key === "Enter"){
             postProfileSearch($("#modal-search-profile").val());
