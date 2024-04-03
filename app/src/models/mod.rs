@@ -7,4 +7,5 @@ pub mod character_unlocks;
 pub mod achievement_image;
 
 pub mod cookie;
-
+pub mod log;
+pub mod app_data;

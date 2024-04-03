@@ -1,5 +1,7 @@
 use serde::{Deserialize};
+use sqlx::PgPool;
 use crate::models::steam_api::player_summaries::PlayerSummary;
+use crate::models::log::Log;
 use anyhow;
 
 #[derive(Deserialize, Debug)]
@@ -15,8 +17,17 @@ pub struct ProfileSearch{
 }
 
 impl ProfileSearch{
-    pub async fn new(steam_id: &str) -> anyhow::Result<i64>{
-       let id = validate_steam_id(steam_id).await?; 
+    pub async fn new(steam_id: &str, pool: &PgPool) -> anyhow::Result<i64>{
+       let id = validate_steam_id(steam_id).await; 
+
+       if id.is_err(){
+           let err = id.err().unwrap().to_string();
+           Log::send_log(&steam_id, "profile_search", &err, pool).await;
+           return Err(anyhow::anyhow!(err));
+       }
+
+       let id = id.unwrap();
+       Log::send_log(&steam_id, "profile_search", "", pool).await;
        Ok(id)
     }
 }
@@ -41,7 +52,7 @@ pub async fn validate_steam_id(steam_id: &str) -> anyhow::Result<i64> {
 
     // if just steam_id
     if !is_steam_url(steam_id) && is_steamid(steam_id){
-        let summary = PlayerSummary::new(&steam_id.parse::<i64>().unwrap()).await;
+        let summary = PlayerSummary::check(&steam_id.parse::<i64>().unwrap()).await;
         if summary.is_ok() {return Ok(steam_id.parse::<i64>().unwrap());}
     }    
 
@@ -49,7 +60,7 @@ pub async fn validate_steam_id(steam_id: &str) -> anyhow::Result<i64> {
     let steam_id = get_steamid_from_url(steam_id);
     if steam_id.is_ok() {
         let steam_id = steam_id.unwrap();
-        let summary = PlayerSummary::new(&steam_id).await;
+        let summary = PlayerSummary::check(&steam_id).await;
         if summary.is_ok() {return Ok(steam_id);}
     }
 

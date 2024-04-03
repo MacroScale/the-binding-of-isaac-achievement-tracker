@@ -1,4 +1,5 @@
 use serde::{Serialize, Deserialize};
+use sqlx::PgPool;
 use anyhow;
 
 use crate::models::steam_api::player_summaries::PlayerSummary; 
@@ -7,6 +8,7 @@ use crate::models::steam_api::player_game_data::PlayerGame;
 use crate::models::steam_api::player_game_data::Game;
 use crate::models::character_unlocks::Character;
 use crate::models::achievement_image::AchievementImg;
+use crate::models::log::Log;
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct PlayerInfo{
@@ -20,10 +22,11 @@ pub struct PlayerInfo{
 }
 
 impl PlayerInfo{
-    pub async fn new(steam_id: &i64) -> anyhow::Result<PlayerInfo>{
-        let player_summary = PlayerSummary::new(steam_id).await?;
-        let player_achievements = PlayerAchievements::new(steam_id).await?;
-        let player_game_data = PlayerGame::new(steam_id).await?;
+    pub async fn new(steam_id: &i64, pool: &PgPool) -> anyhow::Result<PlayerInfo>{
+
+        let player_summary = PlayerSummary::new(steam_id, pool).await?;
+        let player_achievements = PlayerAchievements::new(steam_id, pool).await?;
+        let player_game_data = PlayerGame::new(steam_id, pool).await?;
         let character_data = Character::new();
         let achievement_image_data = AchievementImg::new();
 

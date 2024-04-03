@@ -4,36 +4,38 @@ use crate::models::responses::error::Error;
 use crate::models::steam_api::profile_search::ProfileSearch;
 use crate::models::steam_api::player_info::PlayerInfo;
 use crate::models::cookie::AchievementCookie;
+use crate::models::app_data::AppData;
 
 #[post("/api/profile-search")]
-pub async fn profile_search(req: web::Json<dashboard::ProfileSearch>) -> impl Responder {
+pub async fn profile_search(req: web::Json<dashboard::ProfileSearch>, app_data: web::Data<AppData>) -> impl Responder {
+
+    let pool = &app_data.pool;
 
     let steam_id = &req.steam_id;
-    let id = ProfileSearch::new(steam_id).await;
+    let id = ProfileSearch::new(steam_id, pool).await;
 
     if id.is_err() {
 
         let id_err = id.err().unwrap().to_string();
-
         let err = Error{
             status: 500,
-            message: id_err,
+            message: id_err.clone(),
         };
+
         return HttpResponse::Ok().json(err);
     }
 
     let id = id.unwrap();
-
-    let info = PlayerInfo::new(&id).await;
+    
+    let info = PlayerInfo::new(&id, pool).await;
 
     if info.is_err() {
         let info_err = info.err().unwrap().to_string();
 
         let err = Error{
             status: 500,
-            message: info_err,
+            message: info_err.clone(),
         };
-
         return HttpResponse::Ok().json(err);
     }
 

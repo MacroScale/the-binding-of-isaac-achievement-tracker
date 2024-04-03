@@ -1,6 +1,8 @@
 use serde::{Serialize, Deserialize};
+use sqlx::PgPool;
 use anyhow;
 
+use crate::models::log::Log;
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct Game{
@@ -21,7 +23,7 @@ pub struct PlayerGame{
 
 impl PlayerGame{
 
-    pub async fn new(steam_id: &i64) -> anyhow::Result<Option<Game>>{
+    pub async fn new(steam_id: &i64, pool: &PgPool) -> anyhow::Result<Option<Game>>{
 
         let STEAM_API_KEY = std::env::var("STEAM_API_KEY").expect("STEAM_API_KEY must be set.");
 
@@ -36,18 +38,18 @@ impl PlayerGame{
 
 
         if res.response.games.is_none(){
-            log::info!("Failed to get player game data: {:?}", res);
+            Log::send_log(&steam_id.to_string(), "player_game_data", &res_text, pool).await;
             return Err(anyhow::Error::msg("Failed to get player game data"));
         }
 
         let tboi_data = res.response.games.as_ref().unwrap().iter().find(|x| x.appid == 250900);
 
         if tboi_data.is_none(){
-            log::info!("Failed to get player game data: {:?}", res);
+            Log::send_log(&steam_id.to_string(), "player_game_data", &res_text, pool).await;
             return Err(anyhow::Error::msg("Failed to get player game data"));
         }
 
-        log::info!("player game data grabbed successfully");
+        Log::send_log(&steam_id.to_string(), "player_game_data", "", pool).await;
 
         Ok(tboi_data.cloned())
     }

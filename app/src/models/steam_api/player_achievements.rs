@@ -1,5 +1,9 @@
 use serde::{Serialize, Deserialize};
+use sqlx::PgPool;
 use anyhow;
+
+use crate::models::log::Log;
+
 
 
 #[derive(Serialize, Deserialize, Debug)]
@@ -24,7 +28,7 @@ pub struct Achievement{
 }
 
 impl PlayerAchievements{
-    pub async fn new(steam_id: &i64) -> anyhow::Result<PlayerAchievements>{
+    pub async fn new(steam_id: &i64, pool: &PgPool) -> anyhow::Result<PlayerAchievements>{
 
         let STEAM_API_KEY = std::env::var("STEAM_API_KEY").expect("STEAM_API_KEY must be set.");
 
@@ -38,12 +42,13 @@ impl PlayerAchievements{
         let res = serde_json::from_str::<PlayerAchievements>(&res_text);
 
         if res.is_err(){
-            log::info!("Failed to get player achievements: {:?}", res.err());
+            Log::send_log(&steam_id.to_string(), "player_achievements", &res.err().unwrap().to_string(), &pool).await;
             return Err(anyhow::Error::msg("Failed to get player achievements"));
         }
 
         let res = res.unwrap();
-        log::info!("player achievement grabbed successfully");
+
+        Log::send_log(&steam_id.to_string(), "player_achievements", "", &pool).await;
 
         Ok(res)
 
