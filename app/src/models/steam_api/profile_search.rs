@@ -87,8 +87,8 @@ pub fn get_steamid_from_url(url: &str) -> anyhow::Result<i64>{
 
 pub async fn get_steamid_from_vanity(vanity: String) -> anyhow::Result<i64>{
 
-    let STEAM_API_KEY = std::env::var("STEAM_API_KEY").expect("STEAM_API_KEY must be set.");
-    let url = format!("http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key={}&vanityurl={}", STEAM_API_KEY, vanity);
+    let steam_api_key = std::env::var("STEAM_API_KEY").expect("STEAM_API_KEY must be set.");
+    let url = format!("http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key={}&vanityurl={}", steam_api_key, vanity);
 
     //get fetch json
     let fetch = reqwest::get(&url).await?;

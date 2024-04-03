@@ -1,4 +1,3 @@
-use serde::{Serialize, Deserialize};
 use sqlx::PgPool;
 use crate::database::database;
 

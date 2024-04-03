@@ -1,15 +1,10 @@
-
-
-use std::fs::File;
 use std::fs;
 use std::io::prelude::*;
-use std::path::Path;
 
 use serde::{Serialize, Deserialize};
 use chrono::{DateTime, Utc};
 use anyhow;
 
-use crate::models::youtube_api::video_list::VideoList;
 use crate::models::youtube_api::youtuber::Youtuber;
 
 

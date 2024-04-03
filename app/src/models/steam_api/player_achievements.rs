@@ -13,8 +13,10 @@ pub struct PlayerAchievements{
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct PlayerStats{
-   pub steamID: Option<String>, 
-   pub gameName: Option<String>,
+   #[serde(rename = "steamID")]
+   pub steam_id: Option<String>, 
+   #[serde(rename = "gameName")]
+   pub game_name: Option<String>,
    pub error: Option<String>,
    pub success: Option<bool>,
    pub achievements: Option<Vec<Achievement>>,
@@ -30,9 +32,9 @@ pub struct Achievement{
 impl PlayerAchievements{
     pub async fn new(steam_id: &i64, pool: &PgPool) -> anyhow::Result<PlayerAchievements>{
 
-        let STEAM_API_KEY = std::env::var("STEAM_API_KEY").expect("STEAM_API_KEY must be set.");
+        let steam_api_key = std::env::var("STEAM_API_KEY").expect("STEAM_API_KEY must be set.");
 
-        let url = format!("http://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v0001/?appid=250900&key={}&steamid={}", STEAM_API_KEY, steam_id);
+        let url = format!("http://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v0001/?appid=250900&key={}&steamid={}", steam_api_key, steam_id);
 
         log::info!("url: {:?}", &url);
 

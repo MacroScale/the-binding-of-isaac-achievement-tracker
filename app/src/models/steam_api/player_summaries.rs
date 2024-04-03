@@ -39,9 +39,9 @@ impl PlayerSummary{
 
     pub async fn new(steam_id: &i64, pool: &PgPool) -> anyhow::Result<PlayerSummary>{
 
-        let STEAM_API_KEY = std::env::var("STEAM_API_KEY").expect("STEAM_API_KEY must be set.");
+        let steam_api_key = std::env::var("STEAM_API_KEY").expect("STEAM_API_KEY must be set.");
 
-        let url = format!("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key={}&steamids={}", STEAM_API_KEY, steam_id);
+        let url = format!("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key={}&steamids={}", steam_api_key, steam_id);
 
         log::info!("url: {:?}", &url);
 
@@ -65,9 +65,9 @@ impl PlayerSummary{
 
     pub async fn check(steam_id: &i64) -> anyhow::Result<PlayerSummary>{
 
-        let STEAM_API_KEY = std::env::var("STEAM_API_KEY").expect("STEAM_API_KEY must be set.");
+        let steam_api_key = std::env::var("STEAM_API_KEY").expect("STEAM_API_KEY must be set.");
 
-        let url = format!("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key={}&steamids={}", STEAM_API_KEY, steam_id);
+        let url = format!("http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key={}&steamids={}", steam_api_key, steam_id);
 
         log::info!("url: {:?}", &url);
 

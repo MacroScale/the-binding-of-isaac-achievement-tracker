@@ -8,7 +8,6 @@ use crate::models::steam_api::player_game_data::PlayerGame;
 use crate::models::steam_api::player_game_data::Game;
 use crate::models::character_unlocks::Character;
 use crate::models::achievement_image::AchievementImg;
-use crate::models::log::Log;
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct PlayerInfo{

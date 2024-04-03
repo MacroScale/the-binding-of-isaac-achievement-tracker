@@ -25,9 +25,9 @@ impl PlayerGame{
 
     pub async fn new(steam_id: &i64, pool: &PgPool) -> anyhow::Result<Option<Game>>{
 
-        let STEAM_API_KEY = std::env::var("STEAM_API_KEY").expect("STEAM_API_KEY must be set.");
+        let steam_api_key = std::env::var("STEAM_API_KEY").expect("STEAM_API_KEY must be set.");
 
-        let url = format!("http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key={}&steamid={}", STEAM_API_KEY, steam_id);
+        let url = format!("http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key={}&steamid={}", steam_api_key, steam_id);
 
         log::info!("url: {:?}", &url);
 
