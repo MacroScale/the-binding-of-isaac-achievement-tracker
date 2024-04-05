@@ -156,6 +156,18 @@ $(document).ready( async function(){
         $(this).removeClass("hovering");
     });
 
+
+    $("body").on("mouseenter", "#current-achievement-icon", async function(){
+        $("#current-achievement-icon-box").show() 
+        $("#current-achievement-icon-text").show() 
+        await getAchievementUnlockCondition();
+    });
+
+    $("body").on("mouseleave", "#current-achievement-icon", async function(){
+        $("#current-achievement-icon-box").hide() 
+        $("#current-achievement-icon-text").hide() 
+    });
+
     await init();
 })
 

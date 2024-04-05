@@ -6,6 +6,8 @@ var _app_state = {
     current_achievement_id: 0,
 }
 
+var _achievement_unlock_condition = null;
+
 const mark_map = new Map([
     ["#heart", "/static/completion marks/completion marks/moms_heart.png"],
     ["#isaac", "/static/completion marks/completion marks/isaac.png"],
@@ -235,6 +237,7 @@ function updateAchievements(achievement_id=_app_state.current_achievement_id, ac
     for (let idx = 0; idx < 7; idx++){
         let next_id = (achievement_id - 3) + idx;
         if (next_id < 0) next_id = achievements.length + next_id;
+        else if (next_id > 636) next_id = next_id - achievements.length;
         seven_page_ids.push(next_id+1);
     }
 
@@ -267,6 +270,7 @@ function updateAchievements(achievement_id=_app_state.current_achievement_id, ac
     updateAchievementInputNumber(achievement_id);
     updateSevenPageAchievements(seven_page_images);
     updateAchievementText(achievementText)
+    updateAchievementSteamIcon(achievement_id);
 }
 
 function populateAchievementsTable(achievements, achievementImageData){
@@ -367,3 +371,31 @@ function insertAchievementsTable(achievement_id, achievementText, achieved){
 }
 
 
+async function getAchievementUnlockCondition(apiname = _app_state.current_achievement_id){
+
+    let data = null;
+
+    if (!_achievement_unlock_condition){
+        //grab data
+        let condition_data = await fetch(`/static/achievements/achievement_conditions.json`);
+        data = await condition_data.json();
+        _achievement_unlock_condition = data;
+        console.log(data);
+    }
+
+    //get achievement text
+    let target_id = apiname+1;
+    console.log(target_id)
+    let achievement_data = _achievement_unlock_condition.filter(achieve => achieve.achievement_id == target_id);
+    console.log(achievement_data);
+    let achievement_text = achievement_data[0].achievement_condition;
+
+    //set achievement text
+    $("#current-achievement-icon-text").text(achievement_text);
+
+}
+
+
+function updateAchievementSteamIcon(achievement_id){
+    $("#current-achievement-icon").attr("src", `/static/achievement search/steam_icons/${achievement_id+1}.png`);
+}
