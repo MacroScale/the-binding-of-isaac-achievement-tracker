@@ -41,6 +41,8 @@ pub async fn validate_steam_id(steam_id: &str) -> anyhow::Result<i64> {
         let mut steam_id = steam_id.to_string();
 
         if is_vanity_url(&steam_id) {
+            // if url ends with / remove it
+            if steam_id.ends_with("/") {steam_id = steam_id[..steam_id.len()-1].to_owned();}
             let vanity = steam_id.split("/").last().unwrap().to_owned();
             steam_id = vanity;
         }
@@ -58,6 +60,7 @@ pub async fn validate_steam_id(steam_id: &str) -> anyhow::Result<i64> {
 
     // if is url and not an id
     let steam_id = get_steamid_from_url(steam_id);
+        
     if steam_id.is_ok() {
         let steam_id = steam_id.unwrap();
         let summary = PlayerSummary::check(&steam_id).await;
@@ -81,6 +84,7 @@ pub fn is_steamid(url: &str) -> bool{
     false
 }
 pub fn get_steamid_from_url(url: &str) -> anyhow::Result<i64>{
+    let url = if url.ends_with("/") {&url[..url.len()-1]} else {url};
     let id = url.split("/").last().unwrap().parse::<i64>()?;
     Ok(id)
 }
