@@ -89,7 +89,7 @@ $(document).ready( async function(){
         try{
             let val = parseInt($(this).val());
             if (val < 1) val = 1;
-            if (val > 637) val = 637;
+            if (val > 640) val = 640;
 
             _app_state.current_achievement_id = val - 1;
             updateAchievements();

@@ -3199,6 +3199,22 @@ impl AchievementImg{
             _text: "Dead God!".to_string(),
             _gfx: "achievement_deadgod.png".to_string(),
         });
+        achievements.push(AchievementImg{
+            _id: 638,
+            _text: "Play an online match".to_string(),
+            _gfx: "".to_string(),
+        });
+        achievements.push(AchievementImg{
+            _id: 639,
+            _text: "Win an online match".to_string(),
+            _gfx: "".to_string(),
+        });
+        achievements.push(AchievementImg{
+            _id: 640,
+            _text: "Win an online Daily Run	".to_string(),
+            _gfx: "".to_string(),
+        });
+
 
         achievements
     }

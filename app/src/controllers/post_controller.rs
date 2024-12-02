@@ -51,10 +51,10 @@ fn create_hours_played_cookie(steam_id: &str, completed: &i32, hours_played: &i6
 
 
     let completed = completed.clone();
-    let steam_id = steam_id.clone().to_string();
+    let steam_id = steam_id.to_string();
     let hours_played = hours_played.clone();
 
-    let percentage = (completed as f32 / 637.0) * 100.0;
+    let percentage = (completed as f32 / 640.0) * 100.0;
     let percentage = percentage as i32;
     
     let cookie = AchievementCookie{

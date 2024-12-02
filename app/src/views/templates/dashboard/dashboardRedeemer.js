@@ -96,7 +96,7 @@ function processProfileSearch(res){
 function createNavPlaytimeInfo(){
     let html = `
         <img src="/static/logo.png">
-        <h2><span id="completed-achievements">0</span>/637 (<span id="completed-achievements-percentage">0</span>%)</h2>
+        <h2><span id="completed-achievements">0</span>/640 (<span id="completed-achievements-percentage">0</span>%)</h2>
         <h2><span id="playtime"></span> Hours</h2>
     `
     $(".nav-center").html(html);
@@ -223,9 +223,11 @@ function updateAchievements(achievement_id=_app_state.current_achievement_id, ac
 
     let completed_achievements = null;
 
+    let mod = (x,y) => { return ((x % y) + y) % y; }
+
     for (let idx = 0; idx < 7; idx++){
-        let next_id = (achievement_id - 3) + idx;
-        if (next_id < 0) next_id = achievements.length + next_id;
+        let next_id = achievement_id - 3 + idx;
+        next_id = mod(next_id, achievements.length);
         seven_page_ids.push(next_id+1);
     }
 
@@ -322,7 +324,7 @@ function updateSevenPageAchievements(seven_page_images){
 
     for (let idx = 0; idx < seven_page_images.length; idx++){
         let achievement = seven_page_images[idx];
-        let locked = achievement.achieved === 0;
+        let locked = achievement.achieved == 0;
 
         let original_url = $(`#page-${idx+1}`).attr("src");
         let original_suffix = original_url.match(/\d+/)[0];
@@ -347,7 +349,7 @@ function updateAchievementText(achievementText){
 
 function updateAchievementProgress(completed_achievements){
 
-    let percentage = Math.trunc((completed_achievements / 637) * 100);
+    let percentage = Math.trunc((completed_achievements / 640) * 100);
 
     $("#completed-achievements").text(completed_achievements);
     $("#completed-achievements-percentage").text(percentage);
