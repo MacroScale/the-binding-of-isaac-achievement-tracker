@@ -34,12 +34,9 @@ jobs:
         cache-from: type=registry,ref=${{ secrets.REGISTRY_URL }}/tboiat:cache
         cache-to: type=inline,mode=max
 
-  test:
-    runs-on: self-hosted
-
   deploy:
       runs-on: self-hosted
-      needs: test
+      needs: build 
       steps:
       - name: Deploy App to CapRover
         uses: caprover/deploy-from-github@v1.0.1
