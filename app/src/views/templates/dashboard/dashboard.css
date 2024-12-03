@@ -272,6 +272,34 @@ input[type=number] {
 .achievements-page{
     position: relative;
 }
+
+#current-achievement-icon{
+    width: 9%;
+    height: auto;
+    left: 85%;
+    top: 5%;
+    z-index: 3;
+}
+
+#current-achievement-icon-box{
+    width: 56%;
+    height: auto;
+    left: 82%;
+    top: -2%;
+    z-index: 2;
+    display: none;
+}
+
+#current-achievement-icon-text{
+    width: 38%;
+    height: 25%;
+    left: 96%;
+    top: 0%;
+    z-index: 2;
+    font-size: 1.4vw;
+    display: none;
+}
+
 .achievements-navbar{
     width: 100%;
     height: auto;
@@ -411,4 +439,5 @@ input[type=number] {
     top: 59.3%;
     left: 36%;
 }
+
 

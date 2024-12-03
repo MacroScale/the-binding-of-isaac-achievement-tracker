@@ -33,8 +33,6 @@ impl SteamNews{
 
     pub async fn new() -> anyhow::Result<SteamNews>{
 
-        let STEAM_API_KEY = std::env::var("STEAM_API_KEY").expect("STEAM_API_KEY must be set.");
-
         let url = "https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=250900".to_string();
 
         //get fetch json

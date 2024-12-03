@@ -6,6 +6,8 @@ var _app_state = {
     current_achievement_id: 0,
 }
 
+var _achievement_unlock_condition = null;
+
 const mark_map = new Map([
     ["#heart", "/static/completion marks/completion marks/moms_heart.png"],
     ["#isaac", "/static/completion marks/completion marks/isaac.png"],
@@ -21,6 +23,43 @@ const mark_map = new Map([
     ["#wrinkled-paper", "/static/completion marks/completion marks/delirium.png"],
 ]);
 
+const dance_map = new Map([
+    ["0", "/static/dance_gif/isaac.gif"],
+    ["1", "/static/dance_gif/mag.gif"],
+    ["2", "/static/dance_gif/cain.gif"],
+    ["3", "/static/dance_gif/judas.gif"],
+    ["4", "/static/dance_gif/blue_baby.gif"],
+    ["5", "/static/dance_gif/eve.gif"],
+    ["6", "/static/dance_gif/samson.gif"],
+    ["7", "/static/dance_gif/azazel.gif"],
+    ["8", "/static/dance_gif/lazarus.gif"],
+    ["9", "/static/dance_gif/eden.gif"],
+    ["10", "/static/dance_gif/the_lost.gif"],
+    ["11", "/static/dance_gif/lilith.gif"],
+    ["12", "/static/dance_gif/the_keeper.gif"],
+    ["13", "/static/dance_gif/apollyon.gif"],
+    ["14", "/static/dance_gif/the_forgotten.gif"],
+    ["15", "/static/dance_gif/bethany.gif"],
+    ["16", "/static/dance_gif/esau.gif"],
+// tainted
+    ["16", "/static/dance_gif/isaac.gif"],
+    ["17", "/static/dance_gif/mag.gif"],
+    ["18", "/static/dance_gif/cain.gif"],
+    ["19", "/static/dance_gif/judas.gif"],
+    ["20", "/static/dance_gif/blue_baby.gif"],
+    ["21", "/static/dance_gif/eve.gif"],
+    ["22", "/static/dance_gif/samson.gif"],
+    ["23", "/static/dance_gif/azazel.gif"],
+    ["24", "/static/dance_gif/lazarus.gif"],
+    ["25", "/static/dance_gif/eden.gif"],
+    ["26", "/static/dance_gif/the_lost.gif"],
+    ["27", "/static/dance_gif/lilith.gif"],
+    ["28", "/static/dance_gif/the_keeper.gif"],
+    ["29", "/static/dance_gif/apollyon.gif"],
+    ["30", "/static/dance_gif/the_forgotten.gif"],
+    ["31", "/static/dance_gif/bethany.gif"],
+    ["32", "/static/dance_gif/esau.gif"],
+]);
 
 
 function getCharacterData(character_id, characterData){
@@ -38,6 +77,15 @@ async function ProfileSearchRedeemer(req){
 
     if (!validateSteamData(_steam_data)){
         console.log(_steam_data);
+
+        if (_steam_data.message === "Invalid steam id"){
+            $("#modal-img").attr("src", "/static/error popups/No_Profile.png");
+        }
+        else if (_steam_data.message === "Failed to get player game data"){
+            $("#modal-img").attr("src", "/static/error popups/No_Game_Data.png");
+        }
+
+
         $(".content").css("filter", "blur(5px)");
         $(".navbar").css("filter", "blur(5px)");
         $(".modal-wrapper").show();
@@ -65,11 +113,11 @@ async function ProfileSearchRedeemer(req){
 
 function processProfileSearch(res){
     if (res.status === 200) {
-        let summary = res.player_summary.response.players[0];
-        let achievements = res.player_achievements.playerstats.achievements;
-        let gameData = res.player_game_data;
-        let characterData = res.character_data;
-        let achievementImageData = res.achievement_image_data;
+        let summary = res.player_summary.response.players[0] ?? {};
+        let achievements = res.player_achievements.playerstats.achievements ?? [];
+        let gameData = res.player_game_data ?? {};
+        let characterData = res.character_data ?? [];
+        let achievementImageData = res.achievement_image_data ?? [];
 
         return {
             status: res.status,
@@ -260,6 +308,13 @@ function updateAchievements(achievement_id=_app_state.current_achievement_id, ac
     updateAchievementInputNumber(achievement_id);
     updateSevenPageAchievements(seven_page_images);
     updateAchievementText(achievementText)
+    updateAchievementSteamIcon(achievement_id);
+}
+
+function updateDancingCharacter(character_id){
+    let characterDanceGif = dance_map.get(character_id.toString());
+    console.log(characterDanceGif);
+    $("#dancing-character").attr("src", characterDanceGif);
 }
 
 function populateAchievementsTable(achievements, achievementImageData){
@@ -324,7 +379,7 @@ function updateSevenPageAchievements(seven_page_images){
 
     for (let idx = 0; idx < seven_page_images.length; idx++){
         let achievement = seven_page_images[idx];
-        let locked = achievement.achieved == 0;
+        let locked = achievement.achieved === 0;
 
         let original_url = $(`#page-${idx+1}`).attr("src");
         let original_suffix = original_url.match(/\d+/)[0];
@@ -360,3 +415,31 @@ function insertAchievementsTable(achievement_id, achievementText, achieved){
 }
 
 
+async function getAchievementUnlockCondition(apiname = _app_state.current_achievement_id){
+
+    let data = null;
+
+    if (!_achievement_unlock_condition){
+        //grab data
+        let condition_data = await fetch(`/static/achievements/achievement_conditions.json`);
+        data = await condition_data.json();
+        _achievement_unlock_condition = data;
+        console.log(data);
+    }
+
+    //get achievement text
+    let target_id = apiname+1;
+    console.log(target_id)
+    let achievement_data = _achievement_unlock_condition.filter(achieve => achieve.achievement_id == target_id);
+    console.log(achievement_data);
+    let achievement_text = achievement_data[0].achievement_condition;
+
+    //set achievement text
+    $("#current-achievement-icon-text").text(achievement_text);
+
+}
+
+
+function updateAchievementSteamIcon(achievement_id){
+    $("#current-achievement-icon").attr("src", `/static/achievement search/steam_icons/${achievement_id+1}.png`);
+}

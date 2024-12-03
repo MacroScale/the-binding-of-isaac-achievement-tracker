@@ -6,6 +6,15 @@ $(document).ready( async function(){
         window.history.pushState({}, "Dashboard", "/dashboard?steam_id=" + $("#profile-search-input").val());
     })
 
+
+    $("body").on("keyup", "#profile-search-input", async function(e){
+        if (e.key === "Enter"){
+            postProfileSearch($("#profile-search-input").val());
+            window.history.pushState({}, "Dashboard", "/dashboard?steam_id=" + $("#profile-search-input").val());
+        }
+    })
+
+
     $("body").on("keyup", "#modal-search-profile", async function(e){
         if (e.key === "Enter"){
             postProfileSearch($("#modal-search-profile").val());
@@ -22,6 +31,7 @@ $(document).ready( async function(){
 
             updateCharacterOverlay();
             updateCompletionMarks();
+            updateDancingCharacter(_app_state.current_character_id);
 
             return;
         }
@@ -31,6 +41,7 @@ $(document).ready( async function(){
 
         updateCharacterOverlay();
         updateCompletionMarks();
+        updateDancingCharacter(_app_state.current_character_id);
     })
 
     $("body").on("click", "#prev-char", function(){
@@ -42,6 +53,7 @@ $(document).ready( async function(){
 
             updateCharacterOverlay();
             updateCompletionMarks();
+            updateDancingCharacter(_app_state.current_character_id);
 
             return;
         }
@@ -51,6 +63,7 @@ $(document).ready( async function(){
 
         updateCharacterOverlay();
         updateCompletionMarks();
+        updateDancingCharacter(_app_state.current_character_id);
     });
 
 
@@ -145,6 +158,18 @@ $(document).ready( async function(){
 
     $("body").on("mouseleave", "#achievements-listbox-table tr", function(){
         $(this).removeClass("hovering");
+    });
+
+
+    $("body").on("mouseenter", "#current-achievement-icon", async function(){
+        $("#current-achievement-icon-box").show() 
+        $("#current-achievement-icon-text").show() 
+        await getAchievementUnlockCondition();
+    });
+
+    $("body").on("mouseleave", "#current-achievement-icon", async function(){
+        $("#current-achievement-icon-box").hide() 
+        $("#current-achievement-icon-text").hide() 
     });
 
     await init();

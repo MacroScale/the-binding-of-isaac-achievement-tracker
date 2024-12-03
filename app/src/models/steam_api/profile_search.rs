@@ -1,5 +1,7 @@
 use serde::{Deserialize};
+use sqlx::PgPool;
 use crate::models::steam_api::player_summaries::PlayerSummary;
+use crate::models::log::Log;
 use anyhow;
 
 #[derive(Deserialize, Debug)]
@@ -15,8 +17,17 @@ pub struct ProfileSearch{
 }
 
 impl ProfileSearch{
-    pub async fn new(steam_id: &str) -> anyhow::Result<i64>{
-       let id = validate_steam_id(steam_id).await?; 
+    pub async fn new(steam_id: &str, pool: &PgPool) -> anyhow::Result<i64>{
+       let id = validate_steam_id(steam_id).await; 
+
+       if id.is_err(){
+           let err = id.err().unwrap().to_string();
+           Log::send_log(&steam_id, "profile_search", &err, pool).await;
+           return Err(anyhow::anyhow!(err));
+       }
+
+       let id = id.unwrap();
+       Log::send_log(&steam_id, "profile_search", "", pool).await;
        Ok(id)
     }
 }
@@ -30,6 +41,8 @@ pub async fn validate_steam_id(steam_id: &str) -> anyhow::Result<i64> {
         let mut steam_id = steam_id.to_string();
 
         if is_vanity_url(&steam_id) {
+            // if url ends with / remove it
+            if steam_id.ends_with("/") {steam_id = steam_id[..steam_id.len()-1].to_owned();}
             let vanity = steam_id.split("/").last().unwrap().to_owned();
             steam_id = vanity;
         }
@@ -41,15 +54,16 @@ pub async fn validate_steam_id(steam_id: &str) -> anyhow::Result<i64> {
 
     // if just steam_id
     if !is_steam_url(steam_id) && is_steamid(steam_id){
-        let summary = PlayerSummary::new(&steam_id.parse::<i64>().unwrap()).await;
+        let summary = PlayerSummary::check(&steam_id.parse::<i64>().unwrap()).await;
         if summary.is_ok() {return Ok(steam_id.parse::<i64>().unwrap());}
     }    
 
     // if is url and not an id
     let steam_id = get_steamid_from_url(steam_id);
+        
     if steam_id.is_ok() {
         let steam_id = steam_id.unwrap();
-        let summary = PlayerSummary::new(&steam_id).await;
+        let summary = PlayerSummary::check(&steam_id).await;
         if summary.is_ok() {return Ok(steam_id);}
     }
 
@@ -70,14 +84,15 @@ pub fn is_steamid(url: &str) -> bool{
     false
 }
 pub fn get_steamid_from_url(url: &str) -> anyhow::Result<i64>{
+    let url = if url.ends_with("/") {&url[..url.len()-1]} else {url};
     let id = url.split("/").last().unwrap().parse::<i64>()?;
     Ok(id)
 }
 
 pub async fn get_steamid_from_vanity(vanity: String) -> anyhow::Result<i64>{
 
-    let STEAM_API_KEY = std::env::var("STEAM_API_KEY").expect("STEAM_API_KEY must be set.");
-    let url = format!("http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key={}&vanityurl={}", STEAM_API_KEY, vanity);
+    let steam_api_key = std::env::var("STEAM_API_KEY").expect("STEAM_API_KEY must be set.");
+    let url = format!("http://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key={}&vanityurl={}", steam_api_key, vanity);
 
     //get fetch json
     let fetch = reqwest::get(&url).await?;

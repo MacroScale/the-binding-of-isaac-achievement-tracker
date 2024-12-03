@@ -776,6 +776,8 @@ impl Character{
             hard_hard_all: -1,
         });
 
+        log::info!("characters loaded successfully");
+
         return characters;
     }
 }

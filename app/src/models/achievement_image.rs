@@ -3216,6 +3216,8 @@ impl AchievementImg{
         });
 
 
+        log::info!("achievements image data successfully");
+
         achievements
     }
 

@@ -16,20 +16,27 @@ pub struct Thumbnail{
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct Snippet{
-   pub publishedAt: String, 
-   pub channelId: String,
+   #[serde(rename = "publishedAt")]
+   pub published_at: String, 
+   #[serde(rename = "channelId")]
+   pub channel_id: String,
    pub title: String,
    pub description: String,
    pub thumbnails: Thumbnail,
-   pub channelTitle: String,
-   pub liveBroadcastContent: String,
-   pub publishTime: String,
+   #[serde(rename = "channelTitle")]
+   pub channel_title: String,
+
+   #[serde(rename = "liveBroadcastContent")]
+   pub live_broadcast_content: String,
+   #[serde(rename = "publishTime")]
+   pub publish_time: String,
 }
 
 #[derive(Serialize, Deserialize, Debug)]
 pub struct VideoID{
     pub kind: String, 
-    pub videoId: String,
+    #[serde(rename = "videoId")]
+    pub video_id: String,
 }
 
 #[derive(Serialize, Deserialize, Debug)]

@@ -1,0 +1,3202 @@
+﻿[
+  {
+    "achievement_id": "1",
+    "achievement_name": "Magdalene",
+    "achievement_condition": "Have 7 or more Red Heart Containers at one time"
+  },
+  {
+    "achievement_id": "2",
+    "achievement_name": "Cain",
+    "achievement_condition": "Hold 55 Coins at one time"
+  },
+  {
+    "achievement_id": "3",
+    "achievement_name": "Judas",
+    "achievement_condition": "Defeat Satan"
+  },
+  {
+    "achievement_id": "4",
+    "achievement_name": "The Womb",
+    "achievement_condition": "Defeat Mom"
+  },
+  {
+    "achievement_id": "5",
+    "achievement_name": "The Harbingers",
+    "achievement_condition": "Defeat Mom"
+  },
+  {
+    "achievement_id": "6",
+    "achievement_name": "A Cube of Meat",
+    "achievement_condition": "Defeat Mom"
+  },
+  {
+    "achievement_id": "7",
+    "achievement_name": "The Book of Revelations",
+    "achievement_condition": "Defeat a Harbinger"
+  },
+  {
+    "achievement_id": "8",
+    "achievement_name": "A Noose",
+    "achievement_condition": "Defeat Mom's Heart 3 times"
+  },
+  {
+    "achievement_id": "9",
+    "achievement_name": "The Nail",
+    "achievement_condition": "Complete the Boss Rush as Azazel"
+  },
+  {
+    "achievement_id": "10",
+    "achievement_name": "A Quarter",
+    "achievement_condition": "Defeat Mom's Heart 8 times"
+  },
+  {
+    "achievement_id": "11",
+    "achievement_name": "A Fetus in a Jar",
+    "achievement_condition": "Defeat Mom's Heart 9 times"
+  },
+  {
+    "achievement_id": "12",
+    "achievement_name": "A Small Rock",
+    "achievement_condition": "Destroy 100 Tinted Rocks"
+  },
+  {
+    "achievement_id": "13",
+    "achievement_name": "Monstro's Tooth",
+    "achievement_condition": "Beat Chapter 1"
+  },
+  {
+    "achievement_id": "14",
+    "achievement_name": "Lil' Chubby",
+    "achievement_condition": "Beat Chapter 2"
+  },
+  {
+    "achievement_id": "15",
+    "achievement_name": "Loki's Horns",
+    "achievement_condition": "Defeat Lokii"
+  },
+  {
+    "achievement_id": "16",
+    "achievement_name": "Something From The Future",
+    "achievement_condition": "Beat Basement 40 times"
+  },
+  {
+    "achievement_id": "17",
+    "achievement_name": "Something Cute",
+    "achievement_condition": "Beat Chapter 2 30 times"
+  },
+  {
+    "achievement_id": "18",
+    "achievement_name": "Something Sticky",
+    "achievement_condition": "Beat Chapter 3 20 times"
+  },
+  {
+    "achievement_id": "19",
+    "achievement_name": "A Bandage",
+    "achievement_condition": "Make a Super Bandage Girl by picking up 4 copies of Ball of Bandages in one run; see Unlocking Super Meat Boy & Super Bandage Girl"
+  },
+  {
+    "achievement_id": "20",
+    "achievement_name": "A Cross",
+    "achievement_condition": "Defeat Isaac as Magdalene"
+  },
+  {
+    "achievement_id": "21",
+    "achievement_name": "A Bag of Pennies",
+    "achievement_condition": "Defeat Isaac as Cain"
+  },
+  {
+    "achievement_id": "22",
+    "achievement_name": "The Book of Sin",
+    "achievement_condition": "Defeat all 7 Deadly Sins"
+  },
+  {
+    "achievement_id": "23",
+    "achievement_name": "Little Gish",
+    "achievement_condition": "Defeat Gish"
+  },
+  {
+    "achievement_id": "24",
+    "achievement_name": "Little Steven",
+    "achievement_condition": "Defeat Steven"
+  },
+  {
+    "achievement_id": "25",
+    "achievement_name": "Little C.H.A.D.",
+    "achievement_condition": "Defeat C.H.A.D."
+  },
+  {
+    "achievement_id": "26",
+    "achievement_name": "A Gamekid",
+    "achievement_condition": "Visit 10 Arcades"
+  },
+  {
+    "achievement_id": "27",
+    "achievement_name": "A Halo",
+    "achievement_condition": "Defeat Mom , Mom's Heart , or It Lives! using The Bible"
+  },
+  {
+    "achievement_id": "28",
+    "achievement_name": "Mr. Mega",
+    "achievement_condition": "Destroy 10 Tinted Rocks"
+  },
+  {
+    "achievement_id": "29",
+    "achievement_name": "The D6",
+    "achievement_condition": "Defeat Isaac as ???"
+  },
+  {
+    "achievement_id": "30",
+    "achievement_name": "The Scissors",
+    "achievement_condition": "Die 100 times"
+  },
+  {
+    "achievement_id": "31",
+    "achievement_name": "The Parasite",
+    "achievement_condition": "Pick up any 2 of the following items in a single run: Bob's Rotten Head , Dead Cat , Cricket's Head , and Tammy's Head ( Added in Repentance Any 2 items that have the 'dead' item tag )"
+  },
+  {
+    "achievement_id": "32",
+    "achievement_name": "???",
+    "achievement_condition": "Defeat Mom's Heart 10 times"
+  },
+  {
+    "achievement_id": "33",
+    "achievement_name": "Everything Is Terrible!!!",
+    "achievement_condition": "Defeat Mom's Heart 5 times"
+  },
+  {
+    "achievement_id": "34",
+    "achievement_name": "It Lives!",
+    "achievement_condition": "Defeat Mom's Heart 11 times"
+  },
+  {
+    "achievement_id": "35",
+    "achievement_name": "Mom's Contact",
+    "achievement_condition": "Obtain three Yes Mother? items in one run"
+  },
+  {
+    "achievement_id": "36",
+    "achievement_name": "The Necronomicon",
+    "achievement_condition": "Use XIII - Death 4 times"
+  },
+  {
+    "achievement_id": "37",
+    "achievement_name": "Basement Boy",
+    "achievement_condition": "Beat Chapter 1 without taking damage"
+  },
+  {
+    "achievement_id": "38",
+    "achievement_name": "Spelunker Boy",
+    "achievement_condition": "Beat Chapter 2 without taking damage"
+  },
+  {
+    "achievement_id": "39",
+    "achievement_name": "Dark Boy",
+    "achievement_condition": "Beat Chapter 3 without taking damage"
+  },
+  {
+    "achievement_id": "40",
+    "achievement_name": "Mama's Boy",
+    "achievement_condition": "Beat Chapter 4 without taking damage"
+  },
+  {
+    "achievement_id": "41",
+    "achievement_name": "Golden God!",
+    "achievement_condition": "Defeat ??? and The Lamb"
+  },
+  {
+    "achievement_id": "42",
+    "achievement_name": "Eve",
+    "achievement_condition": "Don't pick up any Hearts for 2 floors in a row"
+  },
+  {
+    "achievement_id": "43",
+    "achievement_name": "Mom's Knife",
+    "achievement_condition": "Defeat Satan as Isaac"
+  },
+  {
+    "achievement_id": "44",
+    "achievement_name": "The Razor",
+    "achievement_condition": "Defeat Satan as Eve"
+  },
+  {
+    "achievement_id": "45",
+    "achievement_name": "Guardian Angel",
+    "achievement_condition": "Defeat Satan as Magdalene"
+  },
+  {
+    "achievement_id": "46",
+    "achievement_name": "A Bag of Bombs",
+    "achievement_condition": "Defeat Satan as Cain"
+  },
+  {
+    "achievement_id": "47",
+    "achievement_name": "Demon Baby",
+    "achievement_condition": "Defeat The Lamb as Azazel"
+  },
+  {
+    "achievement_id": "48",
+    "achievement_name": "Forget Me Now",
+    "achievement_condition": "Defeat Satan as ???"
+  },
+  {
+    "achievement_id": "49",
+    "achievement_name": "The D20",
+    "achievement_condition": "Defeat ??? as Isaac"
+  },
+  {
+    "achievement_id": "50",
+    "achievement_name": "Celtic Cross",
+    "achievement_condition": "Defeat ??? as Magdalene"
+  },
+  {
+    "achievement_id": "51",
+    "achievement_name": "Abel",
+    "achievement_condition": "Defeat The Lamb as Cain"
+  },
+  {
+    "achievement_id": "52",
+    "achievement_name": "Curved Horn",
+    "achievement_condition": "Defeat The Lamb as Judas"
+  },
+  {
+    "achievement_id": "53",
+    "achievement_name": "Sacrificial Dagger",
+    "achievement_condition": "Defeat ??? as Eve"
+  },
+  {
+    "achievement_id": "54",
+    "achievement_name": "Bloody Lust",
+    "achievement_condition": "Defeat Isaac as Samson"
+  },
+  {
+    "achievement_id": "55",
+    "achievement_name": "Blood Penny",
+    "achievement_condition": "Defeat ??? as Samson"
+  },
+  {
+    "achievement_id": "56",
+    "achievement_name": "Blood Rights",
+    "achievement_condition": "Defeat Satan as Samson"
+  },
+  {
+    "achievement_id": "57",
+    "achievement_name": "The Polaroid",
+    "achievement_condition": "Defeat Isaac 5 times"
+  },
+  {
+    "achievement_id": "58",
+    "achievement_name": "Dad's Key",
+    "achievement_condition": "Pick up both Key Pieces from the Angels in one run"
+  },
+  {
+    "achievement_id": "59",
+    "achievement_name": "Blue Candle",
+    "achievement_condition": "Donate 900 coins to the Donation Machine"
+  },
+  {
+    "achievement_id": "60",
+    "achievement_name": "Burnt Penny",
+    "achievement_condition": "Complete Beans! (challenge #13)"
+  },
+  {
+    "achievement_id": "61",
+    "achievement_name": "Lucky Toe",
+    "achievement_condition": "Blow up 20 Shopkeepers"
+  },
+  {
+    "achievement_id": "62",
+    "achievement_name": "Epic Fetus",
+    "achievement_condition": "Complete The Family Man (challenge #19)"
+  },
+  {
+    "achievement_id": "63",
+    "achievement_name": "SMB Super Fan",
+    "achievement_condition": "Complete It's in the Cards (challenge #14)"
+  },
+  {
+    "achievement_id": "64",
+    "achievement_name": "Counterfeit Coin",
+    "achievement_condition": "Play either Shell Game or Added in Repentance Hell Game 100 times"
+  },
+  {
+    "achievement_id": "65",
+    "achievement_name": "Guppy's Hairball",
+    "achievement_condition": "Become Guppy"
+  },
+  {
+    "achievement_id": "66",
+    "achievement_name": "A Forgotten Horseman",
+    "achievement_condition": "Take 10 Angel Room items"
+  },
+  {
+    "achievement_id": "67",
+    "achievement_name": "Samson",
+    "achievement_condition": "Complete 2 floors in a row without taking damage"
+  },
+  {
+    "achievement_id": "68",
+    "achievement_name": "Something Icky",
+    "achievement_condition": "Defeat Isaac 10 times"
+  },
+  {
+    "achievement_id": "69",
+    "achievement_name": "!Platinum God!",
+    "achievement_condition": "Collect all non-DLC items in the game, and unlock all of the secrets and endings (minus The Lost and his 6 unlockable items)"
+  },
+  {
+    "achievement_id": "70",
+    "achievement_name": "Isaac's Head",
+    "achievement_condition": "Complete the Boss Rush as Isaac"
+  },
+  {
+    "achievement_id": "71",
+    "achievement_name": "Maggy's Faith",
+    "achievement_condition": "Defeat The Lamb as Magdalene"
+  },
+  {
+    "achievement_id": "72",
+    "achievement_name": "Judas' Tongue",
+    "achievement_condition": "Defeat Satan as Judas"
+  },
+  {
+    "achievement_id": "73",
+    "achievement_name": "???'s Soul",
+    "achievement_condition": "Defeat The Lamb as ???"
+  },
+  {
+    "achievement_id": "74",
+    "achievement_name": "Samson's Lock",
+    "achievement_condition": "Defeat The Lamb as Samson"
+  },
+  {
+    "achievement_id": "75",
+    "achievement_name": "Cain's Eye",
+    "achievement_condition": "Defeat ??? as Cain"
+  },
+  {
+    "achievement_id": "76",
+    "achievement_name": "Eve's Bird Foot",
+    "achievement_condition": "Defeat Isaac as Eve"
+  },
+  {
+    "achievement_id": "77",
+    "achievement_name": "The Left Hand",
+    "achievement_condition": "Defeat Ultra Pride as any character, or ??? as Judas"
+  },
+  {
+    "achievement_id": "78",
+    "achievement_name": "The Negative",
+    "achievement_condition": "Defeat Satan 5 times"
+  },
+  {
+    "achievement_id": "79",
+    "achievement_name": "Azazel",
+    "achievement_condition": "Make 3 Deals with the Devil in one run"
+  },
+  {
+    "achievement_id": "80",
+    "achievement_name": "Lazarus",
+    "achievement_condition": "Have 4 or more Soul Hearts at one time"
+  },
+  {
+    "achievement_id": "81",
+    "achievement_name": "Eden",
+    "achievement_condition": "Complete Chapter 4"
+  },
+  {
+    "achievement_id": "82",
+    "achievement_name": "The Lost",
+    "achievement_condition": "Removed in Afterbirth It's complicated Added in Afterbirth Die in a Sacrifice Room while holding Missing Poster"
+  },
+  {
+    "achievement_id": "83",
+    "achievement_name": "Dead Boy",
+    "achievement_condition": "Complete Chapter 6 without taking damage"
+  },
+  {
+    "achievement_id": "84",
+    "achievement_name": "The Real Platinum God",
+    "achievement_condition": "Collect every non-DLC item , and unlock every secret and ending ."
+  },
+  {
+    "achievement_id": "85",
+    "achievement_name": "Lucky Rock",
+    "achievement_condition": "Destroy 100 rocks"
+  },
+  {
+    "achievement_id": "86",
+    "achievement_name": "The Cellar",
+    "achievement_condition": "Beat all Basement bosses ( Added in Repentance except Baby Plum ) (not restricted to beating bosses in The Basement)"
+  },
+  {
+    "achievement_id": "87",
+    "achievement_name": "The Catacombs",
+    "achievement_condition": "Beat all Caves bosses ( Added in Repentance except Bumbino ) (not restricted to beating bosses in The Caves)"
+  },
+  {
+    "achievement_id": "88",
+    "achievement_name": "The Necropolis",
+    "achievement_condition": "Beat all Depths bosses ( Added in Repentance except Reap Creep ) (not restricted to beating bosses in The Depths)"
+  },
+  {
+    "achievement_id": "89",
+    "achievement_name": "Rune of Hagalaz",
+    "achievement_condition": "Complete Pitch Black (challenge #1)"
+  },
+  {
+    "achievement_id": "90",
+    "achievement_name": "Rune of Jera",
+    "achievement_condition": "Complete High Brow (challenge #2)"
+  },
+  {
+    "achievement_id": "91",
+    "achievement_name": "Rune of Ehwaz",
+    "achievement_condition": "Complete Head Trauma (challenge #3)"
+  },
+  {
+    "achievement_id": "92",
+    "achievement_name": "Rune of Dagaz",
+    "achievement_condition": "Complete Darkness Falls (challenge #4)"
+  },
+  {
+    "achievement_id": "93",
+    "achievement_name": "Rune of Ansuz",
+    "achievement_condition": "Complete The Tank (challenge #5)"
+  },
+  {
+    "achievement_id": "94",
+    "achievement_name": "Rune of Perthro",
+    "achievement_condition": "Complete Solar System (challenge #6)"
+  },
+  {
+    "achievement_id": "95",
+    "achievement_name": "Rune of Berkano",
+    "achievement_condition": "Complete Purist (challenge #20)"
+  },
+  {
+    "achievement_id": "96",
+    "achievement_name": "Rune of Algiz",
+    "achievement_condition": "Complete Cat Got Your Tongue (challenge #8)"
+  },
+  {
+    "achievement_id": "97",
+    "achievement_name": "Chaos Card",
+    "achievement_condition": "Complete Demo Man (challenge #9)"
+  },
+  {
+    "achievement_id": "98",
+    "achievement_name": "Credit Card",
+    "achievement_condition": "Complete Cursed! (challenge #10)"
+  },
+  {
+    "achievement_id": "99",
+    "achievement_name": "Rules Card",
+    "achievement_condition": "Complete Glass Cannon (challenge #11)"
+  },
+  {
+    "achievement_id": "100",
+    "achievement_name": "Card Against Humanity",
+    "achievement_condition": "Complete When Life Gives You Lemons (challenge #12)"
+  },
+  {
+    "achievement_id": "101",
+    "achievement_name": "Swallowed Penny",
+    "achievement_condition": "Complete Slow Roll (challenge #15)"
+  },
+  {
+    "achievement_id": "102",
+    "achievement_name": "Robo-Baby 2.0",
+    "achievement_condition": "Complete Computer Savvy (challenge #16)"
+  },
+  {
+    "achievement_id": "103",
+    "achievement_name": "Death's Touch",
+    "achievement_condition": "Complete Waka Waka (challenge #17)"
+  },
+  {
+    "achievement_id": "104",
+    "achievement_name": "Technology .5",
+    "achievement_condition": "Complete The Host (challenge #18)"
+  },
+  {
+    "achievement_id": "105",
+    "achievement_name": "Missing No.",
+    "achievement_condition": "Complete the Boss Rush as Lazarus"
+  },
+  {
+    "achievement_id": "106",
+    "achievement_name": "Isaac's Tears",
+    "achievement_condition": "Defeat Isaac as Isaac"
+  },
+  {
+    "achievement_id": "107",
+    "achievement_name": "Guillotine",
+    "achievement_condition": "Defeat Isaac as Judas"
+  },
+  {
+    "achievement_id": "108",
+    "achievement_name": "Judas' Shadow",
+    "achievement_condition": "Complete the Boss Rush as Judas"
+  },
+  {
+    "achievement_id": "109",
+    "achievement_name": "Maggy's Bow",
+    "achievement_condition": "Complete the Boss Rush as Magdalene"
+  },
+  {
+    "achievement_id": "110",
+    "achievement_name": "Cain's Other Eye",
+    "achievement_condition": "Complete the Boss Rush as Cain"
+  },
+  {
+    "achievement_id": "111",
+    "achievement_name": "Black Lipstick",
+    "achievement_condition": "Defeat The Lamb as Eve"
+  },
+  {
+    "achievement_id": "112",
+    "achievement_name": "Eve's Mascara",
+    "achievement_condition": "Complete the Boss Rush as Eve"
+  },
+  {
+    "achievement_id": "113",
+    "achievement_name": "Fate",
+    "achievement_condition": "Defeat ??? as ???"
+  },
+  {
+    "achievement_id": "114",
+    "achievement_name": "???'s Only Friend",
+    "achievement_condition": "Complete the Boss Rush as ???"
+  },
+  {
+    "achievement_id": "115",
+    "achievement_name": "Samson's Chains",
+    "achievement_condition": "Complete the Boss Rush as Samson"
+  },
+  {
+    "achievement_id": "116",
+    "achievement_name": "Lazarus' Rags",
+    "achievement_condition": "Defeat Isaac as Lazarus"
+  },
+  {
+    "achievement_id": "117",
+    "achievement_name": "Broken Ankh",
+    "achievement_condition": "Defeat Satan as Lazarus"
+  },
+  {
+    "achievement_id": "118",
+    "achievement_name": "Store Credit",
+    "achievement_condition": "Defeat ??? as Lazarus"
+  },
+  {
+    "achievement_id": "119",
+    "achievement_name": "Pandora's Box",
+    "achievement_condition": "Defeat The Lamb as Lazarus"
+  },
+  {
+    "achievement_id": "120",
+    "achievement_name": "Suicide King",
+    "achievement_condition": "Complete Suicide King (challenge #7)"
+  },
+  {
+    "achievement_id": "121",
+    "achievement_name": "Blank Card",
+    "achievement_condition": "Defeat Isaac as Eden"
+  },
+  {
+    "achievement_id": "122",
+    "achievement_name": "Book of Secrets",
+    "achievement_condition": "Defeat Satan as Eden"
+  },
+  {
+    "achievement_id": "123",
+    "achievement_name": "Mysterious Paper",
+    "achievement_condition": "Defeat ??? as Eden"
+  },
+  {
+    "achievement_id": "124",
+    "achievement_name": "Mystery Sack",
+    "achievement_condition": "Defeat The Lamb as Eden"
+  },
+  {
+    "achievement_id": "125",
+    "achievement_name": "Undefined",
+    "achievement_condition": "Complete the Boss Rush as Eden"
+  },
+  {
+    "achievement_id": "126",
+    "achievement_name": "Satanic Bible",
+    "achievement_condition": "Defeat Isaac as Azazel"
+  },
+  {
+    "achievement_id": "127",
+    "achievement_name": "Daemon's Tail",
+    "achievement_condition": "Defeat Satan as Azazel"
+  },
+  {
+    "achievement_id": "128",
+    "achievement_name": "Abaddon",
+    "achievement_condition": "Defeat ??? as Azazel"
+  },
+  {
+    "achievement_id": "129",
+    "achievement_name": "Isaac's Heart",
+    "achievement_condition": "Defeat Isaac as The Lost"
+  },
+  {
+    "achievement_id": "130",
+    "achievement_name": "The Mind",
+    "achievement_condition": "Defeat Satan as The Lost"
+  },
+  {
+    "achievement_id": "131",
+    "achievement_name": "The Body",
+    "achievement_condition": "Defeat ??? as The Lost"
+  },
+  {
+    "achievement_id": "132",
+    "achievement_name": "The Soul",
+    "achievement_condition": "Defeat The Lamb as The Lost"
+  },
+  {
+    "achievement_id": "133",
+    "achievement_name": "The D100",
+    "achievement_condition": "Complete the Boss Rush as The Lost"
+  },
+  {
+    "achievement_id": "134",
+    "achievement_name": "Blue Map",
+    "achievement_condition": "Donate 10 Coins to the Donation Machine"
+  },
+  {
+    "achievement_id": "135",
+    "achievement_name": "There's Options",
+    "achievement_condition": "Donate 50 Coins to the Donation Machine"
+  },
+  {
+    "achievement_id": "136",
+    "achievement_name": "Black Candle",
+    "achievement_condition": "Donate 150 Coins to the Donation Machine"
+  },
+  {
+    "achievement_id": "137",
+    "achievement_name": "Red Candle",
+    "achievement_condition": "Donate 400 Coins to the Donation Machine"
+  },
+  {
+    "achievement_id": "138",
+    "achievement_name": "Stop Watch",
+    "achievement_condition": "Donate 999 Coins to the Donation Machine"
+  },
+  {
+    "achievement_id": "139",
+    "achievement_name": "Wire Coat Hanger",
+    "achievement_condition": "Defeat Mom's Heart 4 times"
+  },
+  {
+    "achievement_id": "140",
+    "achievement_name": "Ipecac",
+    "achievement_condition": "Defeat Mom's Heart 6 times"
+  },
+  {
+    "achievement_id": "141",
+    "achievement_name": "Experimental Treatment",
+    "achievement_condition": "Defeat Mom's Heart 7 times"
+  },
+  {
+    "achievement_id": "142",
+    "achievement_name": "Krampus",
+    "achievement_condition": "Take 20 items from Devil Rooms"
+  },
+  {
+    "achievement_id": "143",
+    "achievement_name": "Head of Krampus",
+    "achievement_condition": "Defeat Krampus"
+  },
+  {
+    "achievement_id": "144",
+    "achievement_name": "Super Meat Boy",
+    "achievement_condition": "Make a Super Meat Boy by picking up 4 copies of Cube of Meat in one run; see Unlocking Super Meat Boy & Super Bandage Girl"
+  },
+  {
+    "achievement_id": "145",
+    "achievement_name": "Butter Bean",
+    "achievement_condition": "Destroy 100 Poops"
+  },
+  {
+    "achievement_id": "146",
+    "achievement_name": "Little Baggy",
+    "achievement_condition": "Pick up any 2 of the following items in a single run: Roid Rage , The Virus , Growth Hormones , Experimental Treatment , and Speed Ball ( Added in Repentance Any 2 items that have the 'syringe' item tag )"
+  },
+  {
+    "achievement_id": "147",
+    "achievement_name": "Blood Bag",
+    "achievement_condition": "Use the Blood Donation Machine 30 times"
+  },
+  {
+    "achievement_id": "148",
+    "achievement_name": "The D4",
+    "achievement_condition": "Blow up 30 Slot Machine"
+  },
+  {
+    "achievement_id": "149",
+    "achievement_name": "Missing Poster",
+    "achievement_condition": "Defeat The Lamb as Isaac"
+  },
+  {
+    "achievement_id": "150",
+    "achievement_name": "Rubber Cement",
+    "achievement_condition": "Defeat Mom's Heart 2 times"
+  },
+  {
+    "achievement_id": "151",
+    "achievement_name": "Store Upgrade lv.1",
+    "achievement_condition": "Donate 20 Coins to the Donation Machine"
+  },
+  {
+    "achievement_id": "152",
+    "achievement_name": "Store Upgrade lv.2",
+    "achievement_condition": "Donate 100 Coins to the Donation Machine"
+  },
+  {
+    "achievement_id": "153",
+    "achievement_name": "Store Upgrade lv.3",
+    "achievement_condition": "Donate 200 Coins to the Donation Machine"
+  },
+  {
+    "achievement_id": "154",
+    "achievement_name": "Store Upgrade lv.4",
+    "achievement_condition": "Donate 600 Coins to the Donation Machine"
+  },
+  {
+    "achievement_id": "155",
+    "achievement_name": "Angels",
+    "achievement_condition": "Complete Chapter 6"
+  },
+  {
+    "achievement_id": "156",
+    "achievement_name": "Godhead",
+    "achievement_condition": "Earn all Removed in Afterbirth 5 / Added in Afterbirth / Removed in Afterbirth † 9 (except Ultra Greed ) / Added in Afterbirth † / Removed in Repentance 10 / Added in Repentance 12 Completion Marks on Hard mode as The Lost"
+  },
+  {
+    "achievement_id": "157",
+    "achievement_name": "Darkness Falls",
+    "achievement_condition": "Removed in Repentance Defeat Mom's Heart 11 times and unlock Eve Added in Repentance Defeat Mom's Heart 11 times and defeat ??? as Eve"
+  },
+  {
+    "achievement_id": "158",
+    "achievement_name": "The Tank",
+    "achievement_condition": "Have 7 or more Red Heart Containers at one time"
+  },
+  {
+    "achievement_id": "159",
+    "achievement_name": "Solar System",
+    "achievement_condition": "Defeat Mom's Heart 3 times"
+  },
+  {
+    "achievement_id": "160",
+    "achievement_name": "Suicide King",
+    "achievement_condition": "Defeat Mom's Heart 11 times and unlock Lazarus"
+  },
+  {
+    "achievement_id": "161",
+    "achievement_name": "Cat Got Your Tongue",
+    "achievement_condition": "Become Guppy"
+  },
+  {
+    "achievement_id": "162",
+    "achievement_name": "Demo Man",
+    "achievement_condition": "Defeat Mom's Heart 9 times"
+  },
+  {
+    "achievement_id": "163",
+    "achievement_name": "Cursed!",
+    "achievement_condition": "Have 7 or more Red Heart Containers at one time"
+  },
+  {
+    "achievement_id": "164",
+    "achievement_name": "Glass Cannon",
+    "achievement_condition": "Beat The Family Man (challenge #19) , defeat Lokii , and unlock Judas"
+  },
+  {
+    "achievement_id": "165",
+    "achievement_name": "The Family Man",
+    "achievement_condition": "Pick up both Key Pieces from the Angels in one run"
+  },
+  {
+    "achievement_id": "166",
+    "achievement_name": "Purist",
+    "achievement_condition": "Defeat Mom"
+  },
+  {
+    "achievement_id": "167",
+    "achievement_name": "Lost Baby",
+    "achievement_condition": "Defeat Mom's Heart on Hard mode as Isaac"
+  },
+  {
+    "achievement_id": "168",
+    "achievement_name": "Cute Baby",
+    "achievement_condition": "Defeat Mom's Heart on Hard mode as Magdalene"
+  },
+  {
+    "achievement_id": "169",
+    "achievement_name": "Crow Baby",
+    "achievement_condition": "Defeat Mom's Heart on Hard mode as Eve"
+  },
+  {
+    "achievement_id": "170",
+    "achievement_name": "Shadow Baby",
+    "achievement_condition": "Defeat Mom's Heart on Hard mode as Judas"
+  },
+  {
+    "achievement_id": "171",
+    "achievement_name": "Glass Baby",
+    "achievement_condition": "Defeat Mom's Heart on Hard mode as Cain"
+  },
+  {
+    "achievement_id": "172",
+    "achievement_name": "Wrapped Baby",
+    "achievement_condition": "Removed in Afterbirth † Defeat Mom's Heart on Hard mode as Azazel Added in Afterbirth † Defeat Mom's Heart on Hard mode as Lazarus"
+  },
+  {
+    "achievement_id": "173",
+    "achievement_name": "Begotten Baby",
+    "achievement_condition": "Removed in Afterbirth † Defeat Mom's Heart on Hard mode as Lazarus Added in Afterbirth † Defeat Mom's Heart on Hard mode as Azazel"
+  },
+  {
+    "achievement_id": "174",
+    "achievement_name": "Dead Baby",
+    "achievement_condition": "Defeat Mom's Heart on Hard mode as ???"
+  },
+  {
+    "achievement_id": "175",
+    "achievement_name": "-0- Baby",
+    "achievement_condition": "Defeat Mom's Heart on Hard mode as The Lost"
+  },
+  {
+    "achievement_id": "176",
+    "achievement_name": "Glitch Baby",
+    "achievement_condition": "Defeat Mom's Heart on Hard mode as Eden"
+  },
+  {
+    "achievement_id": "177",
+    "achievement_name": "Fighting Baby",
+    "achievement_condition": "Defeat Mom's Heart on Hard mode as Samson"
+  },
+  {
+    "achievement_id": "178",
+    "achievement_name": "Lord of the Flies",
+    "achievement_condition": "Become Beelzebub"
+  },
+  {
+    "achievement_id": "179",
+    "achievement_name": "Fart Baby",
+    "achievement_condition": "Defeat Hush as Isaac"
+  },
+  {
+    "achievement_id": "180",
+    "achievement_name": "Purity",
+    "achievement_condition": "Defeat Hush as Magdalene"
+  },
+  {
+    "achievement_id": "181",
+    "achievement_name": "D12",
+    "achievement_condition": "Defeat Hush as Cain"
+  },
+  {
+    "achievement_id": "182",
+    "achievement_name": "Betrayal",
+    "achievement_condition": "Defeat Hush as Judas"
+  },
+  {
+    "achievement_id": "183",
+    "achievement_name": "Fate's Reward",
+    "achievement_condition": "Defeat Hush as ???"
+  },
+  {
+    "achievement_id": "184",
+    "achievement_name": "Athame",
+    "achievement_condition": "Defeat Hush as Eve"
+  },
+  {
+    "achievement_id": "185",
+    "achievement_name": "Blind Rage",
+    "achievement_condition": "Defeat Hush as Samson"
+  },
+  {
+    "achievement_id": "186",
+    "achievement_name": "Maw of the Void",
+    "achievement_condition": "Defeat Hush as Azazel"
+  },
+  {
+    "achievement_id": "187",
+    "achievement_name": "Empty Vessel",
+    "achievement_condition": "Defeat Hush as Lazarus"
+  },
+  {
+    "achievement_id": "188",
+    "achievement_name": "Eden's Blessing",
+    "achievement_condition": "Defeat Hush as Eden"
+  },
+  {
+    "achievement_id": "189",
+    "achievement_name": "Sworn Protector",
+    "achievement_condition": "Defeat Hush as The Lost"
+  },
+  {
+    "achievement_id": "190",
+    "achievement_name": "Incubus",
+    "achievement_condition": "Defeat Hush as Lilith"
+  },
+  {
+    "achievement_id": "191",
+    "achievement_name": "Keeper now holds... A Penny!",
+    "achievement_condition": "Defeat Hush as Keeper"
+  },
+  {
+    "achievement_id": "192",
+    "achievement_name": "Lil' Chest",
+    "achievement_condition": "Defeat Ultra Greed as Isaac"
+  },
+  {
+    "achievement_id": "193",
+    "achievement_name": "Censer",
+    "achievement_condition": "Defeat Ultra Greed as Magdalene"
+  },
+  {
+    "achievement_id": "194",
+    "achievement_name": "Evil Eye",
+    "achievement_condition": "Defeat Ultra Greed as Cain"
+  },
+  {
+    "achievement_id": "195",
+    "achievement_name": "My Shadow",
+    "achievement_condition": "Defeat Ultra Greed as Judas"
+  },
+  {
+    "achievement_id": "196",
+    "achievement_name": "Cracked Dice",
+    "achievement_condition": "Defeat Ultra Greed as ???"
+  },
+  {
+    "achievement_id": "197",
+    "achievement_name": "Black Feather",
+    "achievement_condition": "Defeat Ultra Greed as Eve"
+  },
+  {
+    "achievement_id": "198",
+    "achievement_name": "Lusty Blood",
+    "achievement_condition": "Defeat Ultra Greed as Samson"
+  },
+  {
+    "achievement_id": "199",
+    "achievement_name": "Lilith",
+    "achievement_condition": "Defeat Ultra Greed as Azazel"
+  },
+  {
+    "achievement_id": "200",
+    "achievement_name": "Key Bum",
+    "achievement_condition": "Defeat Ultra Greed as Lazarus"
+  },
+  {
+    "achievement_id": "201",
+    "achievement_name": "GB Bug",
+    "achievement_condition": "Defeat Ultra Greed as Eden"
+  },
+  {
+    "achievement_id": "202",
+    "achievement_name": "Zodiac",
+    "achievement_condition": "Defeat Ultra Greed as The Lost"
+  },
+  {
+    "achievement_id": "203",
+    "achievement_name": "Box of Friends",
+    "achievement_condition": "Defeat Ultra Greed as Lilith"
+  },
+  {
+    "achievement_id": "204",
+    "achievement_name": "Rib of Greed",
+    "achievement_condition": "Defeat Ultra Greed as Keeper"
+  },
+  {
+    "achievement_id": "205",
+    "achievement_name": "Cry Baby",
+    "achievement_condition": "Defeat Mega Satan as Isaac"
+  },
+  {
+    "achievement_id": "206",
+    "achievement_name": "Red Baby",
+    "achievement_condition": "Defeat Mega Satan as Magdalene"
+  },
+  {
+    "achievement_id": "207",
+    "achievement_name": "Green Baby",
+    "achievement_condition": "Defeat Mega Satan as Cain"
+  },
+  {
+    "achievement_id": "208",
+    "achievement_name": "Brown Baby",
+    "achievement_condition": "Defeat Mega Satan as Judas"
+  },
+  {
+    "achievement_id": "209",
+    "achievement_name": "Blue Baby",
+    "achievement_condition": "Defeat Mega Satan as ???"
+  },
+  {
+    "achievement_id": "210",
+    "achievement_name": "Lil' Baby",
+    "achievement_condition": "Defeat Mega Satan as Eve"
+  },
+  {
+    "achievement_id": "211",
+    "achievement_name": "Rage Baby",
+    "achievement_condition": "Defeat Mega Satan as Samson"
+  },
+  {
+    "achievement_id": "212",
+    "achievement_name": "Black Baby",
+    "achievement_condition": "Defeat Mega Satan as Azazel"
+  },
+  {
+    "achievement_id": "213",
+    "achievement_name": "Long Baby",
+    "achievement_condition": "Defeat Mega Satan as Lazarus"
+  },
+  {
+    "achievement_id": "214",
+    "achievement_name": "Yellow Baby",
+    "achievement_condition": "Defeat Mega Satan as Eden"
+  },
+  {
+    "achievement_id": "215",
+    "achievement_name": "White Baby",
+    "achievement_condition": "Defeat Mega Satan as The Lost"
+  },
+  {
+    "achievement_id": "216",
+    "achievement_name": "Big Baby",
+    "achievement_condition": "Defeat Mega Satan as Lilith"
+  },
+  {
+    "achievement_id": "217",
+    "achievement_name": "Noose Baby",
+    "achievement_condition": "Defeat Mega Satan as Keeper"
+  },
+  {
+    "achievement_id": "218",
+    "achievement_name": "Rune Bag",
+    "achievement_condition": "Defeat Isaac as Lilith"
+  },
+  {
+    "achievement_id": "219",
+    "achievement_name": "Cambion Conception",
+    "achievement_condition": "Defeat ??? as Lilith"
+  },
+  {
+    "achievement_id": "220",
+    "achievement_name": "Serpent's Kiss",
+    "achievement_condition": "Defeat Satan as Lilith"
+  },
+  {
+    "achievement_id": "221",
+    "achievement_name": "Succubus",
+    "achievement_condition": "Defeat The Lamb as Lilith"
+  },
+  {
+    "achievement_id": "222",
+    "achievement_name": "Immaculate Conception",
+    "achievement_condition": "Complete the Boss Rush as Lilith"
+  },
+  {
+    "achievement_id": "223",
+    "achievement_name": "Goat Head Baby",
+    "achievement_condition": "Defeat Mom's Heart on Hard mode as Lilith"
+  },
+  {
+    "achievement_id": "224",
+    "achievement_name": "Gold Heart",
+    "achievement_condition": "Complete XXXXXXXXL (challenge #21)"
+  },
+  {
+    "achievement_id": "225",
+    "achievement_name": "Get out of Jail Free Card",
+    "achievement_condition": "Complete SPEED! (challenge #22)"
+  },
+  {
+    "achievement_id": "226",
+    "achievement_name": "Gold Bomb",
+    "achievement_condition": "Complete Blue Bomber (challenge #23)"
+  },
+  {
+    "achievement_id": "227",
+    "achievement_name": "2 new pills",
+    "achievement_condition": "Complete PAY TO PLAY (challenge #24)"
+  },
+  {
+    "achievement_id": "228",
+    "achievement_name": "2 new pills",
+    "achievement_condition": "Complete Have a Heart (challenge #25)"
+  },
+  {
+    "achievement_id": "229",
+    "achievement_name": "Poker Chip",
+    "achievement_condition": "Complete I RULE! (challenge #26)"
+  },
+  {
+    "achievement_id": "230",
+    "achievement_name": "Stud Finder",
+    "achievement_condition": "Complete BRAINS! (challenge #27)"
+  },
+  {
+    "achievement_id": "231",
+    "achievement_name": "D8",
+    "achievement_condition": "Complete PRIDE DAY! (challenge #28)"
+  },
+  {
+    "achievement_id": "232",
+    "achievement_name": "Kidney Stone",
+    "achievement_condition": "Removed in Afterbirth † Complete The Guardian (challenge #30) Added in Afterbirth † Complete Onan's Streak (challenge #29)"
+  },
+  {
+    "achievement_id": "233",
+    "achievement_name": "Blank Rune",
+    "achievement_condition": "Removed in Afterbirth † Complete Onan's Streak (challenge #29) Added in Afterbirth † Complete The Guardian (challenge #30)"
+  },
+  {
+    "achievement_id": "234",
+    "achievement_name": "Blue Womb",
+    "achievement_condition": "Defeat Mom's Heart 10 times"
+  },
+  {
+    "achievement_id": "235",
+    "achievement_name": "1001%",
+    "achievement_condition": "Unlock all secrets and endings , and collect every item in the game"
+  },
+  {
+    "achievement_id": "236",
+    "achievement_name": "Keeper holds Wooden Nickel",
+    "achievement_condition": "Defeat Isaac as Keeper"
+  },
+  {
+    "achievement_id": "237",
+    "achievement_name": "Keeper holds Store Key",
+    "achievement_condition": "Defeat Satan as Keeper"
+  },
+  {
+    "achievement_id": "238",
+    "achievement_name": "Deep Pockets",
+    "achievement_condition": "Defeat ??? as Keeper"
+  },
+  {
+    "achievement_id": "239",
+    "achievement_name": "Karma",
+    "achievement_condition": "Defeat The Lamb as Keeper"
+  },
+  {
+    "achievement_id": "240",
+    "achievement_name": "Sticky Nickels",
+    "achievement_condition": "Complete the Boss Rush as Keeper"
+  },
+  {
+    "achievement_id": "241",
+    "achievement_name": "Super Greed Baby",
+    "achievement_condition": "Defeat Mom's Heart on Hard mode as Keeper"
+  },
+  {
+    "achievement_id": "242",
+    "achievement_name": "Lucky Pennies",
+    "achievement_condition": "Donate 2 Coins to the Greed Donation Machine"
+  },
+  {
+    "achievement_id": "243",
+    "achievement_name": "Special Hanging Shopkeepers",
+    "achievement_condition": "Donate 14 Coins to the Greed Donation Machine"
+  },
+  {
+    "achievement_id": "244",
+    "achievement_name": "Wooden Nickel",
+    "achievement_condition": "Donate 33 Coins to the Greed Donation Machine"
+  },
+  {
+    "achievement_id": "245",
+    "achievement_name": "Cain holds Paperclip",
+    "achievement_condition": "Donate 68 Coins to the Greed Donation Machine"
+  },
+  {
+    "achievement_id": "246",
+    "achievement_name": "Everything is Terrible 2!!!",
+    "achievement_condition": "Donate 111 Coins to the Greed Donation Machine"
+  },
+  {
+    "achievement_id": "247",
+    "achievement_name": "Special Shopkeepers",
+    "achievement_condition": "Donate 234 Coins to the Greed Donation Machine"
+  },
+  {
+    "achievement_id": "248",
+    "achievement_name": "Eve now holds Razor Blade",
+    "achievement_condition": "Donate 439 Coins to the Greed Donation Machine"
+  },
+  {
+    "achievement_id": "249",
+    "achievement_name": "Store Key",
+    "achievement_condition": "Donate 666 Coins to the Greed Donation Machine"
+  },
+  {
+    "achievement_id": "250",
+    "achievement_name": "Lost holds Holy Mantle",
+    "achievement_condition": "Donate 879 Coins to the Greed Donation Machine"
+  },
+  {
+    "achievement_id": "251",
+    "achievement_name": "Keeper",
+    "achievement_condition": "Donate 1000 Coins to the Greed Donation Machine"
+  },
+  {
+    "achievement_id": "252",
+    "achievement_name": "Hive Baby",
+    "achievement_condition": "Earn all Hard mode Completion Marks as ???"
+  },
+  {
+    "achievement_id": "253",
+    "achievement_name": "Buddy Baby",
+    "achievement_condition": "Earn all Hard mode Completion Marks as Isaac"
+  },
+  {
+    "achievement_id": "254",
+    "achievement_name": "Colorful Baby",
+    "achievement_condition": "Earn all Hard mode Completion Marks as Magdalene"
+  },
+  {
+    "achievement_id": "255",
+    "achievement_name": "Whore Baby",
+    "achievement_condition": "Earn all Hard mode Completion Marks as Eve"
+  },
+  {
+    "achievement_id": "256",
+    "achievement_name": "Cracked Baby",
+    "achievement_condition": "Earn all Hard mode Completion Marks as Eden"
+  },
+  {
+    "achievement_id": "257",
+    "achievement_name": "Dripping Baby",
+    "achievement_condition": "Earn all Hard mode Completion Marks as Lazarus"
+  },
+  {
+    "achievement_id": "258",
+    "achievement_name": "Blinding Baby",
+    "achievement_condition": "Use Blank Card while holding XIX - The Sun"
+  },
+  {
+    "achievement_id": "259",
+    "achievement_name": "Sucky Baby",
+    "achievement_condition": "Earn all Hard mode Completion Marks as Azazel"
+  },
+  {
+    "achievement_id": "260",
+    "achievement_name": "Dark Baby",
+    "achievement_condition": "Earn all Hard mode Completion Marks as Lilith"
+  },
+  {
+    "achievement_id": "261",
+    "achievement_name": "Picky Baby",
+    "achievement_condition": "Earn all Hard mode Completion Marks as Cain"
+  },
+  {
+    "achievement_id": "262",
+    "achievement_name": "Revenge Baby",
+    "achievement_condition": "Earn all Hard mode Completion Marks as Samson"
+  },
+  {
+    "achievement_id": "263",
+    "achievement_name": "Belial Baby",
+    "achievement_condition": "Earn all Hard mode Completion Marks as Judas"
+  },
+  {
+    "achievement_id": "264",
+    "achievement_name": "Sale Baby",
+    "achievement_condition": "Earn all Hard mode Completion Marks as Keeper"
+  },
+  {
+    "achievement_id": "265",
+    "achievement_name": "XXXXXXXXL",
+    "achievement_condition": "Defeat Mom"
+  },
+  {
+    "achievement_id": "266",
+    "achievement_name": "SPEED!",
+    "achievement_condition": "Defeat Mom"
+  },
+  {
+    "achievement_id": "267",
+    "achievement_name": "Blue Bomber",
+    "achievement_condition": "Destroy 10 Tinted Rocks and defeat Mom's Heart 11 times"
+  },
+  {
+    "achievement_id": "268",
+    "achievement_name": "PAY TO PLAY",
+    "achievement_condition": "Defeat Isaac as Cain and destroy 10 Tinted Rocks"
+  },
+  {
+    "achievement_id": "269",
+    "achievement_name": "Have a Heart",
+    "achievement_condition": "Defeat Mom"
+  },
+  {
+    "achievement_id": "270",
+    "achievement_name": "I RULE!",
+    "achievement_condition": "Removed in Afterbirth † Defeat ??? or The Lamb , defeat Satan as Isaac , and unlock The Negative Added in Afterbirth † / Removed in Repentance Defeat ??? or The Lamb , and defeat Satan as Isaac Added in Repentance Defeat Mega Satan and unlock The Negative"
+  },
+  {
+    "achievement_id": "271",
+    "achievement_name": "BRAINS!",
+    "achievement_condition": "Defeat Isaac 5 times"
+  },
+  {
+    "achievement_id": "272",
+    "achievement_name": "PRIDE DAY!",
+    "achievement_condition": "Defeat Mom"
+  },
+  {
+    "achievement_id": "273",
+    "achievement_name": "Onan's Streak",
+    "achievement_condition": "Added in Afterbirth / Removed in Repentance Defeat Mom Added in Repentance Unlock Judas and It Lives ."
+  },
+  {
+    "achievement_id": "274",
+    "achievement_name": "The Guardian",
+    "achievement_condition": "Defeat Mom"
+  },
+  {
+    "achievement_id": "275",
+    "achievement_name": "Generosity",
+    "achievement_condition": "Donate 999 Coins to the Greed Donation Machine"
+  },
+  {
+    "achievement_id": "276",
+    "achievement_name": "Mega",
+    "achievement_condition": "Defeat Mega Satan as every character ( Added in Repentance except Tainted characters )"
+  },
+  {
+    "achievement_id": "277",
+    "achievement_name": "Backasswards",
+    "achievement_condition": "Removed in Repentance Defeat ??? or The Lamb Added in Repentance Defeat Mega Satan and unlock The Negative"
+  },
+  {
+    "achievement_id": "278",
+    "achievement_name": "Aprils fool",
+    "achievement_condition": "Defeat Mom"
+  },
+  {
+    "achievement_id": "279",
+    "achievement_name": "Pokey Mans",
+    "achievement_condition": "Defeat Mom's Heart 11 times"
+  },
+  {
+    "achievement_id": "280",
+    "achievement_name": "Ultra Hard",
+    "achievement_condition": "Removed in Repentance Defeat ??? or The Lamb . Possession of The Polaroid / The Negative is required, barring getting to Dark Room through a Sacrifice Room . Added in Repentance Defeat Mega Satan and unlock The Negative"
+  },
+  {
+    "achievement_id": "281",
+    "achievement_name": "PONG",
+    "achievement_condition": "Defeat Isaac 5 times"
+  },
+  {
+    "achievement_id": "282",
+    "achievement_name": "D Infinity",
+    "achievement_condition": "Defeat Delirium as Isaac"
+  },
+  {
+    "achievement_id": "283",
+    "achievement_name": "Eucharist",
+    "achievement_condition": "Defeat Delirium as Magdalene"
+  },
+  {
+    "achievement_id": "284",
+    "achievement_name": "Silver Dollar",
+    "achievement_condition": "Defeat Delirium as Cain"
+  },
+  {
+    "achievement_id": "285",
+    "achievement_name": "Shade",
+    "achievement_condition": "Defeat Delirium as Judas"
+  },
+  {
+    "achievement_id": "286",
+    "achievement_name": "King Baby",
+    "achievement_condition": "Defeat Delirium as ???"
+  },
+  {
+    "achievement_id": "287",
+    "achievement_name": "Bloody Crown",
+    "achievement_condition": "Defeat Delirium as Samson"
+  },
+  {
+    "achievement_id": "288",
+    "achievement_name": "Dull Razor",
+    "achievement_condition": "Defeat Delirium as Eve"
+  },
+  {
+    "achievement_id": "289",
+    "achievement_name": "Eden's Soul",
+    "achievement_condition": "Defeat Delirium as Eden"
+  },
+  {
+    "achievement_id": "290",
+    "achievement_name": "Dark Prince's Crown",
+    "achievement_condition": "Defeat Delirium as Azazel"
+  },
+  {
+    "achievement_id": "291",
+    "achievement_name": "Compound Fracture",
+    "achievement_condition": "Defeat Delirium as Lazarus"
+  },
+  {
+    "achievement_id": "292",
+    "achievement_name": "Euthanasia",
+    "achievement_condition": "Defeat Delirium as Lilith"
+  },
+  {
+    "achievement_id": "293",
+    "achievement_name": "Holy Card",
+    "achievement_condition": "Defeat Delirium as The Lost"
+  },
+  {
+    "achievement_id": "294",
+    "achievement_name": "Crooked Penny",
+    "achievement_condition": "Defeat Delirium as Keeper"
+  },
+  {
+    "achievement_id": "295",
+    "achievement_name": "Void",
+    "achievement_condition": "Defeat Delirium as Apollyon"
+  },
+  {
+    "achievement_id": "296",
+    "achievement_name": "D1",
+    "achievement_condition": "Defeat Ultra Greedier as Isaac"
+  },
+  {
+    "achievement_id": "297",
+    "achievement_name": "Glyph of Balance",
+    "achievement_condition": "Defeat Ultra Greedier as Magdalene"
+  },
+  {
+    "achievement_id": "298",
+    "achievement_name": "Sack of Sacks",
+    "achievement_condition": "Defeat Ultra Greedier as Cain"
+  },
+  {
+    "achievement_id": "299",
+    "achievement_name": "Eye of Belial",
+    "achievement_condition": "Defeat Ultra Greedier as Judas"
+  },
+  {
+    "achievement_id": "300",
+    "achievement_name": "Meconium",
+    "achievement_condition": "Defeat Ultra Greedier as ???"
+  },
+  {
+    "achievement_id": "301",
+    "achievement_name": "Stem Cell",
+    "achievement_condition": "Defeat Ultra Greedier as Samson"
+  },
+  {
+    "achievement_id": "302",
+    "achievement_name": "Crow Heart",
+    "achievement_condition": "Defeat Ultra Greedier as Eve"
+  },
+  {
+    "achievement_id": "303",
+    "achievement_name": "Metronome",
+    "achievement_condition": "Defeat Ultra Greedier as Eden"
+  },
+  {
+    "achievement_id": "304",
+    "achievement_name": "Bat Wing",
+    "achievement_condition": "Defeat Ultra Greedier as Azazel"
+  },
+  {
+    "achievement_id": "305",
+    "achievement_name": "Plan C",
+    "achievement_condition": "Defeat Ultra Greedier as Lazarus"
+  },
+  {
+    "achievement_id": "306",
+    "achievement_name": "Duality",
+    "achievement_condition": "Defeat Ultra Greedier as Lilith"
+  },
+  {
+    "achievement_id": "307",
+    "achievement_name": "Dad's Lost Coin",
+    "achievement_condition": "Defeat Ultra Greedier as The Lost"
+  },
+  {
+    "achievement_id": "308",
+    "achievement_name": "Eye of Greed",
+    "achievement_condition": "Defeat Ultra Greedier as Keeper"
+  },
+  {
+    "achievement_id": "309",
+    "achievement_name": "Black Rune",
+    "achievement_condition": "Defeat Ultra Greedier as Apollyon"
+  },
+  {
+    "achievement_id": "310",
+    "achievement_name": "Locust of Wrath",
+    "achievement_condition": "Defeat Isaac as Apollyon"
+  },
+  {
+    "achievement_id": "311",
+    "achievement_name": "Locust of Pestilence",
+    "achievement_condition": "Defeat Satan as Apollyon"
+  },
+  {
+    "achievement_id": "312",
+    "achievement_name": "Locust of Famine",
+    "achievement_condition": "Defeat ??? as Apollyon"
+  },
+  {
+    "achievement_id": "313",
+    "achievement_name": "Locust of Death",
+    "achievement_condition": "Defeat The Lamb as Apollyon"
+  },
+  {
+    "achievement_id": "314",
+    "achievement_name": "Locust of Conquest",
+    "achievement_condition": "Complete the Boss Rush as Apollyon"
+  },
+  {
+    "achievement_id": "315",
+    "achievement_name": "Hushy",
+    "achievement_condition": "Defeat Hush as Apollyon"
+  },
+  {
+    "achievement_id": "316",
+    "achievement_name": "Brown Nugget",
+    "achievement_condition": "Defeat Ultra Greed as Apollyon"
+  },
+  {
+    "achievement_id": "317",
+    "achievement_name": "Mort Baby",
+    "achievement_condition": "Defeat Mega Satan as Apollyon"
+  },
+  {
+    "achievement_id": "318",
+    "achievement_name": "Smelter",
+    "achievement_condition": "Defeat Mom's Heart or It Lives! on Hard mode as Apollyon"
+  },
+  {
+    "achievement_id": "319",
+    "achievement_name": "Apollyon Baby",
+    "achievement_condition": "Earn all Hard mode Completion Marks as Apollyon"
+  },
+  {
+    "achievement_id": "320",
+    "achievement_name": "New Area",
+    "achievement_condition": "Defeat Hush"
+  },
+  {
+    "achievement_id": "321",
+    "achievement_name": "Once More with Feeling!",
+    "achievement_condition": "Complete a Victory Lap , defeating The Lamb"
+  },
+  {
+    "achievement_id": "322",
+    "achievement_name": "Hat trick!",
+    "achievement_condition": "Get a 3-win streak"
+  },
+  {
+    "achievement_id": "323",
+    "achievement_name": "5 Nights at Mom's",
+    "achievement_condition": "Get a 5-win streak ( Added in Repentance 3-win streak), using a different character each time ( Mega Satan victories do not count if the Void portal doesn't spawn)"
+  },
+  {
+    "achievement_id": "324",
+    "achievement_name": "Sin collector",
+    "achievement_condition": "Collect every entry in the Bestiary (bugged v190 - Mobs that don't exist in the bestiary are being counted. This allows Sin Collector to be unlocked without a complete bestiary)"
+  },
+  {
+    "achievement_id": "325",
+    "achievement_name": "Dedication",
+    "achievement_condition": "Participate in 31 Daily Challenges (they don't have to be consecutive; it will still count if Isaac dies in the first room)"
+  },
+  {
+    "achievement_id": "326",
+    "achievement_name": "ZIP!",
+    "achievement_condition": "Defeat The Lamb in under 20 minutes"
+  },
+  {
+    "achievement_id": "327",
+    "achievement_name": "It's the Key",
+    "achievement_condition": "Defeat The Lamb without taking Hearts, Coins, or Bombs through the entire run"
+  },
+  {
+    "achievement_id": "328",
+    "achievement_name": "Mr. Resetter!",
+    "achievement_condition": "Reset 7 times in a row Switch PS4 Get a minus 10-win streak"
+  },
+  {
+    "achievement_id": "329",
+    "achievement_name": "Living on the edge",
+    "achievement_condition": "Complete a Chapter (floors I and II) after Basement , start-to-finish, with only half a Heart total (can use The Lost )"
+  },
+  {
+    "achievement_id": "330",
+    "achievement_name": "U Broke It!",
+    "achievement_condition": "Obtain 50 items in a run (duplicate passive items/familiars count towards the total, e.g., multiple Breakfast )"
+  },
+  {
+    "achievement_id": "331",
+    "achievement_name": "Laz Bleeds More!",
+    "achievement_condition": "Complete Backasswards (challenge #31)"
+  },
+  {
+    "achievement_id": "332",
+    "achievement_name": "Maggy Now Holds a Pill!",
+    "achievement_condition": "Complete Aprils Fool (challenge #32)"
+  },
+  {
+    "achievement_id": "333",
+    "achievement_name": "Charged Key",
+    "achievement_condition": "Complete Pokey Mans (challenge #33)"
+  },
+  {
+    "achievement_id": "334",
+    "achievement_name": "Samson Feels Healthy!",
+    "achievement_condition": "Complete Ultra Hard (challenge #34)"
+  },
+  {
+    "achievement_id": "335",
+    "achievement_name": "Greed's Gullet",
+    "achievement_condition": "Complete Pong (challenge #35)"
+  },
+  {
+    "achievement_id": "336",
+    "achievement_name": "The Marathon",
+    "achievement_condition": "Get a 5-win streak in the Daily Challenges (they don't have to be consecutive days, only the runs you play are counted)"
+  },
+  {
+    "achievement_id": "337",
+    "achievement_name": "RERUN",
+    "achievement_condition": "Complete 3 Victory Laps and start a 4th"
+  },
+  {
+    "achievement_id": "338",
+    "achievement_name": "Delirious",
+    "achievement_condition": "Defeat Delirium"
+  },
+  {
+    "achievement_id": "339",
+    "achievement_name": "1000000%",
+    "achievement_condition": "Collect every item in the game, unlock all secrets and endings , and complete the Bestiary"
+  },
+  {
+    "achievement_id": "340",
+    "achievement_name": "Apollyon",
+    "achievement_condition": "Defeat Mega Satan"
+  },
+  {
+    "achievement_id": "341",
+    "achievement_name": "Greedier!",
+    "achievement_condition": "Donate 500 Coins to the Greed Donation Machine"
+  },
+  {
+    "achievement_id": "342",
+    "achievement_name": "Burning Basement",
+    "achievement_condition": "Defeat Mom's Heart 11 times"
+  },
+  {
+    "achievement_id": "343",
+    "achievement_name": "Flooded Caves",
+    "achievement_condition": "Defeat It Lives! 16 times"
+  },
+  {
+    "achievement_id": "344",
+    "achievement_name": "Dank Depths",
+    "achievement_condition": "Defeat It Lives! 21 times"
+  },
+  {
+    "achievement_id": "345",
+    "achievement_name": "Scarred Womb",
+    "achievement_condition": "Defeat It Lives! 30 times"
+  },
+  {
+    "achievement_id": "346",
+    "achievement_name": "Something wicked this way comes!",
+    "achievement_condition": "Defeat ??? as 3 different Characters"
+  },
+  {
+    "achievement_id": "347",
+    "achievement_name": "Something wicked this way comes+!",
+    "achievement_condition": "Defeat ??? as 6 different Characters"
+  },
+  {
+    "achievement_id": "348",
+    "achievement_name": "The gate is open!",
+    "achievement_condition": "Defeat The Lamb"
+  },
+  {
+    "achievement_id": "349",
+    "achievement_name": "Black Hole",
+    "achievement_condition": "Defeat 20 Portals"
+  },
+  {
+    "achievement_id": "350",
+    "achievement_name": "Mystery Gift",
+    "achievement_condition": "Destroy 500 rocks"
+  },
+  {
+    "achievement_id": "351",
+    "achievement_name": "Sprinkler",
+    "achievement_condition": "Beat Chapter 1 without taking damage"
+  },
+  {
+    "achievement_id": "352",
+    "achievement_name": "Angry Fly",
+    "achievement_condition": "Become Beelzebub"
+  },
+  {
+    "achievement_id": "353",
+    "achievement_name": "Bozo",
+    "achievement_condition": "Destroy 5 rainbow poops"
+  },
+  {
+    "achievement_id": "354",
+    "achievement_name": "Broken Modem",
+    "achievement_condition": "Complete 7 Daily Challenges (by touching the trophy at the end)"
+  },
+  {
+    "achievement_id": "355",
+    "achievement_name": "Buddy in a Box",
+    "achievement_condition": "Pick up 5 familiars in a single run"
+  },
+  {
+    "achievement_id": "356",
+    "achievement_name": "Fast Bombs",
+    "achievement_condition": "Defeat Little Horn 20 times"
+  },
+  {
+    "achievement_id": "357",
+    "achievement_name": "Lil Delirium",
+    "achievement_condition": "Defeat Delirium for the 1st time"
+  },
+  {
+    "achievement_id": "358",
+    "achievement_name": "Hairpin",
+    "achievement_condition": "Recharge using Lil' Batteries 20 times"
+  },
+  {
+    "achievement_id": "359",
+    "achievement_name": "Wooden Cross",
+    "achievement_condition": "Sleep in a bed"
+  },
+  {
+    "achievement_id": "360",
+    "achievement_name": "Butter!",
+    "achievement_condition": "Complete 2 Victory Laps and start a 3rd"
+  },
+  {
+    "achievement_id": "361",
+    "achievement_name": "Huge Growth",
+    "achievement_condition": "Increase in size 5 times in a single run via Magic Mushroom , \" One makes you larger \" pills, XI - Strength , etc."
+  },
+  {
+    "achievement_id": "362",
+    "achievement_name": "Ancient Recall",
+    "achievement_condition": "Use Cards and Runes 20 times"
+  },
+  {
+    "achievement_id": "363",
+    "achievement_name": "Era Walk",
+    "achievement_condition": "Add both the Broken Watch and the Stop Watch to your collection"
+  },
+  {
+    "achievement_id": "364",
+    "achievement_name": "Coupon",
+    "achievement_condition": "Purchase anything from Shops , Devil Rooms , and/or Black Markets 50 times"
+  },
+  {
+    "achievement_id": "365",
+    "achievement_name": "Telekinesis",
+    "achievement_condition": "Beat Chapter 2 without taking damage"
+  },
+  {
+    "achievement_id": "366",
+    "achievement_name": "Moving Box",
+    "achievement_condition": "Use Pandora's Box in Dark Room"
+  },
+  {
+    "achievement_id": "367",
+    "achievement_name": "Jumper Cables",
+    "achievement_condition": "Pick up any 2 of the following items/trinkets in a single run: 9 Volt , The Battery , Car Battery , AAA Battery , and Watch Battery ( Added in Repentance Any 2 items that have the 'battery' item tag )"
+  },
+  {
+    "achievement_id": "368",
+    "achievement_name": "Leprosy",
+    "achievement_condition": "Beat Chapter 3 without taking damage"
+  },
+  {
+    "achievement_id": "369",
+    "achievement_name": "Technology Zero",
+    "achievement_condition": "Pick up any 2 technology items in a single run ( Added in Repentance Any 2 items that have the 'tech' item tag )"
+  },
+  {
+    "achievement_id": "370",
+    "achievement_name": "Filigree Feather",
+    "achievement_condition": "Acquire both Key Piece 1 and Key Piece 2"
+  },
+  {
+    "achievement_id": "371",
+    "achievement_name": "Mr. ME!",
+    "achievement_condition": "Open 20 Locked Chests"
+  },
+  {
+    "achievement_id": "372",
+    "achievement_name": "7 Seals",
+    "achievement_condition": "Defeat all 5 Harbingers"
+  },
+  {
+    "achievement_id": "373",
+    "achievement_name": "Angelic Prism",
+    "achievement_condition": "Defeat an Angel 10 times"
+  },
+  {
+    "achievement_id": "374",
+    "achievement_name": "Pop!",
+    "achievement_condition": "Beat Chapter 4 without taking damage"
+  },
+  {
+    "achievement_id": "375",
+    "achievement_name": "Door Stop",
+    "achievement_condition": "Blow up doors and Secret Room walls 50 times"
+  },
+  {
+    "achievement_id": "376",
+    "achievement_name": "Death's List",
+    "achievement_condition": "Take 25 Deals with the Devil"
+  },
+  {
+    "achievement_id": "377",
+    "achievement_name": "Haemolacria",
+    "achievement_condition": "Acquire Blood Clot 10 times"
+  },
+  {
+    "achievement_id": "378",
+    "achievement_name": "Lachryphagy",
+    "achievement_condition": "Collect 10 \"Tears Up\" items or pills in one run"
+  },
+  {
+    "achievement_id": "379",
+    "achievement_name": "Schoolbag",
+    "achievement_condition": "Enter every Shop from Chapter 1 through Chapter 3 in one run"
+  },
+  {
+    "achievement_id": "380",
+    "achievement_name": "Trisagion",
+    "achievement_condition": "Take 25 Angel Rooms items"
+  },
+  {
+    "achievement_id": "381",
+    "achievement_name": "Extension Cord",
+    "achievement_condition": "Have The Battery , 9 Volt , and Car Battery in Isaac's collection"
+  },
+  {
+    "achievement_id": "382",
+    "achievement_name": "Flat Stone",
+    "achievement_condition": "Acquire Rubber Cement 5 times"
+  },
+  {
+    "achievement_id": "383",
+    "achievement_name": "Sacrificial Altar",
+    "achievement_condition": "Take 50 Deals with the Devil"
+  },
+  {
+    "achievement_id": "384",
+    "achievement_name": "Lil Spewer",
+    "achievement_condition": "Have Isaac die to his own explosion from Ipecac , Bob's Rotten Head , or a Horf! pill"
+  },
+  {
+    "achievement_id": "385",
+    "achievement_name": "Blanket",
+    "achievement_condition": "Sleep in 10 beds"
+  },
+  {
+    "achievement_id": "386",
+    "achievement_name": "Marbles",
+    "achievement_condition": "Use 5 Gulp! pills in one run ( Placebo uses count)"
+  },
+  {
+    "achievement_id": "387",
+    "achievement_name": "Mystery Egg",
+    "achievement_condition": "Spawn three charmed enemies in the same room"
+  },
+  {
+    "achievement_id": "388",
+    "achievement_name": "Rotten Penny",
+    "achievement_condition": "Have 20 Blue Flies at the same time"
+  },
+  {
+    "achievement_id": "389",
+    "achievement_name": "Baby-Bender",
+    "achievement_condition": "Use I - The Magician or Telepathy for Dummies while already having homing tears"
+  },
+  {
+    "achievement_id": "390",
+    "achievement_name": "The Forgotten",
+    "achievement_condition": "It's complicated"
+  },
+  {
+    "achievement_id": "391",
+    "achievement_name": "Bone Heart",
+    "achievement_condition": "It's complicated"
+  },
+  {
+    "achievement_id": "392",
+    "achievement_name": "Marrow",
+    "achievement_condition": "Defeat Mom's Heart or It Lives! on Hard mode as The Forgotten"
+  },
+  {
+    "achievement_id": "393",
+    "achievement_name": "Slipped Rib",
+    "achievement_condition": "Defeat Isaac as The Forgotten"
+  },
+  {
+    "achievement_id": "394",
+    "achievement_name": "Pointy Rib",
+    "achievement_condition": "Defeat Satan as The Forgotten"
+  },
+  {
+    "achievement_id": "395",
+    "achievement_name": "Jaw Bone",
+    "achievement_condition": "Defeat ??? as The Forgotten"
+  },
+  {
+    "achievement_id": "396",
+    "achievement_name": "Brittle Bones",
+    "achievement_condition": "Defeat The Lamb as The Forgotten"
+  },
+  {
+    "achievement_id": "397",
+    "achievement_name": "Divorce Papers",
+    "achievement_condition": "Complete the Boss Rush as The Forgotten"
+  },
+  {
+    "achievement_id": "398",
+    "achievement_name": "Hallowed Ground",
+    "achievement_condition": "Defeat Hush as The Forgotten"
+  },
+  {
+    "achievement_id": "399",
+    "achievement_name": "Finger Bone",
+    "achievement_condition": "Defeat Ultra Greed as The Forgotten"
+  },
+  {
+    "achievement_id": "400",
+    "achievement_name": "Dad's Ring",
+    "achievement_condition": "Defeat Ultra Greedier as The Forgotten"
+  },
+  {
+    "achievement_id": "401",
+    "achievement_name": "Book of the Dead",
+    "achievement_condition": "Defeat Delirium as The Forgotten"
+  },
+  {
+    "achievement_id": "402",
+    "achievement_name": "Bone Baby",
+    "achievement_condition": "Earn all Hard mode Completion Marks as The Forgotten"
+  },
+  {
+    "achievement_id": "403",
+    "achievement_name": "Bound Baby",
+    "achievement_condition": "Defeat Mega Satan as The Forgotten"
+  },
+  {
+    "achievement_id": "404",
+    "achievement_name": "Bethany",
+    "achievement_condition": "Defeat Mom's Heart / It Lives! on hard mode as Lazarus , without dying at all"
+  },
+  {
+    "achievement_id": "405",
+    "achievement_name": "Jacob and Esau",
+    "achievement_condition": "Defeat Mother"
+  },
+  {
+    "achievement_id": "406",
+    "achievement_name": "The Planetarium",
+    "achievement_condition": "Collect any 3 items with the 'stars' item tag in a single run"
+  },
+  {
+    "achievement_id": "407",
+    "achievement_name": "A Secret Exit",
+    "achievement_condition": "Defeat Hush 3 times"
+  },
+  {
+    "achievement_id": "408",
+    "achievement_name": "Forgotten Lullaby",
+    "achievement_condition": "Blow up The Siren 's skull after defeating her"
+  },
+  {
+    "achievement_id": "409",
+    "achievement_name": "Fruity Plum",
+    "achievement_condition": "Defeat Baby Plum 10 times"
+  },
+  {
+    "achievement_id": "410",
+    "achievement_name": "Plum Flute",
+    "achievement_condition": "Allow Baby Plum to escape instead of defeating her"
+  },
+  {
+    "achievement_id": "411",
+    "achievement_name": "Rotten Heart",
+    "achievement_condition": "Enter Added in Repentance Corpse for the first time"
+  },
+  {
+    "achievement_id": "412",
+    "achievement_name": "Dross",
+    "achievement_condition": "Defeat all bosses in Added in Repentance Downpour"
+  },
+  {
+    "achievement_id": "413",
+    "achievement_name": "Ashpit",
+    "achievement_condition": "Defeat all bosses in Added in Repentance Mines"
+  },
+  {
+    "achievement_id": "414",
+    "achievement_name": "Gehenna",
+    "achievement_condition": "Defeat all bosses in Added in Repentance Mausoleum"
+  },
+  {
+    "achievement_id": "415",
+    "achievement_name": "Red Key",
+    "achievement_condition": "Open Mom's Chest in Added in Repentance Home"
+  },
+  {
+    "achievement_id": "416",
+    "achievement_name": "Wisp Baby",
+    "achievement_condition": "Defeat Mom's Heart or It Lives! on Hard mode as Bethany"
+  },
+  {
+    "achievement_id": "417",
+    "achievement_name": "Book of Virtues",
+    "achievement_condition": "Defeat Isaac as Bethany"
+  },
+  {
+    "achievement_id": "418",
+    "achievement_name": "Urn of Souls",
+    "achievement_condition": "Defeat Satan as Bethany"
+  },
+  {
+    "achievement_id": "419",
+    "achievement_name": "Blessed Penny",
+    "achievement_condition": "Defeat ??? as Bethany"
+  },
+  {
+    "achievement_id": "420",
+    "achievement_name": "Alabaster Box",
+    "achievement_condition": "Defeat The Lamb as Bethany"
+  },
+  {
+    "achievement_id": "421",
+    "achievement_name": "Beth's Faith",
+    "achievement_condition": "Complete the Boss Rush as Bethany"
+  },
+  {
+    "achievement_id": "422",
+    "achievement_name": "Soul Locket",
+    "achievement_condition": "Defeat Ultra Greed as Bethany"
+  },
+  {
+    "achievement_id": "423",
+    "achievement_name": "Divine Intervention",
+    "achievement_condition": "Defeat Hush as Bethany"
+  },
+  {
+    "achievement_id": "424",
+    "achievement_name": "Vade Retro",
+    "achievement_condition": "Defeat Ultra Greedier as Bethany"
+  },
+  {
+    "achievement_id": "425",
+    "achievement_name": "Star of Bethlehem",
+    "achievement_condition": "Defeat Delirium as Bethany"
+  },
+  {
+    "achievement_id": "426",
+    "achievement_name": "Hope Baby",
+    "achievement_condition": "Earn all Hard mode Completion Marks as Bethany"
+  },
+  {
+    "achievement_id": "427",
+    "achievement_name": "Glowing Baby",
+    "achievement_condition": "Defeat Mega Satan as Bethany"
+  },
+  {
+    "achievement_id": "428",
+    "achievement_name": "Double Baby",
+    "achievement_condition": "Defeat Mom's Heart or It Lives! on Hard mode as Jacob and Esau"
+  },
+  {
+    "achievement_id": "429",
+    "achievement_name": "The Stairway",
+    "achievement_condition": "Defeat Isaac as Jacob and Esau"
+  },
+  {
+    "achievement_id": "430",
+    "achievement_name": "Red Stew",
+    "achievement_condition": "Defeat Satan as Jacob and Esau"
+  },
+  {
+    "achievement_id": "431",
+    "achievement_name": "Birthright",
+    "achievement_condition": "Defeat ??? as Jacob and Esau"
+  },
+  {
+    "achievement_id": "432",
+    "achievement_name": "Damocles",
+    "achievement_condition": "Defeat The Lamb as Jacob and Esau"
+  },
+  {
+    "achievement_id": "433",
+    "achievement_name": "Rock Bottom",
+    "achievement_condition": "Complete Boss Rush as Jacob and Esau"
+  },
+  {
+    "achievement_id": "434",
+    "achievement_name": "Inner Child",
+    "achievement_condition": "Defeat Ultra Greed as Jacob and Esau"
+  },
+  {
+    "achievement_id": "435",
+    "achievement_name": "Vanishing Twin",
+    "achievement_condition": "Defeat Hush as Jacob and Esau"
+  },
+  {
+    "achievement_id": "436",
+    "achievement_name": "Genesis",
+    "achievement_condition": "Defeat Ultra Greedier as Jacob and Esau"
+  },
+  {
+    "achievement_id": "437",
+    "achievement_name": "Suplex!",
+    "achievement_condition": "Defeat Delirium as Jacob and Esau"
+  },
+  {
+    "achievement_id": "438",
+    "achievement_name": "Solomon's Baby",
+    "achievement_condition": "Earn all Hard mode Completion Marks as Jacob and Esau"
+  },
+  {
+    "achievement_id": "439",
+    "achievement_name": "Illusion Baby",
+    "achievement_condition": "Defeat Mega Satan as Jacob and Esau"
+  },
+  {
+    "achievement_id": "440",
+    "achievement_name": "Meat Cleaver",
+    "achievement_condition": "Defeat Mother as Isaac"
+  },
+  {
+    "achievement_id": "441",
+    "achievement_name": "Options?",
+    "achievement_condition": "Defeat The Beast as Isaac"
+  },
+  {
+    "achievement_id": "442",
+    "achievement_name": "Yuck Heart",
+    "achievement_condition": "Defeat Mother as Magdalene"
+  },
+  {
+    "achievement_id": "443",
+    "achievement_name": "Candy Heart",
+    "achievement_condition": "Defeat The Beast as Magdalene"
+  },
+  {
+    "achievement_id": "444",
+    "achievement_name": "Guppy's Eye",
+    "achievement_condition": "Defeat Mother as Cain"
+  },
+  {
+    "achievement_id": "445",
+    "achievement_name": "A Pound of Flesh",
+    "achievement_condition": "Defeat The Beast as Cain"
+  },
+  {
+    "achievement_id": "446",
+    "achievement_name": "Akeldama",
+    "achievement_condition": "Defeat Mother as Judas"
+  },
+  {
+    "achievement_id": "447",
+    "achievement_name": "Redemption",
+    "achievement_condition": "Defeat The Beast as Judas"
+  },
+  {
+    "achievement_id": "448",
+    "achievement_name": "Eternal D6",
+    "achievement_condition": "Defeat Mother as ???"
+  },
+  {
+    "achievement_id": "449",
+    "achievement_name": "Montezuma's Revenge",
+    "achievement_condition": "Defeat The Beast as ???"
+  },
+  {
+    "achievement_id": "450",
+    "achievement_name": "Bird Cage",
+    "achievement_condition": "Defeat Mother as Eve"
+  },
+  {
+    "achievement_id": "451",
+    "achievement_name": "Cracked Orb",
+    "achievement_condition": "Defeat The Beast as Eve"
+  },
+  {
+    "achievement_id": "452",
+    "achievement_name": "Bloody Gust",
+    "achievement_condition": "Defeat Mother as Samson"
+  },
+  {
+    "achievement_id": "453",
+    "achievement_name": "Empty Heart",
+    "achievement_condition": "Defeat The Beast as Samson"
+  },
+  {
+    "achievement_id": "454",
+    "achievement_name": "Devil's Crown",
+    "achievement_condition": "Defeat Mother as Azazel"
+  },
+  {
+    "achievement_id": "455",
+    "achievement_name": "Lil Abaddon",
+    "achievement_condition": "Defeat The Beast as Azazel"
+  },
+  {
+    "achievement_id": "456",
+    "achievement_name": "Tinytoma",
+    "achievement_condition": "Defeat Mother as Lazarus"
+  },
+  {
+    "achievement_id": "457",
+    "achievement_name": "Astral Projection",
+    "achievement_condition": "Defeat The Beast as Lazarus"
+  },
+  {
+    "achievement_id": "458",
+    "achievement_name": "M",
+    "achievement_condition": "Defeat Mother as Eden"
+  },
+  {
+    "achievement_id": "459",
+    "achievement_name": "Everything Jar",
+    "achievement_condition": "Defeat The Beast as Eden"
+  },
+  {
+    "achievement_id": "460",
+    "achievement_name": "Lost Soul",
+    "achievement_condition": "Defeat Mother as The Lost"
+  },
+  {
+    "achievement_id": "461",
+    "achievement_name": "Hungry Soul",
+    "achievement_condition": "Defeat The Beast as The Lost"
+  },
+  {
+    "achievement_id": "462",
+    "achievement_name": "Blood Puppy",
+    "achievement_condition": "Defeat Mother as Lilith"
+  },
+  {
+    "achievement_id": "463",
+    "achievement_name": "C Section",
+    "achievement_condition": "Defeat The Beast as Lilith"
+  },
+  {
+    "achievement_id": "464",
+    "achievement_name": "Keeper's Sack",
+    "achievement_condition": "Defeat Mother as Keeper"
+  },
+  {
+    "achievement_id": "465",
+    "achievement_name": "Keeper's Box",
+    "achievement_condition": "Defeat The Beast as Keeper"
+  },
+  {
+    "achievement_id": "466",
+    "achievement_name": "Lil Portal",
+    "achievement_condition": "Defeat Mother as Apollyon"
+  },
+  {
+    "achievement_id": "467",
+    "achievement_name": "Worm Friend",
+    "achievement_condition": "Defeat The Beast as Apollyon"
+  },
+  {
+    "achievement_id": "468",
+    "achievement_name": "Bone Spurs",
+    "achievement_condition": "Defeat Mother as The Forgotten"
+  },
+  {
+    "achievement_id": "469",
+    "achievement_name": "Spirit Shackles",
+    "achievement_condition": "Defeat The Beast as The Forgotten"
+  },
+  {
+    "achievement_id": "470",
+    "achievement_name": "Revelation",
+    "achievement_condition": "Defeat Mother as Bethany"
+  },
+  {
+    "achievement_id": "471",
+    "achievement_name": "Jar of Wisps",
+    "achievement_condition": "Defeat The Beast as Bethany"
+  },
+  {
+    "achievement_id": "472",
+    "achievement_name": "Magic Skin",
+    "achievement_condition": "Defeat Mother as Jacob and Esau"
+  },
+  {
+    "achievement_id": "473",
+    "achievement_name": "Friend Finder",
+    "achievement_condition": "Defeat The Beast as Jacob and Esau"
+  },
+  {
+    "achievement_id": "474",
+    "achievement_name": "The Broken",
+    "achievement_condition": "Use Red Key (etc.) to open the hidden closet in Added in Repentance Home as Isaac"
+  },
+  {
+    "achievement_id": "475",
+    "achievement_name": "The Dauntless",
+    "achievement_condition": "Use Red Key (etc.) to open the hidden closet in Added in Repentance Home as Magdalene"
+  },
+  {
+    "achievement_id": "476",
+    "achievement_name": "The Hoarder",
+    "achievement_condition": "Use Red Key (etc.) to open the hidden closet in Added in Repentance Home as Cain"
+  },
+  {
+    "achievement_id": "477",
+    "achievement_name": "The Deceiver",
+    "achievement_condition": "Use Red Key (etc.) to open the hidden closet in Added in Repentance Home as Judas"
+  },
+  {
+    "achievement_id": "478",
+    "achievement_name": "The Soiled",
+    "achievement_condition": "Use Red Key (etc.) to open the hidden closet in Added in Repentance Home as ???"
+  },
+  {
+    "achievement_id": "479",
+    "achievement_name": "The Curdled",
+    "achievement_condition": "Use Red Key (etc.) to open the hidden closet in Added in Repentance Home as Eve"
+  },
+  {
+    "achievement_id": "480",
+    "achievement_name": "The Savage",
+    "achievement_condition": "Use Red Key (etc.) to open the hidden closet in Added in Repentance Home as Samson"
+  },
+  {
+    "achievement_id": "481",
+    "achievement_name": "The Benighted",
+    "achievement_condition": "Use Red Key (etc.) to open the hidden closet in Added in Repentance Home as Azazel"
+  },
+  {
+    "achievement_id": "482",
+    "achievement_name": "The Enigma",
+    "achievement_condition": "Use Red Key (etc.) to open the hidden closet in Added in Repentance Home as Lazarus"
+  },
+  {
+    "achievement_id": "483",
+    "achievement_name": "The Capricious",
+    "achievement_condition": "Use Red Key (etc.) to open the hidden closet in Added in Repentance Home as Eden"
+  },
+  {
+    "achievement_id": "484",
+    "achievement_name": "The Baleful",
+    "achievement_condition": "Use Red Key (etc.) to open the hidden closet in Added in Repentance Home as The Lost"
+  },
+  {
+    "achievement_id": "485",
+    "achievement_name": "The Harlot",
+    "achievement_condition": "Use Red Key (etc.) to open the hidden closet in Added in Repentance Home as Lilith"
+  },
+  {
+    "achievement_id": "486",
+    "achievement_name": "The Miser",
+    "achievement_condition": "Use Red Key (etc.) to open the hidden closet in Added in Repentance Home as Keeper"
+  },
+  {
+    "achievement_id": "487",
+    "achievement_name": "The Empty",
+    "achievement_condition": "Use Red Key (etc.) to open the hidden closet in Added in Repentance Home as Apollyon"
+  },
+  {
+    "achievement_id": "488",
+    "achievement_name": "The Fettered",
+    "achievement_condition": "Use Red Key (etc.) to open the hidden closet in Added in Repentance Home as The Forgotten"
+  },
+  {
+    "achievement_id": "489",
+    "achievement_name": "The Zealot",
+    "achievement_condition": "Use Red Key (etc.) to open the hidden closet in Added in Repentance Home as Bethany"
+  },
+  {
+    "achievement_id": "490",
+    "achievement_name": "The Deserter",
+    "achievement_condition": "Use Red Key (etc.) to open the hidden closet in Added in Repentance Home as Jacob and Esau"
+  },
+  {
+    "achievement_id": "491",
+    "achievement_name": "Glitched Crown",
+    "achievement_condition": "Defeat The Beast as Tainted Isaac"
+  },
+  {
+    "achievement_id": "492",
+    "achievement_name": "Belly Jelly",
+    "achievement_condition": "Defeat The Beast as Tainted Magdalene"
+  },
+  {
+    "achievement_id": "493",
+    "achievement_name": "Blue Key",
+    "achievement_condition": "Defeat The Beast as Tainted Cain"
+  },
+  {
+    "achievement_id": "494",
+    "achievement_name": "Sanguine Bond",
+    "achievement_condition": "Defeat The Beast as Tainted Judas"
+  },
+  {
+    "achievement_id": "495",
+    "achievement_name": "The Swarm",
+    "achievement_condition": "Defeat The Beast as Tainted ???"
+  },
+  {
+    "achievement_id": "496",
+    "achievement_name": "Heartbreak",
+    "achievement_condition": "Defeat The Beast as Tainted Eve"
+  },
+  {
+    "achievement_id": "497",
+    "achievement_name": "Larynx",
+    "achievement_condition": "Defeat The Beast as Tainted Samson"
+  },
+  {
+    "achievement_id": "498",
+    "achievement_name": "Azazel's Rage",
+    "achievement_condition": "Defeat The Beast as Tainted Azazel"
+  },
+  {
+    "achievement_id": "499",
+    "achievement_name": "Salvation",
+    "achievement_condition": "Defeat The Beast as Tainted Lazarus"
+  },
+  {
+    "achievement_id": "500",
+    "achievement_name": "TMTRAINER",
+    "achievement_condition": "Defeat The Beast as Tainted Eden"
+  },
+  {
+    "achievement_id": "501",
+    "achievement_name": "Sacred Orb",
+    "achievement_condition": "Defeat The Beast as Tainted Lost"
+  },
+  {
+    "achievement_id": "502",
+    "achievement_name": "Twisted Pair",
+    "achievement_condition": "Defeat The Beast as Tainted Lilith"
+  },
+  {
+    "achievement_id": "503",
+    "achievement_name": "Strawman",
+    "achievement_condition": "Defeat The Beast as Tainted Keeper"
+  },
+  {
+    "achievement_id": "504",
+    "achievement_name": "Echo Chamber",
+    "achievement_condition": "Defeat The Beast as Tainted Apollyon"
+  },
+  {
+    "achievement_id": "505",
+    "achievement_name": "Isaac's Tomb",
+    "achievement_condition": "Defeat The Beast as Tainted Forgotten"
+  },
+  {
+    "achievement_id": "506",
+    "achievement_name": "Vengeful Spirit",
+    "achievement_condition": "Defeat The Beast as Tainted Bethany"
+  },
+  {
+    "achievement_id": "507",
+    "achievement_name": "Esau Jr.",
+    "achievement_condition": "Defeat The Beast as Tainted Jacob"
+  },
+  {
+    "achievement_id": "508",
+    "achievement_name": "Bloody Mary",
+    "achievement_condition": "Unlock Bethany , Blood Bag , and It Lives!"
+  },
+  {
+    "achievement_id": "509",
+    "achievement_name": "Baptism by Fire",
+    "achievement_condition": "Defeat Satan as Bethany , defeat Mom's Heart 11 times, and unlock Maggy's Faith"
+  },
+  {
+    "achievement_id": "510",
+    "achievement_name": "Isaac's Awakening",
+    "achievement_condition": "Defeat Mother"
+  },
+  {
+    "achievement_id": "511",
+    "achievement_name": "Seeing Double",
+    "achievement_condition": "Defeat Mother"
+  },
+  {
+    "achievement_id": "512",
+    "achievement_name": "Pica Run",
+    "achievement_condition": "Defeat Mom's Heart 11 times and unlock Marbles"
+  },
+  {
+    "achievement_id": "513",
+    "achievement_name": "Hot Potato",
+    "achievement_condition": "Unlock Tainted Forgotten"
+  },
+  {
+    "achievement_id": "514",
+    "achievement_name": "Cantripped!",
+    "achievement_condition": "Unlock Tainted Cain"
+  },
+  {
+    "achievement_id": "515",
+    "achievement_name": "Red Redemption",
+    "achievement_condition": "Unlock Tainted Jacob"
+  },
+  {
+    "achievement_id": "516",
+    "achievement_name": "DELETE THIS",
+    "achievement_condition": "Unlock Tainted Eden"
+  },
+  {
+    "achievement_id": "517",
+    "achievement_name": "Dirty Mind",
+    "achievement_condition": "Complete Scat Man (challenge #36)"
+  },
+  {
+    "achievement_id": "518",
+    "achievement_name": "Sigil of Baphomet",
+    "achievement_condition": "Complete Bloody Mary (challenge #37)"
+  },
+  {
+    "achievement_id": "519",
+    "achievement_name": "Purgatory",
+    "achievement_condition": "Complete Baptism by Fire (challenge #38)"
+  },
+  {
+    "achievement_id": "520",
+    "achievement_name": "Spirit Sword",
+    "achievement_condition": "Complete Isaac's Awakening (challenge #39)"
+  },
+  {
+    "achievement_id": "521",
+    "achievement_name": "Broken Glasses",
+    "achievement_condition": "Complete Seeing Double (challenge #40)"
+  },
+  {
+    "achievement_id": "522",
+    "achievement_name": "Ice Cube",
+    "achievement_condition": "Complete Pica Run (challenge #41)"
+  },
+  {
+    "achievement_id": "523",
+    "achievement_name": "Charged Penny",
+    "achievement_condition": "Donate to Battery Bums until they pay out with an item 5 times"
+  },
+  {
+    "achievement_id": "524",
+    "achievement_name": "The Fool",
+    "achievement_condition": "Defeat Ultra Greedier as Tainted Lost"
+  },
+  {
+    "achievement_id": "525",
+    "achievement_name": "The Magician",
+    "achievement_condition": "Defeat Ultra Greedier as Tainted Judas"
+  },
+  {
+    "achievement_id": "526",
+    "achievement_name": "The High Priestess",
+    "achievement_condition": "Defeat Ultra Greedier as Tainted Lilith"
+  },
+  {
+    "achievement_id": "527",
+    "achievement_name": "The Empress",
+    "achievement_condition": "Defeat Ultra Greedier as Tainted Eve"
+  },
+  {
+    "achievement_id": "528",
+    "achievement_name": "The Emperor",
+    "achievement_condition": "Defeat Ultra Greedier as Tainted ???"
+  },
+  {
+    "achievement_id": "529",
+    "achievement_name": "The Hierophant",
+    "achievement_condition": "Defeat Ultra Greedier as Tainted Bethany"
+  },
+  {
+    "achievement_id": "530",
+    "achievement_name": "The Lovers",
+    "achievement_condition": "Defeat Ultra Greedier as Tainted Magdalene"
+  },
+  {
+    "achievement_id": "531",
+    "achievement_name": "The Chariot",
+    "achievement_condition": "Complete Hot Potato (challenge #42)"
+  },
+  {
+    "achievement_id": "532",
+    "achievement_name": "Justice",
+    "achievement_condition": "Complete Cantripped (challenge #43)"
+  },
+  {
+    "achievement_id": "533",
+    "achievement_name": "The Hermit",
+    "achievement_condition": "Complete Red Redemption (challenge #44)"
+  },
+  {
+    "achievement_id": "534",
+    "achievement_name": "Wheel of Fortune",
+    "achievement_condition": "Defeat Ultra Greedier as Tainted Cain"
+  },
+  {
+    "achievement_id": "535",
+    "achievement_name": "Strength",
+    "achievement_condition": "Defeat Ultra Greedier as Tainted Samson"
+  },
+  {
+    "achievement_id": "536",
+    "achievement_name": "The Hanged Man",
+    "achievement_condition": "Defeat Ultra Greedier as Tainted Keeper"
+  },
+  {
+    "achievement_id": "537",
+    "achievement_name": "Death",
+    "achievement_condition": "Defeat Ultra Greedier as Tainted Forgotten"
+  },
+  {
+    "achievement_id": "538",
+    "achievement_name": "Temperance",
+    "achievement_condition": "Complete DELETE THIS (challenge #45)"
+  },
+  {
+    "achievement_id": "539",
+    "achievement_name": "The Devil",
+    "achievement_condition": "Defeat Ultra Greedier as Tainted Azazel"
+  },
+  {
+    "achievement_id": "540",
+    "achievement_name": "The Tower",
+    "achievement_condition": "Defeat Ultra Greedier as Tainted Apollyon"
+  },
+  {
+    "achievement_id": "541",
+    "achievement_name": "The Stars",
+    "achievement_condition": "Defeat Ultra Greedier as Tainted Isaac"
+  },
+  {
+    "achievement_id": "542",
+    "achievement_name": "The Sun and the Moon",
+    "achievement_condition": "Defeat Ultra Greedier as Tainted Jacob"
+  },
+  {
+    "achievement_id": "543",
+    "achievement_name": "Judgement",
+    "achievement_condition": "Defeat Ultra Greedier as Tainted Lazarus"
+  },
+  {
+    "achievement_id": "544",
+    "achievement_name": "The World",
+    "achievement_condition": "Defeat Ultra Greedier as Tainted Eden"
+  },
+  {
+    "achievement_id": "545",
+    "achievement_name": "Old Capacitor",
+    "achievement_condition": "Kill 10 Battery Bums"
+  },
+  {
+    "achievement_id": "546",
+    "achievement_name": "Brimstone Bombs",
+    "achievement_condition": "After breaking Hornfel 's minecart, kill him before he can escape"
+  },
+  {
+    "achievement_id": "547",
+    "achievement_name": "Mega Mush",
+    "achievement_condition": "Earn all Hard mode Completion Marks for all non-Tainted characters"
+  },
+  {
+    "achievement_id": "548",
+    "achievement_name": "Mom's Lock",
+    "achievement_condition": "Defeat Isaac , ??? , Satan , and The Lamb as Tainted Isaac"
+  },
+  {
+    "achievement_id": "549",
+    "achievement_name": "Dice Bag",
+    "achievement_condition": "Defeat Mother as Tainted Isaac"
+  },
+  {
+    "achievement_id": "550",
+    "achievement_name": "Holy Crown",
+    "achievement_condition": "Defeat Isaac , ??? , Satan , and The Lamb as Tainted Magdalene"
+  },
+  {
+    "achievement_id": "551",
+    "achievement_name": "Mother's Kiss",
+    "achievement_condition": "Defeat Mother as Tainted Magdalene"
+  },
+  {
+    "achievement_id": "552",
+    "achievement_name": "Gilded Key",
+    "achievement_condition": "Defeat Isaac , ??? , Satan , and The Lamb as Tainted Cain"
+  },
+  {
+    "achievement_id": "553",
+    "achievement_name": "Lucky Sack",
+    "achievement_condition": "Defeat Mother as Tainted Cain"
+  },
+  {
+    "achievement_id": "554",
+    "achievement_name": "Your Soul",
+    "achievement_condition": "Defeat Isaac , ??? , Satan , and The Lamb as Tainted Judas"
+  },
+  {
+    "achievement_id": "555",
+    "achievement_name": "Number Magnet",
+    "achievement_condition": "Defeat Mother as Tainted Judas"
+  },
+  {
+    "achievement_id": "556",
+    "achievement_name": "Dingle Berry",
+    "achievement_condition": "Defeat Isaac , ??? , Satan , and The Lamb as Tainted ???"
+  },
+  {
+    "achievement_id": "557",
+    "achievement_name": "Ring Cap",
+    "achievement_condition": "Defeat Mother as Tainted ???"
+  },
+  {
+    "achievement_id": "558",
+    "achievement_name": "Strange Key",
+    "achievement_condition": "Defeat Isaac , ??? , Satan , and The Lamb as Tainted Eve"
+  },
+  {
+    "achievement_id": "559",
+    "achievement_name": "Lil Clot",
+    "achievement_condition": "Defeat Mother as Tainted Eve"
+  },
+  {
+    "achievement_id": "560",
+    "achievement_name": "Temporary Tattoo",
+    "achievement_condition": "Defeat Isaac , ??? , Satan , and The Lamb as Tainted Samson"
+  },
+  {
+    "achievement_id": "561",
+    "achievement_name": "Swallowed M80",
+    "achievement_condition": "Defeat Mother as Tainted Samson"
+  },
+  {
+    "achievement_id": "562",
+    "achievement_name": "Wicked Crown",
+    "achievement_condition": "Defeat Isaac , ??? , Satan , and The Lamb as Tainted Azazel"
+  },
+  {
+    "achievement_id": "563",
+    "achievement_name": "Azazel's Stump",
+    "achievement_condition": "Defeat Mother as Tainted Azazel"
+  },
+  {
+    "achievement_id": "564",
+    "achievement_name": "Torn Pocket",
+    "achievement_condition": "Defeat Isaac , ??? , Satan , and The Lamb as Tainted Lazarus"
+  },
+  {
+    "achievement_id": "565",
+    "achievement_name": "Torn Card",
+    "achievement_condition": "Defeat Mother as Tainted Lazarus"
+  },
+  {
+    "achievement_id": "566",
+    "achievement_name": "Nuh Uh!",
+    "achievement_condition": "Defeat Isaac , ??? , Satan , and The Lamb as Tainted Eden"
+  },
+  {
+    "achievement_id": "567",
+    "achievement_name": "Modeling Clay",
+    "achievement_condition": "Defeat Mother as Tainted Eden"
+  },
+  {
+    "achievement_id": "568",
+    "achievement_name": "Kid's Drawing",
+    "achievement_condition": "Defeat Isaac , ??? , Satan , and The Lamb as Tainted Lost"
+  },
+  {
+    "achievement_id": "569",
+    "achievement_name": "Crystal Key",
+    "achievement_condition": "Defeat Mother as Tainted Lost"
+  },
+  {
+    "achievement_id": "570",
+    "achievement_name": "The Twins",
+    "achievement_condition": "Defeat Isaac , ??? , Satan , and The Lamb as Tainted Lilith"
+  },
+  {
+    "achievement_id": "571",
+    "achievement_name": "Adoption Papers",
+    "achievement_condition": "Defeat Mother as Tainted Lilith"
+  },
+  {
+    "achievement_id": "572",
+    "achievement_name": "Keeper's Bargain",
+    "achievement_condition": "Defeat Isaac , ??? , Satan , and The Lamb as Tainted Keeper"
+  },
+  {
+    "achievement_id": "573",
+    "achievement_name": "Cursed Penny",
+    "achievement_condition": "Defeat Mother as Tainted Keeper"
+  },
+  {
+    "achievement_id": "574",
+    "achievement_name": "Cricket Leg",
+    "achievement_condition": "Defeat Isaac , ??? , Satan , and The Lamb as Tainted Apollyon"
+  },
+  {
+    "achievement_id": "575",
+    "achievement_name": "Apollyon's Best Friend",
+    "achievement_condition": "Defeat Mother as Tainted Apollyon"
+  },
+  {
+    "achievement_id": "576",
+    "achievement_name": "Polished Bone",
+    "achievement_condition": "Defeat Isaac , ??? , Satan , and The Lamb as Tainted Forgotten"
+  },
+  {
+    "achievement_id": "577",
+    "achievement_name": "Hollow Heart",
+    "achievement_condition": "Defeat Mother as Tainted Forgotten"
+  },
+  {
+    "achievement_id": "578",
+    "achievement_name": "Expansion Pack",
+    "achievement_condition": "Defeat Isaac , ??? , Satan , and The Lamb as Tainted Bethany"
+  },
+  {
+    "achievement_id": "579",
+    "achievement_name": "Beth's Essence",
+    "achievement_condition": "Defeat Mother as Tainted Bethany"
+  },
+  {
+    "achievement_id": "580",
+    "achievement_name": "RC Remote",
+    "achievement_condition": "Defeat Isaac , ??? , Satan , and The Lamb as Tainted Jacob"
+  },
+  {
+    "achievement_id": "581",
+    "achievement_name": "Found Soul",
+    "achievement_condition": "Defeat Mother as Tainted Jacob"
+  },
+  {
+    "achievement_id": "582",
+    "achievement_name": "Member Card",
+    "achievement_condition": "Spend 40+ coins in a single Shop"
+  },
+  {
+    "achievement_id": "583",
+    "achievement_name": "Golden Razor",
+    "achievement_condition": "In a single run, obtain 99 Coins, then spend all of them"
+  },
+  {
+    "achievement_id": "584",
+    "achievement_name": "Spindown Dice",
+    "achievement_condition": "Defeat Delirium as Tainted Isaac"
+  },
+  {
+    "achievement_id": "585",
+    "achievement_name": "Hypercoagulation",
+    "achievement_condition": "Defeat Delirium as Tainted Magdalene"
+  },
+  {
+    "achievement_id": "586",
+    "achievement_name": "Bag of Crafting",
+    "achievement_condition": "Defeat Delirium as Tainted Cain"
+  },
+  {
+    "achievement_id": "587",
+    "achievement_name": "Dark Arts",
+    "achievement_condition": "Defeat Delirium as Tainted Judas"
+  },
+  {
+    "achievement_id": "588",
+    "achievement_name": "IBS",
+    "achievement_condition": "Defeat Delirium as Tainted ???"
+  },
+  {
+    "achievement_id": "589",
+    "achievement_name": "Sumptorium",
+    "achievement_condition": "Defeat Delirium as Tainted Eve"
+  },
+  {
+    "achievement_id": "590",
+    "achievement_name": "Berserk!",
+    "achievement_condition": "Defeat Delirium as Tainted Samson"
+  },
+  {
+    "achievement_id": "591",
+    "achievement_name": "Hemoptysis",
+    "achievement_condition": "Defeat Delirium as Tainted Azazel"
+  },
+  {
+    "achievement_id": "592",
+    "achievement_name": "Flip",
+    "achievement_condition": "Defeat Delirium as Tainted Lazarus"
+  },
+  {
+    "achievement_id": "593",
+    "achievement_name": "Corrupted Data",
+    "achievement_condition": "Defeat Delirium as Tainted Eden"
+  },
+  {
+    "achievement_id": "594",
+    "achievement_name": "Ghost Bombs",
+    "achievement_condition": "Defeat Delirium as Tainted Lost"
+  },
+  {
+    "achievement_id": "595",
+    "achievement_name": "Gello",
+    "achievement_condition": "Defeat Delirium as Tainted Lilith"
+  },
+  {
+    "achievement_id": "596",
+    "achievement_name": "Keeper's Kin",
+    "achievement_condition": "Defeat Delirium as Tainted Keeper"
+  },
+  {
+    "achievement_id": "597",
+    "achievement_name": "Abyss",
+    "achievement_condition": "Defeat Delirium as Tainted Apollyon"
+  },
+  {
+    "achievement_id": "598",
+    "achievement_name": "Decap Attack",
+    "achievement_condition": "Defeat Delirium as Tainted Forgotten"
+  },
+  {
+    "achievement_id": "599",
+    "achievement_name": "Lemegeton",
+    "achievement_condition": "Defeat Delirium as Tainted Bethany"
+  },
+  {
+    "achievement_id": "600",
+    "achievement_name": "Anima Sola",
+    "achievement_condition": "Defeat Delirium as Tainted Jacob"
+  },
+  {
+    "achievement_id": "601",
+    "achievement_name": "Mega Chest",
+    "achievement_condition": "Defeat Mega Satan as Tainted Isaac"
+  },
+  {
+    "achievement_id": "602",
+    "achievement_name": "Queen of Hearts",
+    "achievement_condition": "Defeat Mega Satan as Tainted Magdalene"
+  },
+  {
+    "achievement_id": "603",
+    "achievement_name": "Gold Pill",
+    "achievement_condition": "Defeat Mega Satan as Tainted Cain"
+  },
+  {
+    "achievement_id": "604",
+    "achievement_name": "Black Sack",
+    "achievement_condition": "Defeat Mega Satan as Tainted Judas"
+  },
+  {
+    "achievement_id": "605",
+    "achievement_name": "Charming Poop",
+    "achievement_condition": "Defeat Mega Satan as Tainted ???"
+  },
+  {
+    "achievement_id": "606",
+    "achievement_name": "Horse Pill",
+    "achievement_condition": "Defeat Mega Satan as Tainted Eve"
+  },
+  {
+    "achievement_id": "607",
+    "achievement_name": "Crane Game",
+    "achievement_condition": "Defeat Mega Satan as Tainted Samson"
+  },
+  {
+    "achievement_id": "608",
+    "achievement_name": "Hell Game",
+    "achievement_condition": "Defeat Mega Satan as Tainted Azazel"
+  },
+  {
+    "achievement_id": "609",
+    "achievement_name": "Wooden Chest",
+    "achievement_condition": "Defeat Mega Satan as Tainted Lazarus"
+  },
+  {
+    "achievement_id": "610",
+    "achievement_name": "Wild Card",
+    "achievement_condition": "Defeat Mega Satan as Tainted Eden"
+  },
+  {
+    "achievement_id": "611",
+    "achievement_name": "Haunted Chest",
+    "achievement_condition": "Defeat Mega Satan as Tainted Lost"
+  },
+  {
+    "achievement_id": "612",
+    "achievement_name": "Fool's Gold",
+    "achievement_condition": "Defeat Mega Satan as Tainted Lilith"
+  },
+  {
+    "achievement_id": "613",
+    "achievement_name": "Golden Penny",
+    "achievement_condition": "Defeat Mega Satan as Tainted Keeper"
+  },
+  {
+    "achievement_id": "614",
+    "achievement_name": "Rotten Beggar",
+    "achievement_condition": "Defeat Mega Satan as Tainted Apollyon"
+  },
+  {
+    "achievement_id": "615",
+    "achievement_name": "Golden Battery",
+    "achievement_condition": "Defeat Mega Satan as Tainted Forgotten"
+  },
+  {
+    "achievement_id": "616",
+    "achievement_name": "Confessional",
+    "achievement_condition": "Defeat Mega Satan as Tainted Bethany"
+  },
+  {
+    "achievement_id": "617",
+    "achievement_name": "Golden Trinket",
+    "achievement_condition": "Defeat Mega Satan as Tainted Jacob"
+  },
+  {
+    "achievement_id": "618",
+    "achievement_name": "Soul of Isaac",
+    "achievement_condition": "Defeat Hush and Boss Rush as Tainted Isaac"
+  },
+  {
+    "achievement_id": "619",
+    "achievement_name": "Soul of Magdalene",
+    "achievement_condition": "Defeat Hush and Boss Rush as Tainted Magdalene"
+  },
+  {
+    "achievement_id": "620",
+    "achievement_name": "Soul of Cain",
+    "achievement_condition": "Defeat Hush and Boss Rush as Tainted Cain"
+  },
+  {
+    "achievement_id": "621",
+    "achievement_name": "Soul of Judas",
+    "achievement_condition": "Defeat Hush and Boss Rush as Tainted Judas"
+  },
+  {
+    "achievement_id": "622",
+    "achievement_name": "Soul of ???",
+    "achievement_condition": "Defeat Hush and Boss Rush as Tainted ???"
+  },
+  {
+    "achievement_id": "623",
+    "achievement_name": "Soul of Eve",
+    "achievement_condition": "Defeat Hush and Boss Rush as Tainted Eve"
+  },
+  {
+    "achievement_id": "624",
+    "achievement_name": "Soul of Samson",
+    "achievement_condition": "Defeat Hush and Boss Rush as Tainted Samson"
+  },
+  {
+    "achievement_id": "625",
+    "achievement_name": "Soul of Azazel",
+    "achievement_condition": "Defeat Hush and Boss Rush as Tainted Azazel"
+  },
+  {
+    "achievement_id": "626",
+    "achievement_name": "Soul of Lazarus",
+    "achievement_condition": "Defeat Hush and Boss Rush as Tainted Lazarus"
+  },
+  {
+    "achievement_id": "627",
+    "achievement_name": "Soul of Eden",
+    "achievement_condition": "Defeat Hush and Boss Rush as Tainted Eden"
+  },
+  {
+    "achievement_id": "628",
+    "achievement_name": "Soul of the Lost",
+    "achievement_condition": "Defeat Hush and Boss Rush as Tainted Lost"
+  },
+  {
+    "achievement_id": "629",
+    "achievement_name": "Soul of Lilith",
+    "achievement_condition": "Defeat Hush and Boss Rush as Tainted Lilith"
+  },
+  {
+    "achievement_id": "630",
+    "achievement_name": "Soul of the Keeper",
+    "achievement_condition": "Defeat Hush and Boss Rush as Tainted Keeper"
+  },
+  {
+    "achievement_id": "631",
+    "achievement_name": "Soul of Apollyon",
+    "achievement_condition": "Defeat Hush and Boss Rush as Tainted Apollyon"
+  },
+  {
+    "achievement_id": "632",
+    "achievement_name": "Soul of the Forgotten",
+    "achievement_condition": "Defeat Hush and Boss Rush as Tainted Forgotten"
+  },
+  {
+    "achievement_id": "633",
+    "achievement_name": "Soul of Bethany",
+    "achievement_condition": "Defeat Hush and Boss Rush as Tainted Bethany"
+  },
+  {
+    "achievement_id": "634",
+    "achievement_name": "Soul of Jacob and Esau",
+    "achievement_condition": "Defeat Hush and Boss Rush as Tainted Jacob"
+  },
+  {
+    "achievement_id": "635",
+    "achievement_name": "A Strange Door",
+    "achievement_condition": "Defeat Mother"
+  },
+  {
+    "achievement_id": "636",
+    "achievement_name": "Death Certificate",
+    "achievement_condition": "Earn all Hard mode Completion Marks for all characters , including tainted ones"
+  },
+  {
+    "achievement_id": "637",
+    "achievement_name": "Dead God",
+    "achievement_condition": "Unlock all the other achievements and collect every item in the game"
+  },
+  {
+    "achievement_id": "638",
+    "achievement_name": "Play an online match",
+    "achievement_condition": "Playing an Online Match"
+  },
+  {
+    "achievement_id": "639",
+    "achievement_name": "Win an online match",
+    "achievement_condition": "Winning an Online Match"
+  },
+  {
+    "achievement_id": "640",
+    "achievement_name": "Win an online Daily Run",
+    "achievement_condition": "Winning an online Daily Run"
+  }
+]

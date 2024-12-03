@@ -6,6 +6,7 @@ mod server;
 mod models;
 mod views;
 mod controllers;
+mod database;
 
 fn main() {
     dotenv().ok();

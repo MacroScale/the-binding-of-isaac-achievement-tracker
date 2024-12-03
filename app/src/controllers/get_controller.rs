@@ -1,4 +1,4 @@
-use actix_web::{get, web, Responder, HttpResponse, HttpRequest};
+use actix_web::{get, Responder, HttpResponse, HttpRequest};
 use askama::Template;
 use crate::views;
 use crate::models;
@@ -8,7 +8,10 @@ use crate::models::responses::error::Error;
 
 #[get("/")]
 pub async fn index() -> impl Responder {
-    HttpResponse::PermanentRedirect().header("Location", "/dashboard").finish()
+    HttpResponse::PermanentRedirect()
+        .append_header(
+            ("Location", "/dashboard")
+        ).finish()
 }
 
 #[get("/dashboard{tail:.*}")]
@@ -42,7 +45,10 @@ pub async fn dashboard(req: HttpRequest) -> impl Responder {
         let location = format!("/dashboard?steam_id={}", steam_id);
 
         if location != req.uri().to_string(){
-            return HttpResponse::TemporaryRedirect().header("Location", location).finish();
+            return HttpResponse::TemporaryRedirect()
+                .append_header(
+                    ("Location", location)
+                ).finish();
         }
     }
 

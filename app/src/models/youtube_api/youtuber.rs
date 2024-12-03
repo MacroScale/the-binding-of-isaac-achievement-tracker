@@ -17,11 +17,11 @@ impl Youtuber{
     
         let video_list = VideoList::new(channel_id).await?;
 
-        let channel_id = video_list.items[0].snippet.channelId.to_string();
-        let channel_name = video_list.items[0].snippet.channelTitle.to_string();
+        let channel_id = video_list.items[0].snippet.channel_id.to_string();
+        let channel_name = video_list.items[0].snippet.channel_title.to_string();
         let latest_video_title = video_list.items[0].snippet.title.to_string();
         let latest_video_thumbnail = video_list.items[0].snippet.thumbnails.default.url.to_string();
-        let latest_video_url = format!("https://www.youtube.com/watch?v={}", video_list.items[0].id.videoId.to_string());
+        let latest_video_url = format!("https://www.youtube.com/watch?v={}", video_list.items[0].id.video_id.to_string());
 
         let youtuber_obj = Youtuber{
             channel_id,
