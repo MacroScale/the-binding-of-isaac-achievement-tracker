@@ -23,7 +23,7 @@ pub async fn start() -> std::io::Result<()> {
             .service(fs::Files::new("/static", "./static"))
             .default_service(web::to(get_controller::not_found))
     })
-    .bind(("127.0.0.1", 8080))?
+    .bind(("127.0.0.1", 3000))?
     .run()
     .await
 }
